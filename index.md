@@ -1,3 +1,9 @@
+---
+title: BCC Developer Portal
+description: Technical documentation and guides for software development in BCC
+---
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/bcc-code/bcc-code.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
