@@ -65,7 +65,9 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 * [ ] Key action / conversion metrics identified and monitored
 * [ ] Strategically aligned with other products in BCC ecosystem
 
-### Efficiency and Sustainability -- *reducing the bus factor*
+### Efficiency and Sustainability
+
+> *reducing the bus factor*
 
 * [ ] Automated build and deployment pipelines
 * [ ] Automated tests
