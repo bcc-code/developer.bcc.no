@@ -67,20 +67,25 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 
 ### Efficiency and Sustainability -- *reducing the bus factor*
 
-[ ] Automated build and deployment pipelines
-[ ] Automated tests
-[ ] Minimal & documented setup for local development
-[ ] Test and/or staging environment configured
-[ ] System architecture documented
-[ ] Open API (including SDKs)
+* [ ] Automated build and deployment pipelines
+* [ ] Automated tests
+* [ ] Minimal & documented setup for local development
+* [ ] Test and/or staging environment configured
+* [ ] System architecture documented
+* [ ] Open API (including SDKs)
 
 ### Reliability
 
-[ ] Mainstream services and components (no beta, commercial backing, large community)
-[ ] APM monitoring configured
+* [ ] Mainstream services and components (no beta, commercial backing, large community)
+* [ ] APM monitoring configured
+* [ ] Alerts configured
 
 ### Security
 
-[ ] Backup configured
-[ ] Data encrypted at rest
-[ ] Data encrypted in transit (TLS/SSL)
+* [ ] Backup configured
+* [ ] Data encrypted at rest
+* [ ] Data encrypted in transit (TLS/SSL)
+* [ ] Best security practices for system frameworks / components implemented
+* [ ] Plan for governance of development asseets (ideally centralized)
+
+## Typical Antipatterns
