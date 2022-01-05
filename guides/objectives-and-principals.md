@@ -1,4 +1,8 @@
 # Guiding Principals and Objectives
+{:.no_toc}
+
+* Table of Contents
+{:toc}
 
 ## Introduction
 
