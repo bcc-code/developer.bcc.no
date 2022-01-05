@@ -1,14 +1,14 @@
-# Guiding Principals and Objectives
-{:.no_toc}
-
 * Table of Contents
 {:toc}
+
+# Guiding Principals and Objectives
+{:.no_toc}
 
 ## Introduction
 
 The purpose of this document is to provide guidence in what to prioritize and why when making architectural decisions and/or planning development projects.
 
-## What Matters? - Overall Objectives
+## Overall Objectives - What Matters?
 
 The overall goal in our development projects is to bring *value* to the organization, *effectively* and *efficiently* in the form of products that are *usable*, *reliable*, *secure* and *sustainable*.
 
@@ -52,4 +52,30 @@ By **secure** we mean that the integrity of both *personal* data and *organizati
 
 By **sustainable** we mean ensuring that what we develop today, will continue to work reliably, securely and cost effectively in the future - without being dependent on a single person. In short, the solution needs to be *maintainable* and *viable*.
 
+
+## Checklists
+
+### Value
+
+[ ] OKRs defined
+[ ] Key results being measured
+
+### Usability
+
+[ ] Analytics configured
+[ ] Key action / conversion metrics identified and monitored
+
+### Efficiency and Sustainability
+
+[ ] Automated build and deployment pipelines
+[ ] Automated tests
+[ ] Minimal & documented setup for local development
+[ ] Test and/or staging environment configured
+[ ] System architecture documented
+[ ] Open API (including SDKs)
+
+### Reliability
+
+[ ] Mainstream services and components (no beta, commercial backing, large community)
+[ ] APM 
 
