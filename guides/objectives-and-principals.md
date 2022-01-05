@@ -65,7 +65,7 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 [ ] Analytics configured
 [ ] Key action / conversion metrics identified and monitored
 
-### Efficiency and Sustainability
+### Efficiency and Sustainability -- *reducing the bus factor*
 
 [ ] Automated build and deployment pipelines
 [ ] Automated tests
@@ -79,3 +79,8 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 [ ] Mainstream services and components (no beta, commercial backing, large community)
 [ ] APM 
 
+### Security
+
+[ ] Backup configured
+[ ] Data encrypted at rest
+[ ] Data encrypted in transit (TLS/SSL)
