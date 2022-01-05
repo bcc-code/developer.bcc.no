@@ -1,8 +1,8 @@
-* Table of Contents
-{:toc}
-
 # Guiding Principals and Objectives
 {:.no_toc}
+
+1. Table of Contents
+{:toc}
 
 ## Introduction
 
@@ -52,18 +52,18 @@ By **secure** we mean that the integrity of both *personal* data and *organizati
 
 By **sustainable** we mean ensuring that what we develop today, will continue to work reliably, securely and cost effectively in the future - without being dependent on a single person. In short, the solution needs to be *maintainable* and *viable*.
 
-
 ## Checklists
 
 ### Value
 
-[ ] OKRs defined
-[ ] Key results being measured
+* [ ] OKRs defined
+* [ ] Key results being measured
 
 ### Usability
 
-[ ] Analytics configured
-[ ] Key action / conversion metrics identified and monitored
+* [ ] Analytics configured
+* [ ] Key action / conversion metrics identified and monitored
+* [ ] Strategically aligned with other products in BCC ecosystem
 
 ### Efficiency and Sustainability -- *reducing the bus factor*
 
@@ -77,7 +77,7 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 ### Reliability
 
 [ ] Mainstream services and components (no beta, commercial backing, large community)
-[ ] APM 
+[ ] APM monitoring configured
 
 ### Security
 
