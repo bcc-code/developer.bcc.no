@@ -4,14 +4,14 @@ description: Technical documentation and guides for software development in BCC
 ---
 
 
-# Welcome to BCC Developer Portal!
+> Welcome to the BCC Developer Portal
 
-## Guides
-* [Guiding Objectives and Principals](guides/objective-and-principals.md) 
+# Guides
+* [Guiding Objectives and Principals](guides/objectives-and-principals.md) 
 * [Coding Guilde](guides/coding-guide.md)
 
-## Developer Docs
+# Projects
 * [Widgets]()
-* [Members]()
+* [Members](https://bcc-code.github.io/bcc-membership-docs)
 * [BMM]()
-* [WordPress]()
+* [WordPress](https://bcc-code.github.io/bcc-wp)
