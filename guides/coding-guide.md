@@ -6,7 +6,7 @@ The purpose of this guide is to provide a set of _best practices_ for developmen
 
 ## 1. Application Security
 
-### 1.1 Authentication
+### 1.1 Authentication 
 _Authentication_ relates to identifying a user or client.
 
 * **Use OAuth 2.0 (client credentials flow) for application-to-application communication.**  
