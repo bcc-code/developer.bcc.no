@@ -124,7 +124,8 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 2. Implementing security and compliance as an afterthought
 3. Using cloud services from new providers, without considering long-term governance (how will onboarding/offboarding be managed?)
 4. Using new, unproven or propriatory technologies that aren't backed by a large organization (often lack support, community, security in the long run)
-5. Overengineering (trying to build THE next platform without alignment)
+5. Overengineering
 6. Overlooking automated testing and load testing
 7. Being dependent on online database for development
 8. Development environment undocumented and difficult to set up (creates dependence on individual developers)
+9. Lack of alignment with other projects
