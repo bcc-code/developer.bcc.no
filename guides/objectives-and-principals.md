@@ -1,3 +1,9 @@
+---
+title: Guiding Principals and Objectives
+description: Checklist for BCC development projects
+---
+
+
 # Guiding Principals and Objectives
 {:.no_toc}
 
