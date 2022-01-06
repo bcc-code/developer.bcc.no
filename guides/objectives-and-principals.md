@@ -6,11 +6,11 @@
 
 ## Introduction
 
-The purpose of this document is to provide guidence in what to prioritize and why when making architectural decisions and/or planning development projects.
+The purpose of this document is to provide guidence in what to prioritize and why when making architectural decisions and/or planning development projects. When designing a new system architecture, developers should address (have a plan for) each of the points in the checklist below *before* development commences.
 
 ## Overall Objectives - What Matters?
 
-The overall goal in our development projects is to bring *value* to the organization, *effectively* and *efficiently* in the form of products that are *usable*, *reliable*, *secure* and *sustainable*.
+> The overall goal in our development projects is to bring *value* to the organization, *effectively* and *efficiently* in the form of products that are *usable*, *reliable*, *secure* and *sustainable*.
 
 ### Valuable
 
@@ -85,6 +85,7 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 > *Reducing the bus factor*
 
 * [ ] No use of personal accounts purchasing / running services
+* [ ] All service account passwords / tokens available to future developers (e.g LastPass)
 * [ ] Minimal & documented setup for local development
 * [ ] Well-known, well documented technologies used
 * [ ] Test and/or staging environment
