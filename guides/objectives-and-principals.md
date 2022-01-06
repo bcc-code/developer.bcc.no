@@ -102,13 +102,16 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 
 ### Security
 
-* [ ] Backup setup
-* [ ] Governance of developer access in place - 2FA, centralized control (e.g. Azure AD)
+> *Ensuring only those who should have access, have access*
+
+* [ ] Backup in place
+* [ ] Governance of developer access - 2FA, centralized control (e.g. Azure AD)
 * [ ] Data encrypted at rest
 * [ ] Data encrypted in transit (TLS/SSL)
-* [ ] Best security practices for relevant frameworks / components implemented
+* [ ] Best security practices for relevant frameworks / components consulted and implemented
 * [ ] Development doesn't require access to production data
 * [ ] Audit logging
+* [ ] Vulnerability testing
 
 ## Common "Gotchas"
 
@@ -119,3 +122,4 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 5. Overengineering (trying to build THE next platform without alignment)
 6. Overlooking automated testing and load testing
 7. Being dependent on online database for development
+8. Development environment undocumented and difficult to set up (creates dependence on individual developers)
