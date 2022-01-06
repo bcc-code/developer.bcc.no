@@ -12,6 +12,6 @@ description: Technical documentation and guides for software development in BCC
 
 ## Projects
 * [Widgets]()
-* [Members](https://bcc-code.github.io/bcc-membership-docs)
+* [Members](/bcc-membership-docs)
 * [BMM]()
-* [WordPress](https://bcc-code.github.io/bcc-wp)
+* [WordPress](/bcc-wp)
