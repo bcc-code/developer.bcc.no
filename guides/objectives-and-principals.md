@@ -56,38 +56,58 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 
 ### Value
 
-* [ ] OKRs defined
-* [ ] Key results being measured
+* [ ] OKRs defined and measured
 
 ### Usability
 
-* [ ] Analytics configured
-* [ ] Key action / conversion metrics identified and monitored
+* [ ] Analytics configured (including identifying and monitoring key metrics)
 * [ ] Strategically aligned with other products in BCC ecosystem
+* [ ] Compliant with WCAG standards (front-end)
+* [ ] Follows BCC's Design System
+* [ ] Intuitive and/or inline-documented UI
 
-### Efficiency and Sustainability
-
-> *reducing the bus factor*
+### Efficiency
 
 * [ ] Automated build and deployment pipelines
 * [ ] Automated tests
+* [ ] Modular, loosely coupled architecture
+* [ ] Open API (including SDKs) for any service that other services may need to communicate with
+* [ ] Over-engineering avoided
+
+### Sustainability
+
+> *reducing the bus factor*
+
+* [ ] No use of personal accounts purchasing / running services
 * [ ] Minimal & documented setup for local development
-* [ ] Test and/or staging environment configured
-* [ ] System architecture documented
-* [ ] Open API (including SDKs)
+* [ ] Well-known, well documented technologies used
+* [ ] Test and/or staging environment
+* [ ] System architecture documented (along the way)
 
 ### Reliability
 
-* [ ] Mainstream services and components (no beta, commercial backing, large community)
-* [ ] APM monitoring configured
-* [ ] Alerts configured
+* [ ] Scalable architecture
+* [ ] Realistic load tests
+* [ ] Mainstream services and components (commercial backing, large community, no beta)
+* [ ] APM monitoring
+* [ ] Alerterting
 
 ### Security
 
-* [ ] Backup configured
+* [ ] Backup setup
+* [ ] Governance of developer access in place - 2FA, centralized control (e.g. Azure AD)
 * [ ] Data encrypted at rest
 * [ ] Data encrypted in transit (TLS/SSL)
-* [ ] Best security practices for system frameworks / components implemented
-* [ ] Plan for governance of development asseets (ideally centralized)
+* [ ] Best security practices for relevant frameworks / components implemented
+* [ ] Development doesn't require access to production data
+* [ ] Audit logging
 
-## Typical Antipatterns
+## Common "Gotchas"
+
+1. Using personal accounts to set up services
+2. Implementing security and compliance as an afterthought
+3. Using cloud services from new providers, without considering long-term governance (how will onboarding/offboarding be managed?)
+4. Using new, unproven or propriatory technologies that aren't backed by a large organization (often lack support, community, security in the long run)
+5. Overengineering (trying to build THE next platform without alignment with other teams)
+6. Overlooking automated testing and load testing
+7. Being dependent on online database for development
