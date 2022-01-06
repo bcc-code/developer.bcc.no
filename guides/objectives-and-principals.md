@@ -1,4 +1,8 @@
-# Guiding Principals and Objectives
+---
+title: Guiding Principals and Objectives
+description: Checklist for BCC development projects
+---
+
 {:.no_toc}
 
 1. Table of Contents
@@ -10,7 +14,7 @@ The purpose of this document is to provide guidence in what to prioritize and wh
 
 ## Overall Objectives - What Matters?
 
-> The overall goal in our development projects is to bring *value* to the organization, *effectively* and *efficiently* in the form of products that are *usable*, *reliable*, *secure* and *sustainable*.
+> The overall goal in our development projects is to bring **value** to the organization, **effectively** and **efficiently** in the form of products that are **usable**, **reliable**, **secure** and **sustainable**.
 
 ### Valuable
 
