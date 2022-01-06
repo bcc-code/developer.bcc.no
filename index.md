@@ -14,7 +14,7 @@ description: Technical documentation and guides for software development in BCC
 * [Security](/security)
 
 ## Projects
-* [Widgets]()
-* [Members](/bcc-membership-docs)
+* [Widgets](/bcc-widgets)
+* [Sign-on and Membership](/bcc-membership-docs)
 * [BMM]()
 * [WordPress](/bcc-wp)
