@@ -57,8 +57,11 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 ### Value
 
 * [ ] OKRs defined and measured
+* [ ] Prototyping before development
 
 ### Usability
+
+> *Ensuring a great user experience*
 
 * [ ] Analytics configured (including identifying and monitoring key metrics)
 * [ ] Strategically aligned with other products in BCC ecosystem
@@ -68,6 +71,8 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 
 ### Efficiency
 
+> *long term, rather than quick wins*
+
 * [ ] Automated build and deployment pipelines
 * [ ] Automated tests
 * [ ] Modular, loosely coupled architecture
@@ -76,7 +81,7 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 
 ### Sustainability
 
-> *reducing the bus factor*
+> *Reducing the bus factor*
 
 * [ ] No use of personal accounts purchasing / running services
 * [ ] Minimal & documented setup for local development
@@ -85,6 +90,8 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 * [ ] System architecture documented (along the way)
 
 ### Reliability
+
+> *Making sure it works*
 
 * [ ] Scalable architecture
 * [ ] Realistic load tests
@@ -108,6 +115,6 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 2. Implementing security and compliance as an afterthought
 3. Using cloud services from new providers, without considering long-term governance (how will onboarding/offboarding be managed?)
 4. Using new, unproven or propriatory technologies that aren't backed by a large organization (often lack support, community, security in the long run)
-5. Overengineering (trying to build THE next platform without alignment with other teams)
+5. Overengineering (trying to build THE next platform without alignment)
 6. Overlooking automated testing and load testing
 7. Being dependent on online database for development
