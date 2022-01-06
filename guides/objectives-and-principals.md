@@ -78,6 +78,7 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 * [ ] Modular, loosely coupled architecture
 * [ ] Open API (including SDKs) for any service that other services may need to communicate with
 * [ ] Over-engineering avoided
+* [ ] Tracking DORA metrics
 
 ### Sustainability
 
