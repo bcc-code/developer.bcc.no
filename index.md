@@ -10,6 +10,9 @@ description: Technical documentation and guides for software development in BCC
 * [Guiding Objectives and Principals](guides/objectives-and-principals.md) 
 * [Coding Guilde](guides/coding-guide.md)
 
+## Topics
+* [Security](/security)
+
 ## Projects
 * [Widgets]()
 * [Members](/bcc-membership-docs)
