@@ -1,3 +1,6 @@
 remote_theme: bcc-code/bcc-docs-theme
 plugins:
 - jekyll-remote-theme
+algolia:
+  application_id: 'V6FHJ8H6M9'
+  index_name: 'bcc-developer-search'
