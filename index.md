@@ -17,6 +17,7 @@ Check out the rest of this site for documentation.
 * [Security](/security)
 
 ## Docs
+* [BCC Signon - OpenID Connect](/docs/BCC%20Signon/OpenID%20Connect)
 * [BCC Signon - ASP.NET Core](/docs/BCC%20Signon/ASP.NET%20Core)
 
 ## Projects
