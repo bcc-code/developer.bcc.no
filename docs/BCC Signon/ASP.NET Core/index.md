@@ -1,13 +1,27 @@
 ﻿---
-title: BCC Signon - ASP.NET Core 
+title: BCC Signon - ASP.NET Core
 description: Technical documentation and guides for software development in BCC
 ---
 
-## Getting started
+## Page Content
+
+---
+
+* [Getting Started](#getting-started)
+    * [Limitations](#limitations)
+    * [Read more](#read-more)
+* [Install nuget packages](#install-nuget-packages)
+* [Edit configuration file](#edit-configuration-file)
+    * [Get your application credentials](#get-your-application-credentials)
+* [OpenID Connect configuration](#openid-connect-configuration)
+* [Add Account controller](#add-account-controller)
+* [Force login to enter the website](#force-login-to-enter-the-website)
+
+# Getting started
 
 This tutorial will introduce you to our login solution for ASP.NET Core.
 
-### Limitations
+## Limitations
 
 This solution has (for now) some limitations that you have to be aware of. Please read them carefully to avoid any bad
 surprise.
@@ -15,14 +29,16 @@ surprise.
 * The newsfeed link shared with Brunstad Portal should be protected by a [private URL](example.com)
 * The ````userAccountId```` attribute of the old system has been deprecated [(read more)](example.com).
 
-### Read More
+## Read More
 
 If you want to know more about this solution, you can
 read [Auth0’s extended tutorial](https://auth0.com/docs/quickstart/webapp/aspnet-core/01-login).
 
+<br>
+
 ---
 
-## Install nuget packages
+# Install nuget packages
 
 We need to install packages for the Cookies and OpenID Connect. To do that, type the following commands in the Package
 Manager Console.
@@ -32,11 +48,13 @@ Install-Package Microsoft.AspNetCore.Authentication.Cookies
 Install-Package Microsoft.AspNetCore.Authentication.OpenIdConnect
 ````
 
+<br>
+
 ----
 
-## Edit configuration file
+# Edit configuration file
 
-### Get your application credentials
+## Get your application credentials
 
 To use the Auth0 solution, you need to get your client credentials If you don’t have them, please
 contact [support](mailto:it@bcc.no?subject=Support%Developer%BCC).
@@ -51,11 +69,13 @@ Navigate to your ````appsettings.json```` file. Add these parameters
   }
 ````
 
+<br>
+
 ---
 
-## OpenID Connect configuration
+# OpenID Connect configuration
 
-#### Warning: make sure that you have updated the [configuration file](example.com). Don’t expect the solution to work otherwise.
+## Warning: make sure that you have updated the [configuration file](example.com). Don’t expect the solution to work otherwise.
 
 Navigate to the ````ConfigureServices ```` method of your Startup class.
 
@@ -128,15 +148,17 @@ app.UseStaticFiles();
 app.UseAuthentication();
 ````
 
-### Register callbackURL
+## Register callbackURL
 
-###### Before continuing, please send your callback URLs to [support](mailto:it@bcc.no?subject=Support%Developer%BCC) so Auth0 can be configured with your website
+##### Before continuing, please send your callback URLs to [support](mailto:it@bcc.no?subject=Support%Developer%BCC) so Auth0 can be configured with your website
 
 Callback URL:: ````https://your-domain.com/signin-auth0```` (replace ````your-domain.com```` with your website’s domain)
 
+<br>
+
 ---
 
-## Add Account controller
+# Add Account controller
 
 If you don't have any ````AccountController````, create one in your ``Controllers`` folder, using this template:
 
@@ -184,7 +206,7 @@ namespace SampleMvcApp.Controllers
 }
 ````
 
-#### Single Signout
+### Single Signout
 
 Please install Single Signout on your application ([documentation](example.com)).
 
@@ -194,9 +216,11 @@ The ‘signout’ path for this tutorial is ``/Account/SignOut``
 
 The ``SignOut`` view should be implemented as described here: [Signout of BCC Widgets.](example.com)
 
+<br>
+
 ---
 
-## Force login to enter the website
+# Force login to enter the website
 
 We can add a global filter to prevent non-logged in users from entering the website.
 

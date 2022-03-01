@@ -1,5 +1,6 @@
 ﻿---
-title: BCC Signon - OpenID Connect description: Technical documentation and guides for software development in BCC
+title: BCC Signon - OpenID Connect 
+description: Technical documentation and guides for software development in BCC
 ---
 
 ## Page Content
@@ -14,6 +15,10 @@ title: BCC Signon - OpenID Connect description: Technical documentation and guid
     * [Available claims](#available-claims)
     * [Deprecated claims](#deprecated-claims)
     * [ID_token example](#id_token-example)
+* [Sign sign-out](#single-sign-out)
+    * [Integrate your application with single sign-out](#integrate-your-application-with-single-sign-out)
+* [Protect news feed and calendar](#protect-news-feed-and-calendar)
+* [FAQ](#faq)
 
 # Getting started
 
@@ -329,7 +334,6 @@ please contact [support](mailto:it@bcc.no).
 **Warning**: The Client Secret should remain confidential! Don’t send it to anybody, and store it in a safe place.
 
 <br>
-
 
 ### I get redirected to a page that says 'Sorry, an error occurred':
 
