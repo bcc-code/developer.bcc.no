@@ -1,6 +1,6 @@
 ﻿---
-title: BCC Developer Portal | BCC Signon - OpenID Connect description: Technical documentation and guides for software
-development in BCC
+title: BCC Signon - OpenID Connect 
+description: Technical documentation and guides for software development in BCC
 ---
 
 ## Getting started
