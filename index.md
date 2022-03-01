@@ -23,7 +23,7 @@ Check out the rest of this site for documentation.
   * [OpenID Connect](/docs/bcc-signon/openid-connect)
   * [Wordpress](/docs/bcc-signon/wordpress)
   * [Legacy](/docs/bcc-signon/legacy-discontinued)
-* Membership System
+* [Membership System](/docs/bcc-membership-docs)
   * [Authentication](/docs/membership-api/authentication)
 
 ## Projects
