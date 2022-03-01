@@ -297,24 +297,38 @@ calendars ([documentation](https://support.google.com/calendar/answer/37648?hl=e
 
 # FAQ
 
-<details>
-<summary>What's my Redirect URI?</summary>
-<div style="padding-left: 10px">
-The Redirect URI contains the link to which Auth0 will redirect the user after the authentication.
-This URI is different for each CMS :
-<br>
-<br>
-<details>
+### What's my Redirect URI?
 
-<summary>Wordpress</summary>
+The Redirect URI contains the link to which Auth0 will redirect the user after the authentication. This URI is different
+for each CMS :
+
+##### Wordpress:
+
 The Redirect URI provided by the plugin. It can be found at the bottom of the OIDC settings page.
 
-</details><details>
+##### ASP.net:
 
-<summary>ASP.net</summary>
-The Redirect URI recommended for this language is: <code>https://your-domain.com/signin-auth0</code>
+The Redirect URI recommended for this language is:``https://your-domain.com/signin-auth0``
 
-Replace <code>your-domain.com</code>with your domain name.
-</details>
-</div>
-</details>
+Replace ``your-domain.com`` with your domain name.
+
+---
+
+<br>
+
+### Where can I find my Client ID and Client Secret?
+
+The Client ID and Client Secret are used to authenticate the application in our signon system. If you don’t have them,
+please contact [support](mailto:it@bcc.no).
+**Warning**: The Client Secret should remain confidential! Don’t send it to anybody, and store it in a safe place.
+
+---
+
+<br>
+
+### I get redirected to a page that says 'Sorry, an error occurred':
+
+Please open developer tools (F12). and look for the ‘Error’ and ‘Error description’ entry in the console (or the query
+string parameters of the URL).
+
+Please contact [support](mailto:it@bcc.no). with the logged ‘Error’ and ‘Error description’ entry
