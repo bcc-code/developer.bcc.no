@@ -17,8 +17,11 @@ Check out the rest of this site for documentation.
 * [Security](/security)
 
 ## Docs
-* [BCC Signon - OpenID Connect](/docs/BCC%20Signon/OpenID%20Connect)
-* [BCC Signon - ASP.NET Core](/docs/BCC%20Signon/ASP.NET%20Core)
+* BCC Signon 
+  * [OpenID Connect](/docs/BCC%20Signon/OpenID%20Connect)
+  * [ASP.NET Core](/docs/BCC%20Signon/ASP.NET%20Core)
+* Membership System
+  * [Authentication](/docs/membership-api/authentication)
 
 ## Projects
 * [Widgets](/bcc-widgets)
