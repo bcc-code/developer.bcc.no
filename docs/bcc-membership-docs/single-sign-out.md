@@ -2,11 +2,11 @@
 This page contains a description of Single Sign Out system, rolled out in sole purpose of letting BCC end users to log out of all BCC related apps at once.
 
 ## Menu
-- [Home](index.md)
-- [API integration](api-integration.md)
-- [Webhooks integration](webhooks.md)
-- [Data Structures and Scopes](data-structures-and-scopes.md)
-- [Single Sign Out](single-sign-out.md)
+- [Home](index)
+- [API integration](api-integration)
+- [Webhooks integration](webhooks)
+- [Data Structures and Scopes](data-structures-and-scopes)
+- [Single Sign Out](single-sign-out)
 
 ## Sign out - purpose
 BCC uses Auth0 as main identity and authentication/authorization provider. BCC also uses OAuth protocol with OpenID Connect Identity Layer instead of SAML which means that out-of-the-box features of Auth0 are not enough to provide uniformed, federated sign-out experience, thus Single Sign Out project was born. Previous Sign-out component was imitating front-channel logout described [here](https://openid.net/specs/openid-connect-frontchannel-1_0.html).
