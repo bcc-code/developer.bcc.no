@@ -1,9 +1,7 @@
 ﻿---
-title: BCC Developer Portal | BCC Signon - ASP.NET Core 
+title: BCC Signon - ASP.NET Core 
 description: Technical documentation and guides for software development in BCC
 ---
-
-# BCC Signon – ASP.NET Core
 
 ## Getting started
 

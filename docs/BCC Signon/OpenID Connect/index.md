@@ -1,7 +1,17 @@
 ﻿---
-title: BCC Signon - OpenID Connect 
-description: Technical documentation and guides for software development in BCC
+title: BCC Signon - OpenID Connect description: Technical documentation and guides for software development in BCC
 ---
+
+## Quick Links
+
+* [Getting Started](#getting-started)
+    * [Our Strategy](#our-strategy)
+    * [Supported Languages and CMS](#supported-languages-and-cms)
+    * [Using SignOn with other languages/CMS’s](#using-signon-with-other-languagescmss)
+* [Get information about the user](#get-information-about-the-user)
+    * [Available claims](#available-claims)
+    * [Deprecated claims](#deprecated-claims)
+    * [ID_token example](#id_token-example)
 
 ## Getting started
 
@@ -72,8 +82,6 @@ Connect providers.
 
 <br/>
 
----
-
 ## Get information about the user
 
 It is possible to get additional information about the logged-in user, with the use of claims. Claims are statements (
@@ -129,8 +137,6 @@ available).
 |----------------------------------------------|--------------------------------------------------------------------------------------------|
 | https://login.bcc.no/claims/CountryIso2Code  | The [countryCode](https://no.wikipedia.org/wiki/ISO_3166-1_alfa-2) of the user his church  |
 
----
-
 ## Deprecated claims
 
 These claims have been deprecated, and their use is strongly discouraged. Please contact support if your application is
@@ -146,14 +152,13 @@ dependent on theses claims.
 |------------------------------------------------------|------------------------------------------------------------------|
 | https://login.bcc.no/claims/deprecatedSignonUsername | The username of the user that was used in the old signon system  | 
 
-
----
-
 ## id_token example
+
 The id_token contains the following claims when requesting all scopes.
 
 Payload:
-````js
+
+````
 {
   "https://login.bcc.no/claims/personId": 12345,
   "https://login.bcc.no/claims/hasMembership": true,
@@ -175,5 +180,3 @@ Payload:
   "phone_number": "+47 123 45 678",
 }
 ````
-
----
