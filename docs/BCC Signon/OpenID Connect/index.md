@@ -3,8 +3,6 @@ title: BCC Developer Portal | BCC Signon - OpenID Connect description: Technical
 development in BCC
 ---
 
-# BCC Signon – OpenID Connect
-
 ## Getting started
 
 Welcome to the section dedicated to our login system.
@@ -65,12 +63,14 @@ Connect providers.
 
 ### Authentication Endpoints
 
-| Type:                | URL:                                                  |
-|----------------------|-------------------------------------------------------|
-| Authorization URL    | https://login.bcc.no/authorize                        |
-| Token URL            | https://login.bcc.no/oauth/token                      |
-| User Info URL        | https://login.bcc.no/userinfo                         |
-| OpenID Configuration | https://login.bcc.no/.well-known/openid-configuration |
+| Type:                    | URL:                                                  |
+|--------------------------|-------------------------------------------------------|
+| **Authorization URL**    | https://login.bcc.no/authorize                        |
+| **Token URL**            | https://login.bcc.no/oauth/token                      |
+| **User Info URL**        | https://login.bcc.no/userinfo                         |
+| **OpenID Configuration** | https://login.bcc.no/.well-known/openid-configuration |
+
+<br/>
 
 ---
 
@@ -145,3 +145,35 @@ dependent on theses claims.
 | Claim name:                                          | Content:                                                         |
 |------------------------------------------------------|------------------------------------------------------------------|
 | https://login.bcc.no/claims/deprecatedSignonUsername | The username of the user that was used in the old signon system  | 
+
+
+---
+
+## id_token example
+The id_token contains the following claims when requesting all scopes.
+
+Payload:
+````js
+{
+  "https://login.bcc.no/claims/personId": 12345,
+  "https://login.bcc.no/claims/hasMembership": true,
+  "https://login.bcc.no/claims/churchId": 69,
+  "https://login.bcc.no/claims/churchName": "Oslo/Follo",
+  "https://login.bcc.no/claims/deprecatedSignonUsername": "johndoe",
+  "https://login.bcc.no/claims/CountryIso2Code": "no",
+  "given_name": "John",
+  "family_name": "Doe",
+  "nickname": "johndoe",
+  "name": "John Doe",
+  "picture": "https://s.gravatar.com/avatar/url-to-avatar-picture",
+  "gender": "male",
+  "birthdate": "1980-01-01T00:00:00",
+  "locale": "en-US",
+  "updated_at": "2019-05-29T12:15:00.383Z",
+  "email": "johndoe@example.com",
+  "email_verified": true,
+  "phone_number": "+47 123 45 678",
+}
+````
+
+---
