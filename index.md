@@ -18,8 +18,11 @@ Check out the rest of this site for documentation.
 
 ## Docs
 * BCC Signon 
-  * [OpenID Connect](/docs/BCC%20Signon/OpenID%20Connect)
-  * [ASP.NET Core](/docs/BCC%20Signon/ASP.NET%20Core)
+  * [ASP.NET](/docs/bcc-signon/asp.net)
+  * [ASP.NET Core](/docs/bcc-signon/asp.net-core)
+  * [OpenID Connect](/docs/bcc-signon/openid-connect)
+  * [Wordpress](/docs/bcc-signon/wordpress)
+  * [Legacy](/docs/bcc-signon/legacy-discontinued)
 * Membership System
   * [Authentication](/docs/membership-api/authentication)
 
