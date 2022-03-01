@@ -83,6 +83,7 @@ Connect providers.
 | **OpenID Configuration** | https://login.bcc.no/.well-known/openid-configuration |
 
 <br/>
+<br>
 
 ---
 
@@ -191,6 +192,8 @@ Payload:
 }
 ````
 
+<br>
+
 ---
 
 # Single sign-out
@@ -273,6 +276,8 @@ steps:
 * Navigate back to your application
     * You should be required to sign in again with BCC signon.
 
+<br>
+  
 ---
 
 # Protect news feed and calendar
@@ -293,6 +298,8 @@ Example for the calendar feed
 This is the same concept as a ‘private address’ with Google
 calendars ([documentation](https://support.google.com/calendar/answer/37648?hl=en)).
 
+<br>
+
 ---
 
 # FAQ
@@ -312,19 +319,11 @@ The Redirect URI recommended for this language is:``https://your-domain.com/sign
 
 Replace ``your-domain.com`` with your domain name.
 
----
-
-<br>
-
 ### Where can I find my Client ID and Client Secret?
 
 The Client ID and Client Secret are used to authenticate the application in our signon system. If you don’t have them,
 please contact [support](mailto:it@bcc.no).
 **Warning**: The Client Secret should remain confidential! Don’t send it to anybody, and store it in a safe place.
-
----
-
-<br>
 
 ### I get redirected to a page that says 'Sorry, an error occurred':
 
