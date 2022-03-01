@@ -1,8 +1,9 @@
 ﻿---
-title: BCC Signon - OpenID Connect description: Technical documentation and guides for software development in BCC
+title: BCC Signon - OpenID Connect
+description: Technical documentation and guides for software development in BCC
 ---
 
-## Quick Links
+# Page Content
 
 * [Getting Started](#getting-started)
     * [Our Strategy](#our-strategy)
@@ -13,7 +14,7 @@ title: BCC Signon - OpenID Connect description: Technical documentation and guid
     * [Deprecated claims](#deprecated-claims)
     * [ID_token example](#id_token-example)
 
-## Getting started
+# Getting started
 
 Welcome to the section dedicated to our login system.
 
@@ -82,22 +83,29 @@ Connect providers.
 
 <br/>
 
-## Get information about the user
+# Get information about the user
 
 It is possible to get additional information about the logged-in user, with the use of claims. Claims are statements (
 such as name or email address) about the user.
 
-### How to request claims
+## How to request claims
 
 Claims can be requested via the scope parameter in the authentication request to BCC Signon. The claims will be present
 in the response of the authentication request.
+  
+  ### Articles
+  * [Available claims](#available-claims)
+  * [Deprecated claims](#deprecated-claims)
+  * [ID_token example](#id_token-example)
 
-## Available claims
+---
+
+# Available claims
 
 Please keep the requested claims down to the minimal required. You can always ask for additional claims later, when the
 application needs them.
 
-### Standard OpenID Connect claims
+## Standard OpenID Connect claims
 
 See https://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims.
 
@@ -111,33 +119,33 @@ See https://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims.
 * phone
     * Claims: phone_number and phone_number_verified.
 
-### Additional claims of BCC Signon
+## Additional claims of BCC Signon
 
 It’s currently possible to request all available claims. Your application may require additional approval of BCC in the
 future, before you have access to additional claims of the user (the claims of the ‘openid’ scope will always be
 available).
 
-### _‘openid’_ scope
+## _‘openid’_ scope
 
 | Claim name:                               | Content:                                                                                         |
 |-------------------------------------------|--------------------------------------------------------------------------------------------------|
 | https://login.bcc.no/claims/personId      | The primary identifier of the user in the BCC membership system (this value will never change).  |
 | https://login.bcc.no/claims/hasMembership | Shows if the user has an active membership in BCC                                                |
 
-### _‘church’_ scope
+## _‘church’_ scope
 
 | Claim name:                            | Content:                      |
 |----------------------------------------|-------------------------------|
 | https://login.bcc.no/claims/churchId   | The identifier of the church  |
 | https://login.bcc.no/claims/churchName | The name of the church        |
 
-### _‘country’_ scope
+## _‘country’_ scope
 
 | Claim name:                                  | Content:                                                                                   |
 |----------------------------------------------|--------------------------------------------------------------------------------------------|
 | https://login.bcc.no/claims/CountryIso2Code  | The [countryCode](https://no.wikipedia.org/wiki/ISO_3166-1_alfa-2) of the user his church  |
 
-## Deprecated claims
+# Deprecated claims
 
 These claims have been deprecated, and their use is strongly discouraged. Please contact support if your application is
 dependent on theses claims.
@@ -146,13 +154,13 @@ dependent on theses claims.
 |--------------------------------------|---------------------------------------------------------|
 | https://members.bcc.no/app_metadata  | Please use the claims of the additional “openid” scope  |
 
-### _‘deprecatedSignonUsername’_ scope
+## _‘deprecatedSignonUsername’_ scope
 
 | Claim name:                                          | Content:                                                         |
 |------------------------------------------------------|------------------------------------------------------------------|
 | https://login.bcc.no/claims/deprecatedSignonUsername | The username of the user that was used in the old signon system  | 
 
-## id_token example
+# id_token example
 
 The id_token contains the following claims when requesting all scopes.
 
