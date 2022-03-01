@@ -1,5 +1,5 @@
 ﻿---
-title: BCC Signon - ASP.NET Core
+title: BCC Signon - ASP.NET Core 
 description: Technical documentation and guides for software development in BCC
 ---
 
@@ -26,8 +26,10 @@ This tutorial will introduce you to our login solution for ASP.NET Core.
 This solution has (for now) some limitations that you have to be aware of. Please read them carefully to avoid any bad
 surprise.
 
-* The newsfeed link shared with Brunstad Portal should be protected by a [private URL](example.com)
-* The ````userAccountId```` attribute of the old system has been deprecated [(read more)](example.com).
+* The newsfeed link shared with Brunstad Portal should be protected by
+  a [private URL](/docs/bcc-signon/openid-connect#protect-news-feed-and-calendar)
+* The ````userAccountId```` attribute of the old system has been
+  deprecated [(read more)](/docs/bcc-signon/openid-connect#deprecated-claims).
 
 ## Read More
 
