@@ -309,21 +309,27 @@ calendars ([documentation](https://support.google.com/calendar/answer/37648?hl=e
 The Redirect URI contains the link to which Auth0 will redirect the user after the authentication. This URI is different
 for each CMS :
 
-##### Wordpress:
+#### Wordpress:
 
 The Redirect URI provided by the plugin. It can be found at the bottom of the OIDC settings page.
 
-##### ASP.net:
+#### ASP.net:
 
 The Redirect URI recommended for this language is:``https://your-domain.com/signin-auth0``
 
 Replace ``your-domain.com`` with your domain name.
 
+<br>  
+
 ### Where can I find my Client ID and Client Secret?
 
 The Client ID and Client Secret are used to authenticate the application in our signon system. If you don’t have them,
 please contact [support](mailto:it@bcc.no).
+
 **Warning**: The Client Secret should remain confidential! Don’t send it to anybody, and store it in a safe place.
+
+<br>
+
 
 ### I get redirected to a page that says 'Sorry, an error occurred':
 
