@@ -1,0 +1,4 @@
+remote_theme: bcc-code/bcc-docs-theme
+title: BCC Wordpress Plugins & Themes
+plugins:
+- jekyll-remote-theme
