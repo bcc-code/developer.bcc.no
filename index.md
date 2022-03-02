@@ -11,17 +11,16 @@ Check out the rest of this site for documentation.
 
 ## Guides
 * [Guiding Objectives and Principals](guides/objectives-and-principals.md) 
-* [Coding Guilde](guides/coding-guide.md)
+* [Coding Guide](guides/coding-guide.md)
 
 ## Topics
-* [Security](/security)
+* [Security](_topics/security)
 
-## [Documentation](/docs)
-* [BCC Signon](/docs/bcc-signon)
-* [BCC Signon](/docs/bcc-signon)
+## [Documentation](docs)
+* [BCC Signon](docs/bcc-signon)
 
-## [Projects](/_projects)
-* [Widgets](/bcc-widgets)
-* [Sign-on and Membership](/_projects/membership-api)
-* [BMM](/_projects/bmm-api)
-* [WordPress](/_projects/bcc-wp)
+## [Projects](_projects)
+* [Widgets](_projects/bcc-widgets)
+* [Sign-on and Membership](_projects/bcc-membership)
+* [BMM](_projects/bmm-app)
+* [WordPress](_projects/bcc-wp)
