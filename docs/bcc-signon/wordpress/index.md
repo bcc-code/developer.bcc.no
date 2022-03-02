@@ -1,5 +1,6 @@
 ﻿---
-title: BCC Signon - ASP.NET description: Technical documentation and guides for software development in BCC
+title: BCC Signon - ASP.NET
+description: Technical documentation and guides for software development in BCC
 ---
 
 ## Page Content

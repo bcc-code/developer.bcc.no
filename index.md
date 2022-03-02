@@ -17,13 +17,13 @@ Check out the rest of this site for documentation.
 * [Security](/security)
 
 ## Docs
-* BCC Signon 
+* [BCC Signon](/docs/bcc-signon)
   * [ASP.NET](/docs/bcc-signon/asp.net)
   * [ASP.NET Core](/docs/bcc-signon/asp.net-core)
   * [OpenID Connect](/docs/bcc-signon/openid-connect)
   * [Wordpress](/docs/bcc-signon/wordpress)
   * [Legacy](/docs/bcc-signon/legacy-discontinued)
-* [Membership System](/docs/bcc-membership-docs)
+* [Membership System](/docs/membership-api)
   * [Authentication](/docs/membership-api/authentication)
 
 ## Projects
