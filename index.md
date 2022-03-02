@@ -16,10 +16,12 @@ Check out the rest of this site for documentation.
 ## Topics
 * [Security](/security)
 
-## [Documentation](docs/)
+## [Documentation](/docs)
+* [BCC Signon](/docs/bcc-signon)
+* [BCC Signon](/docs/bcc-signon)
 
-## [Projects](_projects/)
+## [Projects](/_projects)
 * [Widgets](/bcc-widgets)
-* [Sign-on and Membership](/bcc-membership-docs)
-* [BMM]()
-* [WordPress](/bcc-wp)
+* [Sign-on and Membership](/_projects/membership-api)
+* [BMM](/_projects/bmm-api)
+* [WordPress](/_projects/bcc-wp)

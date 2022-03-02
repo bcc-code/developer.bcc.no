@@ -1,2 +1,0 @@
-## BCC Wordpress Plugins & Themes
-
