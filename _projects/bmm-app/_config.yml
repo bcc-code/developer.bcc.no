@@ -1,0 +1,5 @@
+remote_theme: bcc-code/bcc-docs-theme
+plugins:
+- jekyll-remote-theme
+gems:
+- jekyll-seo-tag
