@@ -59,7 +59,7 @@ Install-Package Microsoft.AspNetCore.Authentication.OpenIdConnect
 ## Get your application credentials
 
 To use the Auth0 solution, you need to get your client credentials If you don’t have them, please
-contact [support](mailto:it@bcc.no?subject=Support%Developer%BCC).
+contact [support](mailto:it@bcc.no?subject=Support Developer BCC).
 
 Navigate to your ````appsettings.json```` file. Add these parameters
 
@@ -152,7 +152,7 @@ app.UseAuthentication();
 
 ## Register callbackURL
 
-##### Before continuing, please send your callback URLs to [support](mailto:it@bcc.no?subject=Support%Developer%BCC) so Auth0 can be configured with your website
+##### Before continuing, please send your callback URLs to [support](mailto:it@bcc.no?subject=Support Developer BCC) so Auth0 can be configured with your website
 
 Callback URL:: ````https://your-domain.com/signin-auth0```` (replace ````your-domain.com```` with your website’s domain)
 

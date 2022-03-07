@@ -19,8 +19,8 @@ Check out the rest of this site for documentation.
 ## [Documentation](docs)
 * [BCC Signon](docs/bcc-signon)
 
-## [Projects](_projects)
-* [Widgets](_projects/bcc-widgets)
-* [Sign-on and Membership](_projects/bcc-membership)
-* [BMM](_projects/bmm-app)
-* [WordPress](_projects/bcc-wp)
+## [Projects](projects)
+* [Widgets](projects/bcc-widgets)
+* [Sign-on and Membership](projects/bcc-membership)
+* [BMM](projects/bmm-app)
+* [WordPress](projects/bcc-wp)
