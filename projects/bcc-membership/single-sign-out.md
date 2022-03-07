@@ -48,10 +48,9 @@ Configuration consists of only two fields
 
 You can choose endpoint and HTTP method but not query string or params. 
 
-If you select GET request, Sign Out will add ```?userid=USER_ID``` query string to request. 
+If you select GET or POST request, Sign Out will add ```?state=STATE``` query string to request. 
 
-If you select POST request, ```userId``` will be sent in JSON body of a request.
 
-EXAMPLE: Based on configuration shown in image, Sign Out would try to send GET request to ```http://mockserver:555/logout?userId=USERID```
+EXAMPLE: Based on configuration shown in image, Sign Out would try to send GET request to ```http://mockserver:555/logout?state=STATE```
 
 Your app responsibility is to clear any local session of user in question and return Sign Out request with status 200.
