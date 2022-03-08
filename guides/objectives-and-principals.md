@@ -29,7 +29,7 @@ By **effectively** we mean building the right things. This is synonymous with su
 
 ### Efficiently
 
-By **efficiently** we mean delivering quickly and cheaply - "most bang for your buck". Here it important to consider the long term cost of *maintenance*, *technical debt*, *security breaches* etc. before going for a quick win.
+By **efficiently** we mean delivering quickly and cheaply - "most bang for your buck". Here it's important to consider the long term cost of *maintenance*, *technical debt*, *security breaches* etc. before going for a quick win.
 
 > In development, they [DORA metrics](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance) are a good way to measure efficiency. Good [DevOps practices](https://cloud.google.com/blog/products/devops-sre/the-2019-accelerate-state-of-devops-elite-performance-productivity-and-scaling) are what help improve these metrics.
 
@@ -103,13 +103,13 @@ By **sustainable** we mean ensuring that what we develop today, will continue to
 * [ ] Realistic load tests
 * [ ] Mainstream services and components (commercial backing, large community, no beta)
 * [ ] APM monitoring
-* [ ] Alerterting
+* [ ] Alerting
 
 ### Security
 
 > *Ensuring only those who should have access, have access*
 
-* [ ] Backup in place
+* [ ] Tested backup in place
 * [ ] Governance of developer access - 2FA, centralized control (e.g. Azure AD)
 * [ ] Data encrypted at rest
 * [ ] Data encrypted in transit (TLS/SSL)
