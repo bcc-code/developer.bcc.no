@@ -8,6 +8,12 @@ This section describe `person` object and how it relates to scopes.
 - [Data Structures and Scopes](data-structures-and-scopes.md)
 - [Single Sign Out](single-sign-out.md)
 
+## This Document
+- [Menu](#menu)
+- [Scopes](#scopes)
+- [Data Structures](#data-structures)
+- [Enums](#enums)
+
 ## Scopes
 Currently Members supports the following scopes. (_To understand the concept of scopes please have a look at scopes section on the [Home](index.md) page_)
 #### Members (Custom Scopes)
@@ -33,7 +39,7 @@ Currently Members supports the following scopes. (_To understand the concept of 
 
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
 
-## Data Structure
+## Data Structures
 Currently these scopes are all related to the `person` object and maps to the person fields as follows...
 
 ###### By default you automatically get provided with the "personID" and "lastChangedDate" in the case where you get data related to the member.
