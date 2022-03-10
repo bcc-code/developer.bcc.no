@@ -29,7 +29,7 @@ Currently Members supports the following scopes. (_To understand the concept of 
 - `members.read_children_dependents - new`
 - `members.read_parents_guardians - new`
 - `members.read_family - deprecated`
-- [`members.read_orgs`](#`members.read_orgs`)
+- [`members.read_orgs`](#members.read_orgs)
 
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
 
