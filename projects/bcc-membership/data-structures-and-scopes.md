@@ -12,6 +12,7 @@ This section describe `person` object and how it relates to scopes.
 Currently Members supports the following scopes. (_To understand the concept of scopes please have a look at scopes section on the [Home](index.md) page_)
 #### Members (Custom Scopes)
 - `members.email`
+- `members.read_active_status - new`
 - `members.phone`
 - `members.profile - deprecated`
 - `members.address`
@@ -46,6 +47,14 @@ Currently these scopes are all related to the `person` object and maps to the pe
 ```json
   {
     "personID": 54512,   
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
+  }
+```
+###### `members.read_active_status
+```json
+  {
+    "personID": 54512,
+    "activeStatus":"Active",   
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
