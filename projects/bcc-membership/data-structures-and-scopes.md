@@ -11,7 +11,7 @@ This section describe `person` object and how it relates to scopes.
 ## Scopes
 Currently Members supports the following scopes. (_To understand the concept of scopes please have a look at scopes section on the [Home](index.md) page_)
 #### Members (Custom Scopes)
-- `members.email`
+- [`members.email`](#`members.email`)
 - `members.read_active_status - new`
 - `members.phone`
 - `members.profile - deprecated`
@@ -29,7 +29,7 @@ Currently Members supports the following scopes. (_To understand the concept of 
 - `members.read_children_dependents - new`
 - `members.read_parents_guardians - new`
 - `members.read_family - deprecated`
-- `members.read_orgs`
+- [`members.read_orgs`](#`members.read_orgs`)
 
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
 
@@ -50,7 +50,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
-###### `members.read_active_status
+###### `members.read_active_status`
 ```json
   {
     "personID": 54512,
