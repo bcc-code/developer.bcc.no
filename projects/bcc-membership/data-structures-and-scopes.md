@@ -317,3 +317,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
   "website": null
 }
 ```
+
+## Enums
+
+Here are enum members used in above data structures.
