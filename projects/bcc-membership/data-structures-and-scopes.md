@@ -301,7 +301,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
     }
   }
 ```
-###### `members.read_orgs`
+###### members.read_orgs
 ```json
 {  
   "name": "Oslo/Follo",
