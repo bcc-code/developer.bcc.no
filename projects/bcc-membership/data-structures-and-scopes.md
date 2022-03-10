@@ -2,37 +2,44 @@
 This section describe `person` object and how it relates to scopes.
 
 ## Menu
-- [Home](index)
-- [API integration](api-integration)
-- [Webhooks integration](webhooks)
-- [Data Structures and Scopes](data-structures-and-scopes)
-- [Single Sign Out](single-sign-out)
+- [Home](index.md)
+- [API integration](api-integration.md)
+- [Webhooks integration](webhooks.md)
+- [Data Structures and Scopes](data-structures-and-scopes.md)
+- [Single Sign Out](single-sign-out.md)
+
+## This Document
+- [Menu](#menu)
+- [Scopes](#scopes)
+- [Data Structures](#data-structures)
+- [Enums](#enums)
 
 ## Scopes
 Currently Members supports the following scopes. (_To understand the concept of scopes please have a look at scopes section on the [Home](index.md) page_)
 #### Members (Custom Scopes)
-- `members.email`
-- `members.phone`
-- `members.profile - deprecated`
-- `members.address`
-- `members.read_person_id`
-- `members.read_name`
-- `members.read_birthdate - new`
-- `members.read_gender - new`
-- `members.read_culture - new`
-- `members.read_picture - new`
-- `members.read_church - new`
-- `members.read_club - coming`
-- `members.read_membership - deprecated`
-- `members.read_spouse`
-- `members.read_children_dependents - new`
-- `members.read_parents_guardians - new`
-- `members.read_family - deprecated`
-- `members.read_orgs`
+- [`members.email`](#membersemail)
+- [`members.read_active_status - new`](#membersreadactivestatus)
+- [`members.phone`](#membersphone)
+- [`members.profile - deprecated`](#membersprofile)
+- [`members.address`](#membersaddress)
+- [`members.read_person_id`](#membersreadpersonid)
+- [`members.read_name`](#membersreadname)
+- [`members.read_birthdate - new`](#membersreadbirthdate)
+- [`members.read_gender - new`](#membersreadgender)
+- [`members.read_culture - new`](#membersreadculture)
+- [`members.read_picture - new`](#membersreadpicture)
+- [`members.read_church - new`](#membersreadchurch)
+- [`members.read_club - coming`]()
+- [`members.read_membership - deprecated`](#membersreadmembership)
+- [`members.read_spouse`](#membersspouse)
+- [`members.read_children_dependents - new`](#membersreadchildrendependents)
+- [`members.read_parents_guardians - new`](#membersreadparentsguardians)
+- [`members.read_family - deprecated`](#membersreadfamily)
+- [`members.read_orgs`](#membersreadorgs)
 
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
 
-## Data Structure
+## Data Structures
 Currently these scopes are all related to the `person` object and maps to the person fields as follows...
 
 ###### By default you automatically get provided with the "personID" and "lastChangedDate" in the case where you get data related to the member.
@@ -46,6 +53,14 @@ Currently these scopes are all related to the `person` object and maps to the pe
 ```json
   {
     "personID": 54512,   
+    "lastChangedDate": "2021-07-16T12:41:10.168Z"
+  }
+```
+###### `members.read_active_status`
+```json
+  {
+    "personID": 54512,
+    "activeStatus":"Active",   
     "lastChangedDate": "2021-07-16T12:41:10.168Z"
   }
 ```
@@ -308,3 +323,38 @@ Currently these scopes are all related to the `person` object and maps to the pe
   "website": null
 }
 ```
+
+## Enums
+
+Here are enum members used in above data structures.
+
+```typescript
+export enum MaritalStatus {
+    Unknown = 'Unknown',
+    Single = 'Single',
+    Married = 'Married',
+    Widowed = 'Widowed',
+    Separated = 'Separated',
+    SingleParent = 'SingleParent',
+}
+```
+
+
+
+```typescript
+export enum Gender {
+    Female = 'Female',
+    Male = 'Male',
+}
+````
+
+
+```typescript
+export enum ActiveStatus {
+    Active = 'Active',
+    Inactive = 'Inactive',
+    Duplicate = 'Duplicate',
+    Deceased = 'Deceased',
+    Contact = 'Contact',
+}
+````

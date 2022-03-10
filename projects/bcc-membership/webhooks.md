@@ -3,11 +3,11 @@
 The Members System support webhooks. You can register your webhook in the UI or via the API. Currently we only support changes for the "person" entity.
 
 ## Menu
-- [Home](index)
-- [API integration](api-integration)
-- [Webhooks integration](webhooks)
-- [Data Structures and Scopes](data-structures-and-scopes)
-- [Single Sign Out](single-sign-out)
+- [Home](index.md)
+- [API integration](api-integration.md)
+- [Webhooks integration](webhooks.md)
+- [Data Structures and Scopes](data-structures-and-scopes.md)
+- [Single Sign Out](single-sign-out.md)
 
 ## Webhook functionality (UI and API)
 

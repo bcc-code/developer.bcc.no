@@ -14,11 +14,11 @@ This documentation is aimed at you as a Developer/Technical Administrator for yo
 **swagger: [https://members.bcc.no/docs](https://members.bcc.no/docs)**
 
 ## Menu
-- [Home](index)
-- [API integration](api-integration)
-- [Webhooks integration](webhooks)
-- [Data Structures and Scopes](data-structures-and-scopes)
-- [Single Sign Out](single-sign-out)
+- [Home](index.md)
+- [API integration](api-integration.md)
+- [Webhooks integration](webhooks.md)
+- [Data Structures and Scopes](data-structures-and-scopes.md)
+- [Single Sign Out](single-sign-out.md)
 
 ## Getting Started
 1. Write to [it@bcc.no](mailto:it@bcc.no) requesting the "Technical Administrator" role
