@@ -35,7 +35,7 @@ Currently Members supports the following scopes. (_To understand the concept of 
 - `members.read_children_dependents - new`
 - `members.read_parents_guardians - new`
 - `members.read_family - deprecated`
-- `members.read_orgs`
+- [`members.read_orgs`](#membersreadorgs)
 
 Once you have the "Technical Administrator" role ([See Getting Started](index.md)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration.md) it shows the navigation to your application.
 
@@ -327,3 +327,34 @@ Currently these scopes are all related to the `person` object and maps to the pe
 ## Enums
 
 Here are enum members used in above data structures.
+
+```typescript
+export enum MaritalStatus {
+    Unknown = 'Unknown',
+    Single = 'Single',
+    Married = 'Married',
+    Widowed = 'Widowed',
+    Separated = 'Separated',
+    SingleParent = 'SingleParent',
+}
+```
+
+
+
+```typescript
+export enum Gender {
+    Female = 'Female',
+    Male = 'Male',
+}
+````
+
+
+```typescript
+export enum ActiveStatus {
+    Active = 'Active',
+    Inactive = 'Inactive',
+    Duplicate = 'Duplicate',
+    Deceased = 'Deceased',
+    Contact = 'Contact',
+}
+````
