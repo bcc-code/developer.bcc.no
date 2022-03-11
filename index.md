@@ -14,7 +14,7 @@ Check out the rest of this site for documentation.
 * [Coding Guide](guides/coding-guide.md)
 
 ## Topics
-* [Security](_topics/security)
+* [Security](topics/security)
 
 ## [Documentation](docs)
 * [BCC Signon](docs/bcc-signon)
