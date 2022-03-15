@@ -32,6 +32,7 @@ The TV guide is a widget that shows the upcoming programs on BrunstadTV. It can 
 ````
 
 ### Parameters
+
 | Parameter                                                         | Description                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ``data-authentication-type`` and ``data-authentication-location`` | Please check the [documentation](#widgets-authentication) on widget authentication.                                                                                                                                                  |
