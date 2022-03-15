@@ -1,6 +1,2 @@
----
-title: BCC Wordpress Documentation
-description: Documentation about creating wordpress sites with BCC widgets and plugins
----
+## BCC Wordpress Plugins & Themes
 
-# BCC Wordpress Documentation
