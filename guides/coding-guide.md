@@ -1,3 +1,8 @@
+---
+title: BCC Coding Guide
+description: A guide to using BCC's best practices
+---
+
 # BCC Coding Guide
 
 ## 0. Purpose

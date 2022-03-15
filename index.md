@@ -9,11 +9,11 @@ description: Technical documentation and guides for software development in BCC
 * There’s a channel on Telegram where you can get updates about the BCC Login system and the Brunstad Portal. To get subscribed, send a request to support, and you will be added.
 Check out the rest of this site for documentation.
 
-## Guides
+## [Guides](guides)
 * [Guiding Objectives and Principals](guides/objectives-and-principals.md) 
 * [Coding Guide](guides/coding-guide.md)
 
-## Topics
+## [Topics](topics)
 * [Security](topics/security)
 
 ## [Documentation](docs)
@@ -24,3 +24,6 @@ Check out the rest of this site for documentation.
 * [Sign-on and Membership](projects/bcc-membership)
 * [BMM](projects/bmm-app)
 * [WordPress](projects/bcc-wp)
+
+## [Wordpress Plugins](plugins)
+* [BCC Signon Plugin](plugins/bcc-signon.zip)
