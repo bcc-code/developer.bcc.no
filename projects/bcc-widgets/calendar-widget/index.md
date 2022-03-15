@@ -7,7 +7,7 @@ description: Here you’ll find the documentation for the “new” widgets. The
 
 ## Page Contents
 
-* [Calendar - integration](integration#calendar---integration)
+* [Calendar - integration](integration)
 * [Week calendar](#week-calendar)
 * [Month calendar](#month-calendar)
 
