@@ -40,9 +40,6 @@ Users tab in the left panel of the WordPress dashboard, find your newly created 
 
 That’s it! Now you can use this user to access the administration dashboard, without any need to fill in credentials.
 
-
 ---
 
-| Back                          | Continue                                                |
-|-------------------------------|---------------------------------------------------------|
-| [← Getting started](index.md) | [Installing BCC Signon on WordPress →](installation.md) |
+Next: [Plugin Configuration →](configuration.md)
