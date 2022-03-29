@@ -19,8 +19,10 @@ Each ADR consists of following sections:
 
 ## Index
 
-[01-architecture-for-services-releated-to-members](01-architecture-for-services-releated-to-members)
-[02-approach-to-microservice-architecture](02-approach-to-microservice-architecture)
+[01-architecture-for-services-releated-to-members](01-architecture-for-services-releated-to-members)  
+
+[02-approach-to-microservice-architecture](02-approach-to-microservice-architecture)  
+
 [03-approach-to-application-hosting-infrastructure]
 [04-approach-to-testing]
 [05-api-gateway-solution]

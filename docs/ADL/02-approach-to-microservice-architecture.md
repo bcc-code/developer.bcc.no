@@ -57,8 +57,4 @@ Containers using Dapr to communicate currently need to be run:
 
 ## Alternatives
 
-
-- Context - architectural drivers, business cases
-- Decision - the choice and the arguments
-- Consequences - known issues which can occur because of chosen decision
-- Alternatives - were there any other alternatives? why were they not choose
+1. Drop use of Dapr, and use Cloud Run to host services
