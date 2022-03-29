@@ -16,3 +16,12 @@ Each ADR consists of following sections:
 - Decision - the choice and the arguments
 - Consequences - known issues which can occur because of chosen decision
 - Alternatives - were there any other alternatives? why were they not choose
+
+## Index
+
+[01-architecture-for-services-releated-to-members](01-architecture-for-services-releated-to-members)
+[02-approach-to-microservice-architecture](02-approach-to-microservice-architecture)
+[03-approach-to-application-hosting-infrastructure]
+[04-approach-to-testing]
+[05-api-gateway-solution]
+[06-api-documentation-solution]
