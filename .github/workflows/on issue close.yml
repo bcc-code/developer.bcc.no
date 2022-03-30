@@ -25,13 +25,13 @@ jobs:
       - name: Convert title
         id: title
         run: |
-          title="${{ github.event.issue.title }}"
+          title="${{ steps.date.outputs.date }}_${{ github.event.issue.title }}"
           replacement="_"
           echo "::set-output name=name::${title//[\[\] ]/"$replacement"}"
           
       - uses: "finnp/create-file-action@master"
         env:
-          FILE_NAME: ${{ format('docs/ADL/{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
+          FILE_NAME: ${{ format('docs/ADL/{0}.md', steps.title.outputs.name) }}
           FILE_DATA: ${{ github.event.issue.body }}
 
       - uses: EndBug/add-and-commit@v9
