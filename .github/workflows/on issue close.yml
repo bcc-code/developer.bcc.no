@@ -11,6 +11,7 @@ jobs:
     if: ${{ contains(github.event.issue.labels.*.name, 'adr') }}
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: View issue information
         run: |
           echo "Issue title: ${{ github.event.issue.title }}"
