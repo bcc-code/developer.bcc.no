@@ -15,10 +15,14 @@ jobs:
         run: |
           echo "Issue title: ${{ github.event.issue.title }}"
           echo "Issue body: ${{ github.event.issue.body }}"
+          
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y%m%d')"
 
       - uses: "finnp/create-file-action@master"
         env:
-          FILE_NAME: ${{ format('docs/adl/{0}_{1}.md', date::$(date +'%Y%m%d'),  github.event.issue.title) }}
+          FILE_NAME: ${{ format('docs/adl/{0}_{1}.md', steps.date.outputs.date,  github.event.issue.title) }}
           FILE_DATA: ${{ github.event.issue.body }}
 
       - name: View the github context
