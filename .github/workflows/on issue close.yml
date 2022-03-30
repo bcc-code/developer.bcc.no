@@ -1,6 +1,6 @@
 # This workflow creates a ADR based on a issue description on a issue close event.
 
-name: Commit ADR to repo
+name: ADR - commit file to repo
 
 on:
   issues: 
@@ -38,3 +38,10 @@ jobs:
         with:
           message: "Add ${{ github.event.issue.title }} to ADL"
           add: '*.md --force'
+          
+      - name: Add link to the documentation 
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.issue.number }} 
+          body: |
+            The document will be available under following [link](https://bcc-code.github.io/docs/ADL/${{ steps.title.outputs.name }})
