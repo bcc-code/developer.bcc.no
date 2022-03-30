@@ -12,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with: 
-          path: './docs/ADL'
           
       - name: View issue information
         run: |
@@ -31,13 +29,13 @@ jobs:
           replacement="_"
           echo "::set-output name=name::${title//[\[\] ]/"$replacement"}"
           
-      - run: echo "123" > ./docs/ADL/file.txt
+      - run: echo "123" > $GITHUB_WORKSPACE/docs/ADL/file.txt
 
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Add the very useful text file'
           add: '*.txt --force'
-          cwd: './docs/ADL'
+          cwd: '$GITHUB_WORKSPACE/docs/ADL'
           
 #       - uses: "finnp/create-file-action@master"
 #         env:
