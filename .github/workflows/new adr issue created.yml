@@ -2,7 +2,7 @@ name: ADR - new issue created
 
 on:
   issues:
-    type: [created]
+    type: [opened]
 
 jobs:
   comment:
