@@ -9,7 +9,7 @@ This is a collection of decisions (Architecture Decision Records) that have been
 
 Each document describes one decision and reflects what the pros and cons are, what other solutions were considered, as well as any additional background for the decision.
 
-More about it [here](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
+More about it [here](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) or [here](https://github.com/joelparkerhenderson/architecture-decision-record)
 
 Each ADR consists of following sections:
 - Context - architectural drivers, business cases
