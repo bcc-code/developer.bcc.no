@@ -1,0 +1,1 @@
+# Context  - architectural drivers, business cases # Decision  - the choice and the arguments # Consequences  - known issues which can occur because of chosen decision # Alternatives  - were there any other alternatives? why were they not choose
