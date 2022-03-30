@@ -7,7 +7,6 @@ assignees: ''
 
 ---
 
-Before you write, please be familiar with description of [ADL](https://bcc-code.github.io/docs/ADL/)
 # Context 
 - architectural drivers, business cases
 # Decision 
