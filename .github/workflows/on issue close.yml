@@ -2,22 +2,24 @@
 
 name: Create ADR
 
-# Controls when the workflow will run
 on:
   issues: 
     types: [closed]
 
-
 jobs:
   create_adr:
-#     if: ${{ github.event.issue.label.name == 'adr' }}
-
+    if: ${{ contains(github.event.issue.labels.*.name, 'adr') }}
     runs-on: ubuntu-latest
     steps:
       - name: View issue information
         run: |
           echo "Issue title: ${{ github.event.issue.title }}"
           echo "Issue body: ${{ github.event.issue.body }}"
+
+      - uses: "finnp/create-file-action@master"
+        env:
+          FILE_NAME: ${{ format('docs/adl/{0}_{1}.md', date::$(date +'%Y%m%d'),  github.event.issue.title) }}
+          FILE_DATA: ${{ github.event.issue.body }}
 
       - name: View the github context
         run: echo "$GITHUB_CONTEXT"
