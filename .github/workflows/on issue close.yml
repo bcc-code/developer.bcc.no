@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with: 
+          path: './docs/ADL'
+          
       - name: View issue information
         run: |
           echo "Issue title: ${{ github.event.issue.title }}"
@@ -32,6 +35,12 @@ jobs:
         env:
           FILE_NAME: ${{ format('{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
           FILE_DATA: ${{ github.event.issue.body }}
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: "Add ${{ github.event.issue.title }} to ADL"
+          add: '*.md --force'
+          cwd: './docs/ADL'
 
       - name: View the github context
         run: echo "$GITHUB_CONTEXT"
