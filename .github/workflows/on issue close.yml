@@ -30,7 +30,7 @@ jobs:
       - name: Create file
         run: echo $FILE_DATA > $FILE_NAME
         env:
-          FILE_NAME: ${{ format('docs/ADL/{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
+          FILE_NAME: ${{ format('/docs/ADL/{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
           FILE_DATA: ${{ github.event.issue.body }}
 
       - name: View the github context
