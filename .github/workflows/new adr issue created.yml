@@ -1,8 +1,8 @@
 name: ADR - new issue created
 
 on:
-  issues:
-    type: [opened]
+  label:
+    types: [created]
 
 jobs:
   comment:
