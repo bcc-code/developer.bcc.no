@@ -1,6 +1,6 @@
 # This workflow creates a ADR based on a issue description on a issue close event.
 
-name: Create ADR
+name: Commit ADR to repo
 
 on:
   issues: 
@@ -38,19 +38,3 @@ jobs:
         with:
           message: "Add ${{ github.event.issue.title }} to ADL"
           add: '*.md --force'
-          
-#       - uses: "finnp/create-file-action@master"
-#         env:
-#           FILE_NAME: ${{ format('{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
-#           FILE_DATA: ${{ github.event.issue.body }}
-
-#       - uses: EndBug/add-and-commit@v9
-#         with:
-#           message: "Add ${{ github.event.issue.title }} to ADL"
-#           add: '*.md --force'
-#           cwd: './docs/ADL'
-
-      - name: View the github context
-        run: echo "$GITHUB_CONTEXT"
-        env:
-         GITHUB_CONTEXT: ${{ toJson(github) }}
