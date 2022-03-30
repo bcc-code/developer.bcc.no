@@ -1,4 +1,4 @@
-name: New ADR issue created
+name: ADR - new issue created
 
 on:
   issues:
