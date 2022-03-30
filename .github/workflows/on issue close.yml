@@ -21,14 +21,16 @@ jobs:
         run: echo "::set-output name=date::$(date +'%Y%m%d')"
 
       - name: Convert title
+        id: title
         run: |
           title="${{ github.event.issue.title }}"
           replacement="_"
-          echo "${title//[\[\] ]/"$replacement"}" 
+          echo "::set-output name=name::${title//[\[\] ]/"$replacement"}"
 
-      - uses: "finnp/create-file-action@master"
+      - name: Create file
+        run: echo $FILE_DATA > $FILE_NAME
         env:
-          FILE_NAME: ${{ format('docs/ADL/{0}_{1}.md', steps.date.outputs.date,  github.event.issue.title) }}
+          FILE_NAME: ${{ format('docs/ADL/{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
           FILE_DATA: ${{ github.event.issue.body }}
 
       - name: View the github context
