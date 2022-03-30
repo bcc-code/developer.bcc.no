@@ -28,8 +28,7 @@ jobs:
           replacement="_"
           echo "::set-output name=name::${title//[\[\] ]/"$replacement"}"
 
-      - name: Create file
-        run: echo $FILE_DATA > $FILE_NAME
+      - uses: "finnp/create-file-action@master"
         env:
           FILE_NAME: ${{ format('/docs/ADL/{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
           FILE_DATA: ${{ github.event.issue.body }}
