@@ -28,3 +28,4 @@ description: Technical documentation and guides for software development in BCC
 
 ## [Wordpress Plugins](plugins)
 * [BCC Signon Plugin](plugins/bcc-signon.zip)
+* [BCC Signon Plugin (Update)](api/updates/bcc-signon.zip)
