@@ -30,17 +30,25 @@ jobs:
           title="${{ github.event.issue.title }}"
           replacement="_"
           echo "::set-output name=name::${title//[\[\] ]/"$replacement"}"
-
-      - uses: "finnp/create-file-action@master"
-        env:
-          FILE_NAME: ${{ format('{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
-          FILE_DATA: ${{ github.event.issue.body }}
+          
+      - run: echo "123" > ./docs/ADL/file.txt
 
       - uses: EndBug/add-and-commit@v9
         with:
-          message: "Add ${{ github.event.issue.title }} to ADL"
-          add: '*.md --force'
+          message: 'Add the very useful text file'
+          add: '*.txt --force'
           cwd: './docs/ADL'
+          
+#       - uses: "finnp/create-file-action@master"
+#         env:
+#           FILE_NAME: ${{ format('{0}_{1}.md', steps.date.outputs.date,  steps.title.outputs.name) }}
+#           FILE_DATA: ${{ github.event.issue.body }}
+
+#       - uses: EndBug/add-and-commit@v9
+#         with:
+#           message: "Add ${{ github.event.issue.title }} to ADL"
+#           add: '*.md --force'
+#           cwd: './docs/ADL'
 
       - name: View the github context
         run: echo "$GITHUB_CONTEXT"
