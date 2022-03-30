@@ -6,11 +6,10 @@ on:
 
 jobs:
   comment:
-    if: ${{ contains(github.event.issue.labels.*.name, 'adr') }
+    if: ${{ contains(github.event.issue.labels.*.name, 'adr') }}
     runs-on: ubuntu-latest
 
-    steps:
- 
+    steps: 
       - name: Create comment
         uses: peter-evans/create-or-update-comment@v2
         with:
