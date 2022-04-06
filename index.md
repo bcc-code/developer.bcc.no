@@ -22,7 +22,7 @@ description: Technical documentation and guides for software development in BCC
 
 ## [Projects](projects)
 * [Widgets](projects/bcc-widgets)
-* [Sign-on and Membership](projects/bcc-membership)
+* [Sign-on and Membership](projects/bcc-membership-docs)
 * [BMM](projects/bmm-app)
 * [WordPress](projects/bcc-wp)
 
