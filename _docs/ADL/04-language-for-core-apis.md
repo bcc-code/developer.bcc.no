@@ -1,3 +1,9 @@
+---
+layout:default
+title:
+description:
+---
+
 # Context 
 After deciding the API model, we need to agree on implementation details.
 This document is focusing on the language selection for the core APIs (person API, org API, Affilitaions API, profile API)

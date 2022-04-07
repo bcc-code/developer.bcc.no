@@ -5,21 +5,11 @@ plugins:
 collections:
   projects:
     output: true
-    order:
-      - projects-index.md
   docs:
     output: true
-    order:
-      - docs-index.md
   guides:
     output: true
-    order:
-      - guides-index.md
   topics:
     output: true
-    order:
-      - topics-index.md
   plugins:
     output: true
-    order:
-      - plugins-index.md

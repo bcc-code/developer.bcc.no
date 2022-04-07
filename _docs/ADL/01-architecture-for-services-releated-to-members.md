@@ -1,4 +1,5 @@
 ---
+layout:default
 title: Future Architecture for Services in "Members"
 description: High level target architecture for services implemented in Members (as of March 2022)
 ---

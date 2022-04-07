@@ -1,3 +1,9 @@
+---
+layout:default
+title:
+description:
+---
+
 ## There are 2 types or databases that are considered:
 1. Relational
 2. Document
