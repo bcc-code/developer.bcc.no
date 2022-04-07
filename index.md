@@ -18,7 +18,7 @@ description: Technical documentation and guides for software development in BCC
 ## [Topics](topics)
 * [Security](topics/security)
 
-## [Documentation](_docs)
+## [Documentation](docs)
 * [BCC Signon](_docs/bcc-signon)
 
 ## [Projects](projects)
