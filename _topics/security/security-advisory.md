@@ -1,5 +1,5 @@
 ---
-title: Security Advisory
+layout:default
 ---
 
 # Github security advisory usage
