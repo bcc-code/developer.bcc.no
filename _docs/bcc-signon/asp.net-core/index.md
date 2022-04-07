@@ -27,9 +27,9 @@ This solution has (for now) some limitations that you have to be aware of. Pleas
 surprise.
 
 * The newsfeed link shared with Brunstad Portal should be protected by
-  a [private URL](/docs/bcc-signon/openid-connect#protect-news-feed-and-calendar)
+  a [private URL](/_docs/bcc-signon/openid-connect#protect-news-feed-and-calendar)
 * The ````userAccountId```` attribute of the old system has been
-  deprecated [(read more)](/docs/bcc-signon/openid-connect#deprecated-claims).
+  deprecated [(read more)](/_docs/bcc-signon/openid-connect#deprecated-claims).
 
 ## Read More
 

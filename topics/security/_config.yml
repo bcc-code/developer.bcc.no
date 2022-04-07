@@ -1,4 +1,4 @@
-remote_theme: bcc-code/bcc-docs-theme
+remote_theme: bcc-code/bcc-_docs-theme
 title: Security
 plugins:
 - jekyll-remote-theme

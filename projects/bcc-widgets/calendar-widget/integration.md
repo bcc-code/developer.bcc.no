@@ -34,7 +34,7 @@ feed**
 and send the hyperlink to [support](mailto:it@bcc.no?subject=Support Developer BCC).
 
 If you’re creating the feed yourself (i.e. not using Google or other existing services), please make sure the link is
-making use of a [Private URL](/docs/bcc-signon/openid-connect#protect-news-feed-and-calendar).
+making use of a [Private URL](/_docs/bcc-signon/openid-connect#protect-news-feed-and-calendar).
 
 ## What is ICalendar?
 
@@ -64,7 +64,7 @@ The link to your iCalendar feed should follow this syntax:
 ``http://church.brunstad.org/icalfeed?start-min=2010-12-19T16:39:57-08:00&start-max=2011-01-19T16:39:57-08:00&updated-min=2011-03-20T16:39:57-08:00``
 
 **[RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8)** is a standardized time format.
-Please make sure the link is making use of a [Private URL](/docs/bcc-signon/openid-connect#protect-news-feed-and-calendar)..
+Please make sure the link is making use of a [Private URL](/_docs/bcc-signon/openid-connect#protect-news-feed-and-calendar)..
 
 | Parameters      |                                                         |
 |-----------------|---------------------------------------------------------|

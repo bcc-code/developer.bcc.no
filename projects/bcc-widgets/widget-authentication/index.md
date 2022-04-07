@@ -29,10 +29,10 @@ The application should have an endpoint that returns the access_token to the bro
 
 1. Set the ``audience`` property to ``https://widgets.brunstad.org``
     * located in the OpenID
-      Configuration ([see ASP.NET Core Tutorial for an example](/docs/bcc-signon/asp.net-core#get-your-application-credentials))
+      Configuration ([see ASP.NET Core Tutorial for an example](/_docs/bcc-signon/asp.net-core#get-your-application-credentials))
       .
 2. Create an endpoint that returns the access_token of the
-   end-user ([see ASP.NET Core Tutorial for an example](/docs/bcc-signon/asp.net-core#add-account-controller)).
+   end-user ([see ASP.NET Core Tutorial for an example](/_docs/bcc-signon/asp.net-core#add-account-controller)).
 
     * The access_token should be able to be requested from browser (based on the cookie of the user).
 
@@ -59,7 +59,7 @@ Configure the top bar for ‘inline access_token’:
 1. Set the ``data-authentication-type`` attribute to ```"inline-access-token"```
 2. Remove the ``data-authentication-location`` attribute
 3. Request an access_token for the Widgets API, by setting the ``audience``
-   to ``https://widgets.brunstad.org``  ([see ASP.NET Core Tutorial for an example](/docs/bcc-signon/asp.net-core#edit-configuration-file))
+   to ``https://widgets.brunstad.org``  ([see ASP.NET Core Tutorial for an example](/_docs/bcc-signon/asp.net-core#edit-configuration-file))
    .
 4. Add the ``data-access-token`` attribute with the access_token of the end-user
 

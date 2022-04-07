@@ -28,7 +28,7 @@ and [the troubleshooting page](#troubleshooting)
     * **Login type**: OpenID Connect button on login form
     * **Client ID**: Your client ID
     * **Client Secret Key**: Your client Secret
-    * **OpenID Scope**: Your [scopes](/docs/bcc-signon/openid-connect#available-claims). (E.g. email openid profile
+    * **OpenID Scope**: Your [scopes](/_docs/bcc-signon/openid-connect#available-claims). (E.g. email openid profile
       church)
     * **Enable logging**: Uncheck this unless you need logging.
 6. Save Changes

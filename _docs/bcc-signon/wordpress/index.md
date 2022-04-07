@@ -41,7 +41,7 @@ and [the troubleshooting page](#troubleshooting)
     * **Login type**: OpenID Connect button on login form
     * **Client ID**: Your client ID
     * **Client Secret Key**: Your client Secret
-    * **OpenID Scope**: Your [scopes](/docs/bcc-signon/openid-connect#available-claims). (E.g. email openid profile
+    * **OpenID Scope**: Your [scopes](/_docs/bcc-signon/openid-connect#available-claims). (E.g. email openid profile
       church)
     * **Enable logging**: Uncheck this unless you need logging.
 6. Save Changes
@@ -131,7 +131,7 @@ contact [support](mailto:it@bcc.no?subject=Support%Developer%BCC).
 ### OpenID Scope
 
 Here you can request different scopes. More information is
-available [here](/docs/bcc-signon/openid-connect#available-claims).
+available [here](/_docs/bcc-signon/openid-connect#available-claims).
 
 ### Enforce Privacy
 
@@ -171,7 +171,7 @@ by contacting [support](mailto:it@bcc.no?subject=Support%Developer%BCC).
 This enables BCC’s new top bar widget, that you already see on this website.
 
 If you enable this, you can delete the old top bar script tag (See
-the [documentation of the old top bar](/docs/widgets/legacy-discontinued#old-topbar))
+the [documentation of the old top bar](/_docs/widgets/legacy-discontinued#old-topbar))
 
 ### Local church
 
@@ -363,7 +363,7 @@ WordPress actions are generic events that other plugins can react to. You’ll p
 plugin ([official documentation](https://github.com/oidc-wp/openid-connect-generic#actions)).
 
 You can use the openid-connect-generic-update-user-using-current-claim action to add WordPress roles to the user, based
-on [signon claims](/docs/bcc-signon/openid-connect#get-information-about-the-user).
+on [signon claims](/_docs/bcc-signon/openid-connect#get-information-about-the-user).
 
 ## User Meta Data
 
@@ -387,7 +387,7 @@ function getUserAttribute() {
 ````
 
 Where ``ClaimName`` is the name of the claim. All the available claims are
-documented [here](/docs/bcc-signon/openid-connect#get-information-about-the-user).
+documented [here](/_docs/bcc-signon/openid-connect#get-information-about-the-user).
 
 # How SSO data is handled
 

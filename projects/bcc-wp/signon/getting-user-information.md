@@ -19,7 +19,7 @@ function getUserAttribute() {
 }
 ````
 
-Where ``ClaimName`` is the name of the claim. All the available claims are documented [here](/docs/bcc-signon/openid-connect#get-information-about-the-user).
+Where ``ClaimName`` is the name of the claim. All the available claims are documented [here](/_docs/bcc-signon/openid-connect#get-information-about-the-user).
 
 
 ---

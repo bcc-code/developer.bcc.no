@@ -1,4 +1,5 @@
 ---
+layout: home
 title: BCC Developer Portal
 description: Technical documentation and guides for software development in BCC
 ---
@@ -17,8 +18,8 @@ description: Technical documentation and guides for software development in BCC
 ## [Topics](topics)
 * [Security](topics/security)
 
-## [Documentation](docs)
-* [BCC Signon](docs/bcc-signon)
+## [Documentation](_docs)
+* [BCC Signon](_docs/bcc-signon)
 
 ## [Projects](projects)
 * [Widgets](projects/bcc-widgets)

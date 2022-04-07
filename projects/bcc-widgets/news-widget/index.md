@@ -29,7 +29,7 @@ You are required to make your own RSS-feed containing news to be accessible via 
 
 #### Warning
 
-The url should be a [private url](/docs/bcc-signon/openid-connect/#protect-news-feed-and-calendar) and not protected by
+The url should be a [private url](/_docs/bcc-signon/openid-connect/#protect-news-feed-and-calendar) and not protected by
 signon. Because the contents of the news feed is then technically available to anyone (if they know the url), it’s best
 to keep the information in the feed to a minimum and to avoid any sensitive information. You should only include the
 title, the link to the article, the publication date, a unique id for the article and a link to the thumbnail image.
@@ -54,7 +54,7 @@ We would like to get a link in the following format:
 ``http://church.brunstad.org/rssfeed?updated-min=2019-01-31T16:39:57-08:00&max-results=100``
 
 **RFC3339** is a standardized time format.
-Please make sure the link is making use of a [Private Url](/docs/bcc-signon/openid-connect/#protect-news-feed-and-calendar).
+Please make sure the link is making use of a [Private Url](/_docs/bcc-signon/openid-connect/#protect-news-feed-and-calendar).
 
 ### Parameters
 

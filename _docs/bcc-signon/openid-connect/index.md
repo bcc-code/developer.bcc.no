@@ -227,8 +227,8 @@ This is the path (part of the URL) that clears the session of the user (e.g. /ac
 
 Check the documentation of your plugin to get the correct sign-out path:
 
-* [ASP.NET Core](/docs/BCC%20Signon/ASP.NET%20Core#add-account-controller)
-* [ASP.NET](/docs/BCC%20Signon/ASP.NET#add-account-controller)
+* [ASP.NET Core](/_docs/BCC%20Signon/ASP.NET%20Core#add-account-controller)
+* [ASP.NET](/_docs/BCC%20Signon/ASP.NET#add-account-controller)
 
 ### 2.Create sign-out page for BCC widgets.
 
