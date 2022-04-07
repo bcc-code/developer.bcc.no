@@ -1,15 +1,3 @@
 remote_theme: bcc-code/bcc-docs-theme
 plugins:
 - jekyll-remote-theme
-
-collections:
-  projects:
-    output: true
-  docs:
-    output: true
-  guides:
-    output: true
-  topics:
-    output: true
-  plugins:
-    output: true
