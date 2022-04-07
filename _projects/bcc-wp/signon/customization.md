@@ -1,8 +1,3 @@
----
-title: Plugin Customization
-description: Documentation about creating WordPress sites with BCC widgets and plugins
----
-
 # Plugin Customization
 
 ## Hooks

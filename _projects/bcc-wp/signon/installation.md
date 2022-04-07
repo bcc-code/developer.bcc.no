@@ -24,7 +24,7 @@ user.
 
 ## Installation
 
-1. Download the latest version of [BCC Signon Plugin](/_plugins/bcc-signon.zip)
+1. Download the latest version of [BCC Signon Plugin](/plugins/bcc-signon.zip)
 2. Login to the admin panel of WordPress
 3. Navigate to **Plugins** → **Add New** → **Upload Plugin**, and find the downloaded file bcc-signon.zip. Install the
    plugin.

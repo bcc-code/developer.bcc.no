@@ -1,8 +1,3 @@
----
-title: Plugin Configuration
-description: Technical documentation
----
-
 # Plugin Configuration
 
 The settings of BCC Signon are grouped into two panels:

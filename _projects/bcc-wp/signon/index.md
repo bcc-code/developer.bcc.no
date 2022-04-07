@@ -19,7 +19,7 @@ This tutorial will explain you how to implement BCC Signon on a WordPress websit
 This a shortened version of the detailed documentation. If you encounter problems, check out the detailed documentation
 and [the troubleshooting page](#troubleshooting)
 
-1. Download the latest version of the [BCC Signon Plugin](/_plugins/bcc-signon.zip).
+1. Download the latest version of the [BCC Signon Plugin](/plugins/bcc-signon.zip).
 2. Log in to the admin panel of WordPress.
 3. Navigate to **Plugins** → **Add New** → **Upload Plugin**, and find the downloaded file **bcc-signon.zip**. Install
    the plugin.

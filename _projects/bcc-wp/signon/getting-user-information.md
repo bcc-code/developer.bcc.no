@@ -1,8 +1,3 @@
----
-title: Getting User Information
-description: Documentation about creating WordPress sites with BCC widgets and plugins
----
-
 # Get information about the user
 
 You can easily get information about the logged in user by using this method.
