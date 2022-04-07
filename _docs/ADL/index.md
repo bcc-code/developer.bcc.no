@@ -1,5 +1,4 @@
 ---
-layout:default
 title: Architecture Decision Log
 description: Technical documentation and guides for software development in BCC
 ---

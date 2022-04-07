@@ -1,5 +1,4 @@
 ---
-layout:default
 title: Approach to Microservice API Architecture
 description: High level decisions related to implementing microservices
 ---
