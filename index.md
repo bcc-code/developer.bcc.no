@@ -11,12 +11,12 @@ description: Technical documentation and guides for software development in BCC
 
 * Check out the rest of this site for documentation.
 
-## [Guides](guides)
-* [Guiding Objectives and Principals](guides/objectives-and-principals.md) 
-* [Coding Guide](guides/coding-guide.md)
+## [Guides](_guides)
+* [Guiding Objectives and Principals](_guides/objectives-and-principals.md) 
+* [Coding Guide](_guides/coding-guide.md)
 
-## [Topics](topics)
-* [Security](topics/security)
+## [Topics](_topics)
+* [Security](_topics/security)
 
 ## [Documentation](docs)
 * [BCC Signon](_docs/bcc-signon)
@@ -27,6 +27,6 @@ description: Technical documentation and guides for software development in BCC
 * [BMM](projects/bmm-app)
 * [WordPress](projects/bcc-wp)
 
-## [Wordpress Plugins](plugins)
-* [BCC Signon Plugin](plugins/bcc-signon.zip)
+## [Wordpress Plugins](_plugins)
+* [BCC Signon Plugin](_plugins/bcc-signon.zip)
 * [BCC Signon Plugin (Update)](api/updates/bcc-signon.zip)
