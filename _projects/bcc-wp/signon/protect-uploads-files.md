@@ -1,8 +1,3 @@
----
-title: Protect Uploads files
-description: Documentation about creating WordPress sites with BCC widgets and plugins
----
-
 # Protect Uploads files
 
 We have been notified that uploaded files on WordPress were not protected with BCC Signon, allowing a direct access

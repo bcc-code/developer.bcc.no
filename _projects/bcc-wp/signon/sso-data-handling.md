@@ -1,8 +1,3 @@
----
-title: HOw SSO data is handled
-description: Documentation about creating WordPress sites with BCC widgets and plugins
----
-
 # How SSO data is handled 
 
 _This article will describe how BCC distributes the BCC members personal data through it’s
