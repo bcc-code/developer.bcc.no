@@ -1,3 +1,7 @@
+---
+title: TV Guide
+---
+
 # TV guide
 
 The TV guide is a widget that shows the upcoming programs on BrunstadTV. It can be implemented on local church websites as a widget.
