@@ -1,3 +1,8 @@
+---
+title: Troubleshooting
+description: Documentation about creating WordPress sites with BCC widgets and plugins
+---
+
 # Troubleshooting 
 
 If you get redirected to a page that says “Sorry, an error occurred”, please look at the url. It
