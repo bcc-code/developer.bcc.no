@@ -1,6 +1,5 @@
 ﻿---
-title: Installing BCC signon on wordpress
-description: Technical documentation
+title: Installing BCC SignOn on Wordpress
 ---
 
 # Installing BCC Signon on Wordpress

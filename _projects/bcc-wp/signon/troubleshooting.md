@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting
-description: Documentation about creating WordPress sites with BCC widgets and plugins
 ---
 
 # Troubleshooting 

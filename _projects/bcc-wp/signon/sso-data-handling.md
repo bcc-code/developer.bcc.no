@@ -1,6 +1,5 @@
 ---
-title: HOw SSO data is handled
-description: Documentation about creating WordPress sites with BCC widgets and plugins
+title: How SSO data is handled
 ---
 
 # How SSO data is handled 

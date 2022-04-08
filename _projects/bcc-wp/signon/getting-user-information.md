@@ -1,3 +1,7 @@
+---
+title: Getting user information
+---
+
 # Get information about the user
 
 You can easily get information about the logged in user by using this method.

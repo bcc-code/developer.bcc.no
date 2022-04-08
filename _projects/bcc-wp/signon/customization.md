@@ -1,3 +1,7 @@
+---
+title: Plugin Customization
+---
+
 # Plugin Customization
 
 ## Hooks

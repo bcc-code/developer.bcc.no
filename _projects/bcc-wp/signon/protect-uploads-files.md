@@ -1,6 +1,5 @@
 ---
 title: Protect Uploads files
-description: Documentation about creating WordPress sites with BCC widgets and plugins
 ---
 
 # Protect Uploads files
