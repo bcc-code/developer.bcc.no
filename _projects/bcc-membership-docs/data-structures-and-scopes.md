@@ -1,12 +1,16 @@
+---
+title: Data Structures
+---
+
 # Data Structures and Scopes
 This section describe `person` object and how it relates to scopes.
 
 ## Menu
-- [Home](index.md)
-- [API integration](api-integration.md)
-- [Webhooks integration](webhooks.md)
-- [Data Structures and Scopes](data-structures-and-scopes.md)
-- [Single Sign Out](single-sign-out.md)
+- [Home](index)
+- [API integration](api-integration)
+- [Webhooks integration](webhooks)
+- [Data Structures and Scopes](data-structures-and-scopes)
+- [Single Sign Out](single-sign-out)
 
 ## This Document
 - [Menu](#menu)
