@@ -1,7 +1,3 @@
----
-layout:default
----
-
 # Github security advisory usage
 ### What is Github Security Advisory
 Security advisories are a way to report and fix security issues in a private manner. They offer the advantage of allowing private discussions and colaboration in private branches even on public repositories, and a convenient way to overview the current status. The full documentation is available [here](https://docs.github.com/en/code-security).

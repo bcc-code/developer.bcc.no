@@ -1,5 +1,5 @@
 ﻿---
-title: BCC Signon - OpenID Connect 
+title: BCC SignOn - OpenID Connect 
 description: Technical documentation and guides for software development in BCC
 ---
 

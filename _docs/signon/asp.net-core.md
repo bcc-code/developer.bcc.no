@@ -1,5 +1,5 @@
 ﻿---
-title: BCC Signon - ASP.NET Core 
+title: BCC SignOn - ASP.NET Core 
 description: Technical documentation and guides for software development in BCC
 ---
 
