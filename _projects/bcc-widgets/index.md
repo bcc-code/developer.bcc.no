@@ -15,6 +15,7 @@ Here you’ll find the documentation for the “new” widgets. They are also kn
     * [Configuration](widget-authentication#configuration)
     * [Signout](widget-authentication#signout)
 * [Topbar](topbar-widget)
+* [Collection](collection-widget)
 * [Calendar - integration](calendar-widget/integration)
     * [Link to share with Brunstad](calendar-widget/integration#link-to-share-with-brunstad)
     * [ICalendar Feed Format](calendar-widget/integration#icalendar-feed-format)
