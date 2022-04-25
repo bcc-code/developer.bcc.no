@@ -10,7 +10,7 @@ title: BCC Membership System
 This documentation is aimed at you as a Developer/Technical Administrator for your organization. The documentation here provides documentation on all the ways possible to integrate with BCC's membership system. 
 
 **url: [https://members.bcc.no](https://members.bcc.no)** 
-<br />
+
 **swagger: [https://members.bcc.no/docs](https://members.bcc.no/docs)**
 
 ## Menu
