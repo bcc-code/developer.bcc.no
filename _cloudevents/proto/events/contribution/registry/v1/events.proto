@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package bccCode.events.contribution.registry.v1;
+
+import "bccCode/events/contribution/registry/v1/data.proto";
+
+option csharp_namespace = "BccCode.Events.Protobuf.Contribution.Registry.V1";
+
+message ObjectCreatedEvent {
+    
+    ContributionObjectData data = 1;
+}

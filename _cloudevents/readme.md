@@ -9,6 +9,7 @@ See proto/README.md for more information about the messages used to describe Clo
 # CloudEvents in this repository
 This repository contains definitions for the following CloudEvents:
 
-| Value | Schemas | Types |
-|-------|---------|-------|
-| Contribution Registry| Proto | CloudEvent Type: `bccCode.donation` |
+| Value | Schemas | Types                                                                         |
+|-------|---------|-------------------------------------------------------------------------------|
+| Contribution Registry| [Proto](proto/events/contribution/registry/v1/events.proto) | CloudEvent Type: `bccCode.events.contribution.registry.v1.ObjectCreatedEvent` |
+~~~~
