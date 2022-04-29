@@ -39,8 +39,4 @@ The TV guide is a widget that shows the upcoming programs on BrunstadTV. It can 
 |                                                                   | **DE** (German), **EN** (English), **FI** (Finnish), **FR** (French), **NO** (Norwegian), **NL** (Dutch), **ES** (Spanish)                                                                                                           |                                                                                                                                                                                                                     |
 | ``data-maxdays`` (optional)                                       | Maximum number of days (counted from today) to return. Default is 1 day                                                                                                                                                              |
 
-<br/>
-
----
-
-<br/>
+ 

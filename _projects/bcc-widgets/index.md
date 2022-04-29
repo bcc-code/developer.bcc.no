@@ -32,8 +32,4 @@ Here you’ll find the documentation for the “new” widgets. They are also kn
     * [Developer Tips](news-widget#developer-tips)
 * [Birthdays](birthday-widget)
 
-<br/>
-
----
-
-<br/>
+ 

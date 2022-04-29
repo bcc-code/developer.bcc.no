@@ -13,8 +13,3 @@ var onlineCollectionWidget = {
 };
 ```
 
-<br/>
-
----
-
-<br/>

@@ -298,8 +298,3 @@ namespace iCalExport.General
 }
 ````
 
-<br/>
-
----
-
-<br/>

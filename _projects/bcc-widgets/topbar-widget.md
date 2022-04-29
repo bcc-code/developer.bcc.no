@@ -42,8 +42,4 @@ website you want to point to. That can, for example, be:
 
 Please check the [widgets authentication](../widget-authentication/).
 
-<br/>
-
----
-
-<br/>
+ 

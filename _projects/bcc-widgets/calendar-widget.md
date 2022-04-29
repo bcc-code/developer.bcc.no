@@ -104,8 +104,3 @@ The script tag of the month calendar looks like this:
 | ``data-language`` (optional)                                      | The language for the calendar to be returned in. If not specified, the language will be set to English                                                                                                                                                                            |
 |                                                                   | **DE** (German), **EN** (English), **FI** (Finnish), **FR** (French), **NO** (Norwegian), **NL** (Dutch), **ES** (Spanish)                                                                                                                                                        |                                                                                                                                                                                                                     |
 
-<br/>
-
----
-
-<br/>
