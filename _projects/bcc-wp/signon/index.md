@@ -1,4 +1,4 @@
-﻿---
+---
 title: Signon Wordpress
 description: Technical documentation
 ---

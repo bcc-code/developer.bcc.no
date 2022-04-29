@@ -1,4 +1,4 @@
-﻿---
+---
 title: Installing BCC SignOn on Wordpress
 ---
 
