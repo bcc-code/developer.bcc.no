@@ -9,8 +9,6 @@ Here you’ll find the documentation for the “new” widgets. They are also kn
 
 ## Articles
 
----
-
 * [Widget authentication](widget-authentication)
     * [Configuration](widget-authentication#configuration)
     * [Signout](widget-authentication#signout)
