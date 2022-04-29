@@ -4,7 +4,7 @@ This repository contains types for [CloudEvents](https://cloudevents.io) issued 
 
 The "source of truth" for the event data format is in the form of [Google Protocol Buffers](https://github.com/protocolbuffers/protobuf).
 
-See proto/README.md for more information about the messages used to describe CloudEvents.
+See [proto/README.md](proto) for more information about the messages used to describe CloudEvents.
 
 # Cloud PubSub
 Since most of our application are hosted in Google we use Cloud PubSub for publishing and subscribing cloud events.
