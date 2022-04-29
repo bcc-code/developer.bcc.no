@@ -113,3 +113,9 @@ by loading the following HTML page:
 ````
 
 **Path to clear session**: The user gets redirected to this location after widgets has been signed out.
+
+<br/>
+
+---
+
+<br/>

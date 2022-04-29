@@ -30,6 +30,7 @@ three days, today included.
 
 
 ## Parameters
+
 | Parameter                                                         | Description                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ``data-authentication-type`` and ``data-authentication-location`` | Please check the [documentation](#widgets-authentication) on widget authentication.                                                                                                                                                                                                             |
@@ -37,3 +38,9 @@ three days, today included.
 |                                                                   | **DE** (German), **EN** (English), **FI** (Finnish), **FR** (French), **NO** (Norwegian), **NL** (Dutch), **ES** (Spanish)                                                                                                                                                                      |                                                                                                                                                                                                                     |
 | ``data-churchname`` (required)                                    | What church to show birthdays from. The value is simply the name of the church. For your own church, the church name can be found on the [profile page](https://members.bcc.no/profile/). Special characters like æ, ø, å, ä, ü and ö are supported. “hessenhöfe” is for example a valid value. |
 | ``data-maxdays `` (optional)                                      | Maximum number of days (counted from today) to return. Default is 3 days.                                                                                                                                                                                                                       |
+
+<br/>
+
+---
+
+<br/>

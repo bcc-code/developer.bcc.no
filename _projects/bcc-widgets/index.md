@@ -16,11 +16,11 @@ Here you’ll find the documentation for the “new” widgets. They are also kn
     * [Signout](widget-authentication#signout)
 * [Topbar](topbar-widget)
 * [Collection](collection-widget)
-* [Calendar - integration](calendar-widget/integration)
-    * [Link to share with Brunstad](calendar-widget/integration#link-to-share-with-brunstad)
-    * [ICalendar Feed Format](calendar-widget/integration#icalendar-feed-format)
-    * [ICalendar Feed Example](calendar-widget/integration#icalendar-feed-example)
-    * [Developer Tips](calendar-widget/integration#developer-tips)
+* [Calendar - integration](calendar-widget-integration)
+    * [Link to share with Brunstad](calendar-widget-integration#link-to-share-with-brunstad)
+    * [ICalendar Feed Format](calendar-widget-integration#icalendar-feed-format)
+    * [ICalendar Feed Example](calendar-widget-integration#icalendar-feed-example)
+    * [Developer Tips](calendar-widget-integration#developer-tips)
 * [Calendar - widget](calendar-widget)
     * [Week calendar](calendar-widget#week-calendar)
     * [Month calendar](calendar-widget#month-calendar)
@@ -34,3 +34,8 @@ Here you’ll find the documentation for the “new” widgets. They are also kn
     * [Developer Tips](news-widget#developer-tips)
 * [Birthdays](birthday-widget)
 
+<br/>
+
+---
+
+<br/>

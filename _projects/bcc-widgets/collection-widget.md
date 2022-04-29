@@ -12,3 +12,9 @@ var onlineCollectionWidget = {
   enabled: false
 };
 ```
+
+<br/>
+
+---
+
+<br/>

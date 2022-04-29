@@ -49,6 +49,7 @@ The script tag of the week calendar looks like this:
 ````
 
 ### Parameters
+
 | Parameter                                                         | Description                                                                                                                                                                                                                                                                       |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ``data-authentication-type`` and ``data-authentication-location`` | Please check the [documentation](#widgets-authentication) on widget authentication.                                                                                                                                                                                               |
@@ -95,9 +96,16 @@ The script tag of the month calendar looks like this:
 ````
 
 ### Parameters
+
 | Parameter                                                         | Description                                                                                                                                                                                                                                                                       |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ``data-authentication-type`` and ``data-authentication-location`` | Please check the [documentation](#widgets-authentication) on widget authentication.                                                                                                                                                                                               |
 | ``data-calendars`` (required)                                     | Comma separated list of ids to the calendars that should be returned. **This parameter must be specified**. Each local church church has an id like _tonsberg_calendar_, and Brunstad has one calendar named _brunstad_calendar_no_.                                              |
 | ``data-language`` (optional)                                      | The language for the calendar to be returned in. If not specified, the language will be set to English                                                                                                                                                                            |
 |                                                                   | **DE** (German), **EN** (English), **FI** (Finnish), **FR** (French), **NO** (Norwegian), **NL** (Dutch), **ES** (Spanish)                                                                                                                                                        |                                                                                                                                                                                                                     |
+
+<br/>
+
+---
+
+<br/>

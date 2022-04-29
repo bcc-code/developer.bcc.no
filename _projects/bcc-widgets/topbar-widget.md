@@ -41,3 +41,9 @@ website you want to point to. That can, for example, be:
 ## Configuration:
 
 Please check the [widgets authentication](../widget-authentication/).
+
+<br/>
+
+---
+
+<br/>

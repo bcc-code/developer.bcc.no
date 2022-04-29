@@ -29,6 +29,7 @@ The TV guide is a widget that shows the upcoming programs on BrunstadTV. It can 
 ````
 
 ## Parameters
+
 | Parameter                                                         | Description                                                                                                                                      |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | ``data-authentication-type`` and ``data-authentication-location`` | Please check the [documentation](#widgets-authentication) on widget authentication.                                                              |
@@ -36,3 +37,9 @@ The TV guide is a widget that shows the upcoming programs on BrunstadTV. It can 
 |                                                                   | **DE** (German), **EN** (English), **FI** (Finnish), **FR** (French), **NO** (Norwegian), **NL** (Dutch), **ES** (Spanish)                       |                                                                                                                                                                                                                     |
 | ``data-hidesearchbox `` (optional)                                | Set to **True** to hide the search box so you can use your own search box and send the search string as **q** parameter. Default is **False**.   |
 | ``data-searchquery `` (optional)                                  | If you use your own search box, you may send the search string as this parameter. Must be used in combination with the HideSearchBox parameter.  |
+
+<br/>
+
+---
+
+<br/>

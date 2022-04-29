@@ -159,3 +159,9 @@ There are various ways to do this:
 * Use ``<![CDATA[ ]]>`` around all content. For example:
   ``<title><![CDATA[Some title with special characters.]]></title>``
 * Use libraries to generate the RSS XML that handles this automatically (such as XElement in the System.Linq.Xml library in .Net 3.5+)
+
+<br/>
+
+---
+
+<br/>
