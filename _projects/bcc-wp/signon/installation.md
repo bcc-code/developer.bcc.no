@@ -41,4 +41,4 @@ That’s it! Now you can use this user to access the administration dashboard, w
 
 ---
 
-Next: [Plugin Configuration →](configuration.md)
+Next: [Plugin Configuration →](configuration)

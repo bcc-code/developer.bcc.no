@@ -55,4 +55,4 @@ see [this page](#disable-dashboard-and-toolbar).
 
 ---
 
-Next: [Installing BCC Signon on WordPress →](installation.md)
+Next: [Installing BCC Signon on WordPress →](installation)

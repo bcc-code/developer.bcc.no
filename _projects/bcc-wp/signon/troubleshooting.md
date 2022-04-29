@@ -15,3 +15,8 @@ If you get the error: “Failed user creation”
 when logging in with OpenID Connect, you most likely have an existing WordPress user with the same email address as your
 BCC user, but with a username that is not your BCC person ID. In that case, either change the email address of the
 existing WordPress user or remove the WordPress user. After that you should no longer get the error.
+
+
+---
+
+Next: [Home](index)

@@ -26,4 +26,4 @@ as of today this has not yet been implemented.
 
 ---
 
-Next: [Protect Uploads files](protect-uploads-files.md)
+Next: [Protect Uploads files](protect-uploads-files)

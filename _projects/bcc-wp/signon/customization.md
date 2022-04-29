@@ -33,4 +33,4 @@ This plugin stores meta data about the user for both practical and debugging pur
 
 ---
 
-Next: [Getting User Information →](getting-user-information.md)
+Next: [Getting User Information →](getting-user-information)

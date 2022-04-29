@@ -104,4 +104,4 @@ RewriteRule ^wp-content/uploads/(.*)$ dl-file.php?file=$1 [QSA,L]
 
 ---
 
-Next: [Troubleshooting](troubleshooting.md)
+Next: [Troubleshooting](troubleshooting)
