@@ -4,8 +4,7 @@ title: BCC Widgets
 
 # BCC Widgets
 
-Here you’ll find the documentation for the “new” widgets. They are also known as widgets.bcc.no (as opposed to the old
-widgets: widgets.brunstad.org).
+Here you’ll find the documentation for the “new” widgets. They are also known as widgets.bcc.no (as opposed to the old widgets: widgets.brunstad.org).
 
 
 ## Articles
@@ -32,3 +31,5 @@ widgets: widgets.brunstad.org).
     * [Modify the properties of your feed](news-widget#modify-the-properties-of-your-feed)
     * [Developer Tips](news-widget#developer-tips)
 * [Birthdays](birthday-widget)
+
+ 
