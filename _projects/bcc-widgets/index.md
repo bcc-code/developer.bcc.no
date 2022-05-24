@@ -4,8 +4,12 @@ title: BCC Widgets
 
 # BCC Widgets
 
-Here you’ll find the documentation for the “new” widgets. They are also known as widgets.bcc.no (as opposed to the old widgets: widgets.brunstad.org).
+Here you’ll find the documentation for the “new” widgets. They are also known as widgets.bcc.no (as opposed to the old
+widgets: widgets.brunstad.org).
 
+<div class="sidebar">
+
+<nav>
 
 ## Articles
 
@@ -32,4 +36,6 @@ Here you’ll find the documentation for the “new” widgets. They are also kn
     * [Developer Tips](news-widget#developer-tips)
 * [Birthdays](birthday-widget)
 
- 
+</nav>
+
+</div>
