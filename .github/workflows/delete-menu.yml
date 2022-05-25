@@ -19,6 +19,9 @@ jobs:
         uses: JesseTG/rm@v1.0.0
         with:
           path: '/_projects/bcc-widgets/menu.md'
-          user_email: 'bcc-docs-bot@bcc.no'
-          user_name: 'bcc-docs-bot'
-          commit_message: 'Update BCC-Widgets Docs'
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Remove Widgets Menu"
+          commit_user_name: bcc-docs-bot
+          commit_user_email: bcc-docs-bot@bcc.no
+          commit_author: BCC Docs Bot <bcc-docs-bot@bcc.no>
