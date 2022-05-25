@@ -3,7 +3,7 @@ plugins:
 - jekyll-remote-theme
 
 collections:
-  projects:
+  products:
     output: true
   docs:
     output: true
