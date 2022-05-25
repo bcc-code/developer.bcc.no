@@ -18,4 +18,4 @@ jobs:
       - name: Remove File
         uses: JesseTG/rm@v1.0.2
         with:
-          path: _projects/bcc-widgets/menu.md
+          path: '_projects/bcc-widgets/menu.md'
