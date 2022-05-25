@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Delete Menu
+
+on:
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  delete-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Remove File
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: /_projects/bcc-widgets/menu.md
