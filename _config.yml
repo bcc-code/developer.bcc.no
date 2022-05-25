@@ -13,6 +13,8 @@ collections:
     output: true
   plugins:
     output: true
+  apis:
+    output: true
 
 defaults:
   - scope:
