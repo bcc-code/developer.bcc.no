@@ -1,5 +1,0 @@
----
-title: Persons
----
-
-# Getting Started
