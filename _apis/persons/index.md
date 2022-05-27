@@ -15,9 +15,9 @@ title: Persons API
 - You probable wants to start developing your app or integration on top of BCC's API's. The easiest way to get access to the BCC environment is to first request access to the sandbox environment. This will allow you quick access. While development is in progress you can in parallel request access to the production environment.
 ## Get access to sandbox environemnt
 1. Write a email to [it@bcc.no](mailto:it@bcc.no), your email should include the following information.
-    - Name for you applications
-    - Scopes you would like to get access to (link coming soon...)
-    - Reason for wanting access
+    * Name for you applications
+    * Scopes you would like to get access to (link coming soon...)
+    * Reason for wanting access
 2. BCC IT will respond to your request with OAuth2 Client Crendetials to BCC's sandbox environment.
 
 ## Get access to production environment
