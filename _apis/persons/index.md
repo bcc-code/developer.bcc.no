@@ -16,7 +16,7 @@ title: Persons API
 ## Get access to sandbox environemnt
 1. Write a email to [it@bcc.no](mailto:it@bcc.no), your email should include the following information.
     - Name for you applications
-    - Scopes you would like to get access to (provide link)
+    - Scopes you would like to get access to (link coming soon...)
     - Reason for wanting access
 2. BCC IT will respond to your request with OAuth2 Client Crendetials to BCC's sandbox environment.
 
