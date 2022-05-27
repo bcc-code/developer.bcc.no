@@ -5,7 +5,7 @@ title: Persons API
 # Menu
 - [Getting Started](#getting-started)
 - [Auth](#auth)
-- [API Explorer Here](https://members.bcc.no/organisations)
+- [API Explorer Here](https://api.bcc.no/docs/?urls.primaryName=Persons%20documentation)
 - [Examples (Comming...)](#examples)
 
 
