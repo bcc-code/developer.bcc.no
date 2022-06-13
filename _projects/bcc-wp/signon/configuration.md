@@ -7,7 +7,7 @@ title: SignOn Configuration
 The settings of BCC Signon are grouped into two panels:
 
 * OpenId Connect Client (OIDC Settings) contains all the settings related to the login of users.
-* BCC Signon (BCC Settings) contains all the setttings related to BCC’s widgets: newsfeeds, topbar
+* BCC Signon (BCC Settings) contains all the settings related to BCC’s widgets: newsfeeds, topbar
 
 ## OpenId Connect Client Settings
 
@@ -74,7 +74,7 @@ If you enable this, you can delete the old top bar script tag (See the documenta
 
 If you want to identify the users which log in to your website by church, e.g. for displaying specific
 content or give access to some pages just to members from your local church, find the church name in the list below and
-type it in in the text field on the BCC Login Settings page. If the church you’re coming from is not in the list you can
+type it in the text field on the BCC Login Settings page. If the church you’re coming from is not in the list you can
 contact [support](it@bcc.no?subject=Support%Developer%BCC).
 
 * Argentina 
