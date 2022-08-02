@@ -15,7 +15,7 @@ feedback first to ensure it fits all of your configurations.
 working seamlessly for you.**
 
 1. Add the following file as ``dl-file.php`` to your WordPress root folder.
-```html
+```php
 <?php
 /*
  * dl-file.php
