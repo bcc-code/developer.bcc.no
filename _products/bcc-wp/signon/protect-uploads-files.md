@@ -15,7 +15,7 @@ feedback first to ensure it fits all of your configurations.
 working seamlessly for you.**
 
 1. Add the following file as ``dl-file.php`` to your WordPress root folder.
-````html
+```html
 <?php
 /*
  * dl-file.php
@@ -94,7 +94,7 @@ exit;
 
 // If we made it this far, just serve the file
 readfile( $file );
-````
+```
 
 2. Append the following lines to your .htaccess
 ````
