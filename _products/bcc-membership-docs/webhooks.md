@@ -55,7 +55,7 @@ const fetch = require('node-fetch');
                url: 'https://someurl.com/something'
            }
        }
-       let httpResponse = await fetch('https://members.bcc.no/application/{APPLICATION-ID}',
+       let httpResponse = await fetch('https://api.members.bcc.no/application/{APPLICATION-ID}',
            {
                method: 'patch',
                headers:
@@ -88,7 +88,7 @@ try {
         },
     }
     let httpResponse = await fetch(
-        'https://members.bcc.no/application/{APPLICATION-ID}',
+        'https://api.members.bcc.no/application/{APPLICATION-ID}',
         {
             method: 'patch',
             headers: {
