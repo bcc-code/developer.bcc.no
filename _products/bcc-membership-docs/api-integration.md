@@ -30,7 +30,7 @@ For these example we are using the [node-fetch](https://www.npmjs.com/package/no
 ```js
 const fetch = require('node-fetch');
     try {
-        let httpResponse = await fetch('https://members.bcc.no/person?personID=12345',
+        let httpResponse = await fetch('https://api.members.bcc.no/person?personID=12345',
             {
                 method: 'get',
                 headers:
@@ -53,7 +53,7 @@ const fetch = require('node-fetch');
 ```js
 const fetch = require('node-fetch');
     try {
-        let httpResponse = await fetch('https://members.bcc.no/person?churchID=69&$limit=50&$skip=0',
+        let httpResponse = await fetch('https://api.members.bcc.no/person?churchID=69&$limit=50&$skip=0',
             {
                 method: 'get',
                 headers:
