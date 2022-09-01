@@ -188,6 +188,7 @@ Currently these scopes are all related to the `person` object and maps to the pe
       "archived": false,
       "startDate": "2020-10-18T11:52:46.474Z",
       "endDate": "2021-11-28T00:00:00.000Z",
+      "membershipType": "participant", //allowed values: "participant", "affiliator", "member"
       "name": "Oslo/Follo",
       "visitingAddress": {
         "address1": "Ryenstubben 2",
