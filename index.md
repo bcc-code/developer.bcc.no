@@ -13,6 +13,6 @@ description: Technical documentation and guides for software development in BCC
 
 ## Platform Services
 
-* [PDF Service](/pdf-service)
+* [PDF Service](https://developer.bcc.no/pdf-service)
 
 <!-- The table of contents loads here automagically -->
