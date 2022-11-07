@@ -11,4 +11,8 @@ description: Technical documentation and guides for software development in BCC
 
 * Check out the rest of this site for documentation.
 
+## Services
+
+* [PDF Service](/pdf-service)
+
 <!-- The table of contents loads here automagically -->
