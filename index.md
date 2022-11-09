@@ -13,6 +13,7 @@ description: Technical documentation and guides for software development in BCC
 
 ## Platform Services
 
+* [Logo Assets](https://developer.bcc.no/bcc-design)
 * [PDF Service](https://developer.bcc.no/pdf-service)
 
 <!-- The table of contents loads here automagically -->
