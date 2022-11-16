@@ -1,0 +1,6 @@
+remote_theme: bcc-code/bcc-docs-theme
+title: Security
+plugins:
+- jekyll-remote-theme
+gems:
+- jekyll-seo-tag
