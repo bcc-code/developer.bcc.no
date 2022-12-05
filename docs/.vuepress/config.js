@@ -11,8 +11,18 @@ const findAllItemChildren = (item, array, fullPath) => {
   if (item.split("/").length >= 2) {
     const firstItemName = item.split("/")[0];
 
-    console.log(item);
     const foundElement = array.findIndex((item) => item.text === firstItemName);
+
+    //Differentiate if item contains nested children
+    if (item.split("/").length > 2) {
+      const itemWithoutFolderName = item.split("/").slice(1).join("/");
+      console.log(fullPath);
+      return findAllItemChildren(
+        itemWithoutFolderName,
+        array[foundElement].children,
+        fullPath
+      );
+    }
 
     // Create nested object first layer
     if (
@@ -25,9 +35,10 @@ const findAllItemChildren = (item, array, fullPath) => {
 
       return array.push({
         text: item.split("/")[0],
-        children: [findAllItemChildren(joinedNames, array, item)],
+        children: [findAllItemChildren(joinedNames, array, fullPath)],
       });
     }
+    // Push item to its children
     return array[foundElement].children.push({
       text: path.basename(item, ".md"),
       link: `/${fullPath}`,
@@ -35,6 +46,7 @@ const findAllItemChildren = (item, array, fullPath) => {
     });
   }
   //It is a children last element
+  console.log('%c FullPath', `color: red`, fullPath);
   return {
     text: path.basename(item, ".md"),
     link: `/${fullPath}`,
