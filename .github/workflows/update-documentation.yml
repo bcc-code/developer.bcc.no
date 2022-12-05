@@ -1,7 +1,9 @@
 name: "BCC documentation release 🚀"
 
 on:
-  push
+  push:
+    branches:
+      - 'main'
   workflow_dispatch:
 
 jobs:
