@@ -20,11 +20,11 @@ Make sure you include this styling in your ``<head>`` tag:
 
 ````html
 <!-- stylesheet link (common for all widgets) -->
-<link href="https://widgets.bcc.no/styles/widgets.css" rel="stylesheet" type="text/css">
+<link href="https://widgets.bcc.no/styles/widgets.css" rel="stylesheet" type="text/css" >
 <!-- end stylesheet link -->
 ````
 
-Include the following just after <body>:
+Include the following just after ``<body>``:
 
 ````html
 <!-- topbar widget -->
