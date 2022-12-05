@@ -7,7 +7,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  docs:
   runs-on: ubuntu-latest
   name: Documentation build and release 🚀
   steps:
