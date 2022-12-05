@@ -37,12 +37,10 @@ jobs:
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
-        working-directory: componentsPackage
 
       # run build script
       - name: Build VuePress site
         run: yarn docs:build
-        working-directory: componentsPackage
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
@@ -50,9 +48,9 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           # deploy the default output dir of VuePress
-          build_dir: componentsPackage/docs/.vuepress/dist
+          build_dir: docs/.vuepress/dist
           target_branch: gh-pages
-          repo: bcc-code/bcc-design
+          repo: Kurczak1233/bcc-code.github.io
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
