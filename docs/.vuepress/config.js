@@ -1,4 +1,4 @@
-import { defaultTheme, defineUserConfig } from "vuepress";
+import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "@vuepress/utils";
 import autoprefixer from "autoprefixer";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
@@ -85,8 +85,8 @@ export default defineUserConfig({
   lang: "en-US",
   title: "BCC Developer Documentation",
   description: "Package documentation",
-  base: "/bcc-documentation/",
-  theme: defaultTheme({
+  base: "/bcc-code.github.io/",
+  theme: bccCustomTheme({
     logoDark: "bccLogoWhite.png",
     logo: "bccLogoDark.png",
     sidebarDepth: 2,
