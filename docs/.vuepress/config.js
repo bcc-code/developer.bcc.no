@@ -14,9 +14,8 @@ const findAllItemChildren = (item, array, fullPath) => {
     const foundElement = array.findIndex((item) => item.text === firstItemName);
 
     //Differentiate if item contains nested children
-    if (item.split("/").length > 2) {
+    if (item.split("/").length > 2 && array[foundElement]) {
       const itemWithoutFolderName = item.split("/").slice(1).join("/");
-      console.log(fullPath);
       return findAllItemChildren(
         itemWithoutFolderName,
         array[foundElement].children,
@@ -35,6 +34,7 @@ const findAllItemChildren = (item, array, fullPath) => {
 
       return array.push({
         text: item.split("/")[0],
+        collapsible: true,
         children: [findAllItemChildren(joinedNames, array, fullPath)],
       });
     }
