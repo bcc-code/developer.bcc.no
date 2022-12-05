@@ -11,6 +11,9 @@ const findAllItemChildren = (item, array, fullPath) => {
   if (item.split("/").length >= 2) {
     const firstItemName = item.split("/")[0];
 
+    console.log(item);
+    const foundElement = array.findIndex((item) => item.text === firstItemName);
+
     // Create nested object first layer
     if (
       array &&
@@ -20,19 +23,23 @@ const findAllItemChildren = (item, array, fullPath) => {
       splittedNames.shift();
       const joinedNames = splittedNames.join("/");
 
-      array.push({
+      return array.push({
         text: item.split("/")[0],
         children: [findAllItemChildren(joinedNames, array, item)],
       });
     }
-  } else {
-    //It is a children last element
-    return {
+    return array[foundElement].children.push({
       text: path.basename(item, ".md"),
       link: `/${fullPath}`,
       activeMatch: `^/${path.basename(item, ".md")}`,
-    };
+    });
   }
+  //It is a children last element
+  return {
+    text: path.basename(item, ".md"),
+    link: `/${fullPath}`,
+    activeMatch: `^/${path.basename(item, ".md")}`,
+  };
 };
 
 const getSideBarItems = () => {
