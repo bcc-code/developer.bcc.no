@@ -3,9 +3,6 @@ name: "BCC documentation release 🚀"
 on:
   push:
     branches:
-      - main
-    paths:
-      - "/**"
   workflow_dispatch:
 
 jobs:
