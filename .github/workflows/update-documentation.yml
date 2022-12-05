@@ -7,9 +7,10 @@ on:
   workflow_dispatch:
 
 jobs:
-    docs:
+  build:
     runs-on: ubuntu-latest
-    name:  Documentation build and release 🚀
+    name: Documentation build
+
     steps:
       - uses: actions/checkout@v2
         with:
