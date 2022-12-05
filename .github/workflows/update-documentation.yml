@@ -1,10 +1,19 @@
 name: "BCC documentation release 🚀"
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'main'
+
+  on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "/docs/**"
+      - ".github/workflows/update-documentation.yml"
 
 jobs:
   build:
