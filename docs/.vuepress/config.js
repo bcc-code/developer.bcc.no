@@ -10,10 +10,12 @@ const findAllItemChildren = (item, array, fullPath) => {
   if (item.split("/").length >= 2) {
     const firstItemName = item.split("/")[0];
 
-    const foundElement = array.findIndex((item) => item.text === firstItemName);
+    const foundElement = array.findIndex(
+      (item) => item && item.text === firstItemName
+    );
 
     //Differentiate if item contains nested children
-    if (item.split("/").length > 2 && array[foundElement]) {
+    if (item.split("/").length > 2 && array[foundElement] && item) {
       const itemWithoutFolderName = item.split("/").slice(1).join("/");
       return findAllItemChildren(
         itemWithoutFolderName,
@@ -25,18 +27,35 @@ const findAllItemChildren = (item, array, fullPath) => {
     // Create nested object first layer
     if (
       array &&
-      array.findIndex((item) => item.text === firstItemName) === -1
+      array.findIndex((item) => item && item.text === firstItemName) === -1
     ) {
       const splittedNames = item.split("/");
       splittedNames.shift();
       const joinedNames = splittedNames.join("/");
 
+      //If item name is index.md then add it to the parent folder
+      const children = findAllItemChildren(joinedNames, array, fullPath);
+      if (joinedNames === "index.md") {
+        return array.push({
+          text: item.split("/")[0],
+          collapsible: true,
+          link: `/${fullPath}`,
+          children: children ? [children] : [],
+        });
+      }
+
       return array.push({
         text: item.split("/")[0],
         collapsible: true,
-        children: [findAllItemChildren(joinedNames, array, fullPath)],
+        children: children ? [children] : [],
       });
     }
+
+    //item contains string index.md
+    if (item.includes("index.md")) {
+      return (array[foundElement].link = `/${fullPath}`);
+    }
+
     // Push item to its children
     return array[foundElement].children.push({
       text: path.basename(item, ".md"),
@@ -44,6 +63,11 @@ const findAllItemChildren = (item, array, fullPath) => {
       activeMatch: `^/${path.basename(item, ".md")}`,
     });
   }
+
+  if (!item || item.includes("index.md")) {
+    return;
+  }
+
   //It is a children last element
   return {
     text: path.basename(item, ".md"),
@@ -55,8 +79,14 @@ const findAllItemChildren = (item, array, fullPath) => {
 const getSideBarItems = () => {
   const filesPaths = glob.sync(`${__dirname}/../**/*.md`);
   //Get path name from the docs folder
-  var paths = filesPaths.map((file) => {
-    return path.relative(`${__dirname}/..`, file);
+  var paths = filesPaths
+    .map((file) => {
+      return path.relative(`${__dirname}/..`, file);
+    });
+
+  // Sort paths by '/' count
+  paths.sort((a, b) => {
+    return a.split("/").length - b.split("/").length;
   });
 
   const sideBarItems = [];
@@ -74,7 +104,7 @@ const getSideBarItems = () => {
       }
     }
   });
-  return sideBarItems.filter((item) => item !== undefined);
+  return sideBarItems.filter((item) => item);
 };
 
 export default defineUserConfig({
