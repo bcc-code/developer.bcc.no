@@ -20,7 +20,7 @@
     "glob": "^8.0.3",
     "stylus": "^0.59.0",
     "vuepress-plugin-md-enhance": "^2.0.0-beta.130",
-    "vuepress-theme-bcc-common-components": "^1.0.31",
+    "vuepress-theme-bcc-common-components": "^1.0.35",
     "vuepress-theme-hope": "^2.0.0-beta.130"
   }
 }

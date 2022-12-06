@@ -4918,10 +4918,10 @@ vuepress-shared@2.0.0-beta.132:
     vue "^3.2.45"
     vue-router "^4.1.6"
 
-vuepress-theme-bcc-common-components@^1.0.31:
-  version "1.0.31"
-  resolved "https://registry.npmjs.org/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.0.31.tgz"
-  integrity sha512-rfuTtztgNauOJSrgt+shv/kKULzZW7g+XHLqMqrGoZDypp1dEWkU/ntsO1EehOh5ElUS3NE1wDqTn9TtkRJEIA==
+vuepress-theme-bcc-common-components@^1.0.35:
+  version "1.0.35"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.0.35.tgz#ef0046834a04d6d29ae66d6291161e6414c7c8c4"
+  integrity sha512-EC0dh3UYkymkytefIyTBmESkMgcfoLREKMytoUjzVCeRK5uIoe+kNsLxbsM2zG3hdXmF6uzQedGspBH8L+zFhQ==
 
 vuepress-theme-hope@^2.0.0-beta.130:
   version "2.0.0-beta.132"

@@ -79,10 +79,9 @@ const findAllItemChildren = (item, array, fullPath) => {
 const getSideBarItems = () => {
   const filesPaths = glob.sync(`${__dirname}/../**/*.md`);
   //Get path name from the docs folder
-  var paths = filesPaths
-    .map((file) => {
-      return path.relative(`${__dirname}/..`, file);
-    });
+  var paths = filesPaths.map((file) => {
+    return path.relative(`${__dirname}/..`, file);
+  });
 
   // Sort paths by '/' count
   paths.sort((a, b) => {
@@ -117,6 +116,19 @@ export default defineUserConfig({
     logo: "bccLogoDark.png",
     sidebarDepth: 2,
     sidebar: getSideBarItems(),
+    repo: "Kurczak1233/bcc-code.github.io",
+    // if your docs are in a different repo from your main project:
+    docsRepo: "Kurczak1233/bcc-code.github.io",
+    // if your docs are not at the root of the repo:
+    docsDir: "docs",
+    // if your docs are in a specific branch (defaults to 'master'):
+    docsBranch: "master",
+    // defaults to false, set to true to enable
+    editLinks: true,
+    // custom text for edit link. Defaults to "Edit this page"
+    editLinkText: "Edit this page on github",
+    prev: true,
+    next: true,
   }),
   plugins: [
     mdEnhancePlugin({
