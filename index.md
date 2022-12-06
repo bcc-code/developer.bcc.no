@@ -25,4 +25,7 @@ description: Technical documentation and guides for software development in BCC
 * [Logo Assets](https://developer.bcc.no/bcc-design) for organizations in the BCC Federation
 * [PDF Service](https://developer.bcc.no/pdf-service)
 
+## Libraries
+* [Tripletex .Net SDK](https://github.com/bcc-code/tripletex-client-dotnet)
+
 <!-- The table of contents loads here automagically -->
