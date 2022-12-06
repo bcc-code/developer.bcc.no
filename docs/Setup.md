@@ -18,3 +18,4 @@ Setup the package for local development:
 *(REMEMBER THAT THOSE HAVE TO BE USING VuePress 2.0!)
 5. Create config file
 6. Get the public folder and change favicon and the logo.
+7. Write documentation

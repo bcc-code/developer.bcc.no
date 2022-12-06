@@ -1,11 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "@vuepress/utils";
-import autoprefixer from "autoprefixer";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { bccCustomTheme } from "vuepress-theme-bcc-common-components/config.js";
 import glob from "glob";
-// import tailwindcss from 'tailwindcss'
-// import autoprefixer from 'autoprefixer'
 
 const __dirname = getDirname(import.meta.url);
 
@@ -48,7 +45,6 @@ const findAllItemChildren = (item, array, fullPath) => {
     });
   }
   //It is a children last element
-  console.log('%c FullPath', `color: red`, fullPath);
   return {
     text: path.basename(item, ".md"),
     link: `/${fullPath}`,
@@ -98,13 +94,4 @@ export default defineUserConfig({
       codetabs: true,
     }),
   ],
-  // bundlerConfig: {
-  //   viteOptions: {
-  //     css: {
-  //       postcss: {
-  //         plugins: [autoprefixer, tailwind],
-  //       },
-  //     },
-  //   },
-  // },
 });
