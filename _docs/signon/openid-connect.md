@@ -283,8 +283,9 @@ interface LogoutRequestBody {
 ```
 
 2. Verify the logout token
-   1. The token signature can be verified against the auth0 JWKS (https://LOGIN_DOMAIN/.well-known/jwks.json)
-   2. The ```iss``` and ```aud``` values should also be verified (the ```iss``` should contain the login domain, and the ```aud``` should equal to your application ```client_id```)
+   1. The logout token is a [JWT](https://www.rfc-editor.org/rfc/rfc7519)
+   2. The token signature can be verified against the auth0 JWKS (https://LOGIN_DOMAIN/.well-known/jwks.json)
+   3. The ```iss``` and ```aud``` values should also be verified (the ```iss``` should contain the login domain, and the ```aud``` should equal to your application ```client_id```)
 3. Invalidate the session
    1. Use the ```sid```(session id) from the token payload to invalidate/remove the corresponding session
 #### Logout token payload example
