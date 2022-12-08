@@ -15,8 +15,8 @@ description: Technical documentation and guides for software development in BCC
     * [Available claims](#available-claims)
     * [Deprecated claims](#deprecated-claims)
     * [ID_token example](#id_token-example)
-* [Sign sign-out](#single-sign-out)
-    * [Integrate your application with single sign-out](#integrate-your-application-with-single-sign-out)
+* [Single log-out](#single-log-out)
+    * [Integrate your application with single logout](#integrate-your-application-with-single-log-out)
 * [Protect news feed and calendar](#protect-news-feed-and-calendar)
 * [FAQ](#faq)
 
@@ -55,7 +55,7 @@ We encourage all applications to use the BCC topbar, this has the following adva
 
 * The user can go back to the home page (BCC portal)
 * The user can search for all applications related to BCC
-* The user can easily sign-out of all BCC applications.
+* The user can easily logout of all BCC applications.
 
 We would like to improve the functionality of the BCC Topbar, and are interested in feedback/suggestions from you!
 
@@ -201,16 +201,20 @@ Payload:
 
 ---
 
-# Single sign-out
+# Single logout
 
-Single sign-out is the process of logging the user out of all the applications they signed into with single signon (SSO)
-.
+single logout is the process of logging the user out of all the applications they signed into with single signon (SSO).
 
-## Integrate your application with single sign-out
+Single signout flow consists of 3 steps:
+1. Local logout
+2. Central logout
+3. Backchannel logout through a webhook
 
-This tutorial will explain you how to integrate your application with single sign-out.
+## Integrate your application with single logout
 
-### Requirements
+This tutorial will explain you how to integrate your application with single logout.
+
+## Requirements
 
 HTTPS (SSL) must be installed on your application!
 
@@ -218,66 +222,99 @@ HTTPS (SSL) must be installed on your application!
   e.g. [Let’s Encrypt](https://letsencrypt.org/))
 * Please contact support if you have any questions regarding SSL certificates.
 
-**WordPress applications that have the ``BCC Signon`` plugin installed should not follow this tutorial (single sign-out
+**WordPress applications that have the ``BCC Signon`` plugin installed should not follow this tutorial (single logout
 is included in the plugin).**
 
-### 1. Determine the ‘endsession’ path of your application
 
-This is the path (part of the URL) that clears the session of the user (e.g. /account/endsession).
+## Local logout
 
-Check the documentation of your plugin to get the correct sign-out path:
+### SPA
+
+Create a page in your app that will clear the user session.
+In SPAs the session is usually stored in localStorage, sessionStorage or in-memory
+
+### Regular web app
+
+#### 1. Create the ‘endsession’ endpoint in your application
+
+This is the endpoint that clears the session of the user (e.g. /account/endsession).
+
+The endpoint needs to delete the session cookie of the user, and if the session was stored in a session store remove it from there as well.
+
+If you are using ASP.NET you can check our documentation here:
 
 * [ASP.NET Core](/_docs/BCC%20Signon/ASP.NET%20Core#add-account-controller)
-* [ASP.NET](/_docs/BCC%20Signon/ASP.NET#add-account-controller)
+* [ASP.NET](/_docs/BCC%20Signon/ASP.NET#add-account-controller)\
 
-### 2.Create sign-out page for BCC widgets.
+### Topbar setup
 
-BCC Widgets uses the LocalStorage of your application to store (and cache) values. The storage of BCC widgets can be
-cleared by loading the following HTML page:
+If you're using the topbar as the UI for the logout, you need to register your logout-url there.
+The logout-url is registered using the ```data-logout-url``` attribute when registering the topbar widget
+[Topbar Widget](/_products/bcc-widgets/topbar-widget.md)
 
-````html
-<!DOCTYPE html>
+#### 2. Redirect the user to the endsession endpoint
 
-<html>
-<head>
-    <title>signout</title>
-</head>
-<body>
+## Central logout
 
-<div>
-    <script src="https://widgets.bcc.no/widgets/signoutjs"></script>
-    <script>
-        window.location = "path to end session (from step 1)"
-    </script>
-</div>
-</body>
-</html>
-````
+### 1. Redirect the user to the central logout endpoint
 
-**NOTE**: Please add the header ‘Content-Security-Policy: frame-ancestors https://*.bcc.no’ to this page, since it will
-be loaded in an iframe.
+The logout endpoint is: https://LOGIN_DOMAIN/v2/logout
+In production environment that would be https://login.bcc.no/v2/logout
 
-### 3.Add script reference to your application.
+## Backchannel logout
 
-Include the following script in your application (this script should be loaded on all protected pages)
+Backchannel logout is triggerd for all applications (that have registered it) after a user logs out centrally.
 
-````html
+The backchannel logout is only availible for applications that have a backend that is storing the user sessions in a persistent storage (as opoposed to storing the session inside a cookie), so it can be invalidated
 
-<script type="text/javascript" src="https://auth.bcc.no/signout/js" signout-path="SIGNOUTPATH">
+### Backchannel logout architecture
+![image](logout-architecture.png)
 
-</script>
-````
+### 1. Create the logout endpoint in your backend
 
-Replace ``SIGNOUTPATH`` with the path to the created page of step 2 (e.g. /account/signout).
+The endpoint has to do the following thigs:
+1. Accept a following request from auth0
+   1. Method: POST
+   2. Body contains an url-encoded object:
+```ts
+interface LogoutRequestBody {
+    logout_token: string;
+}
+```
 
-#### 4. Test your setup
+2. Verify the logout token
+   1. The token signature can be verified against the auth0 JWKS (https://LOGIN_DOMAIN/.well-known/jwks.json)
+   2. The ```iss``` and ```aud``` values should also be verified (the ```iss``` should contain the login domain, and the ```aud``` should equal to your application ```client_id```)
+3. Invalidate the session
+   1. Use the ```sid```(session id) from the token payload to invalidate/remove the corresponding session
+#### Logout token payload example
+```json
+{
+  "iss": "https://login.bcc.no/",
+  "sub": "auth0|62b30b0908dcafbc2fda40a",
+  "aud": "hPK4PRnpFkY5MmuoJZa31sNldB0Mprei",
+  "iat": 1670000000,
+  "jti": "3adae621-4423-4a22-ba4a-612beca52ede",
+  "events": {
+    "http://schemas.openid.net/event/backchannel-logout": {}
+  },
+  "trace_id": "7764a3031fe0bbda",
+  "sid": "EKIRPdag3PtbAQRfG2BptNi5UThMi5AZl"
+}
+```
 
-To verify that you correctly configured single sign-out, please open a new incognito browser, and follow the following
+### 2. Register the logout endpoint for your application in auth0
+
+To register the logout endpoint contact [support](mailto:it@bcc.no), providing the url of your logout endpoint
+
+## Test your setup
+
+To verify that you correctly configured single logout, please open a new incognito browser, and follow the following
 steps:
 
 * Sign in to your application
 * Click on the “Sign out” button on the BCC topbar.
-    * You should be redirected to the login screen after the sign-out process completed.
+    * You should be redirected to the login screen after the logout process completed.
 * Navigate back to your application
     * You should be required to sign in again with BCC signon.
 
