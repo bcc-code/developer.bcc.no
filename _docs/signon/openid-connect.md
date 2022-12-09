@@ -222,7 +222,7 @@ HTTPS (SSL) must be installed on your application!
   e.g. [Let’s Encrypt](https://letsencrypt.org/))
 * Please contact support if you have any questions regarding SSL certificates.
 
-**WordPress applications that have the ``BCC Signon`` plugin installed should not follow this tutorial (single logout
+**WordPress applications that have the [BCC LOGIN](https://github.com/bcc-code/bcc-wp/releases) plugin installed should not follow this tutorial (single logout
 is included in the plugin).**
 
 
@@ -266,6 +266,9 @@ In production environment that would be https://login.bcc.no/v2/logout
 Backchannel logout is triggerd for all applications (that have registered it) after a user logs out centrally.
 
 The backchannel logout is only availible for applications that have a backend that is storing the user sessions in a persistent storage (as opoposed to storing the session inside a cookie), so it can be invalidated
+
+### Backchannel logout OIDC specification
+https://openid.net/specs/openid-connect-backchannel-1_0.html
 
 ### Backchannel logout architecture
 ![image](logout-architecture.png)
