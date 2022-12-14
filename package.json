@@ -2,6 +2,7 @@
   "docs:dev": "vuepress dev docs",
   "docs:build": "vuepress build docs",
   "devDependencies": {
+    "tailwindcss": "^3.2.4",
     "vuepress": "^2.0.0-beta.53"
   },
   "scripts": {
@@ -17,10 +18,9 @@
   "module": "./dist/components.es.js",
   "dependencies": {
     "@vuepress/plugin-register-components": "^2.0.0-beta.53",
-    "glob": "^8.0.3",
     "stylus": "^0.59.0",
     "vuepress-plugin-md-enhance": "^2.0.0-beta.130",
-    "vuepress-theme-bcc-common-components": "^1.0.35",
+    "vuepress-theme-bcc-common-components": "^1.2.33",
     "vuepress-theme-hope": "^2.0.0-beta.130"
   }
 }
