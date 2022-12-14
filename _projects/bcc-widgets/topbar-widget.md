@@ -29,7 +29,7 @@ Include the following just after <body>:
 ````html
 <!-- topbar widget -->
 <script id="script-bcc-topbar" data-authentication-type="TYPE" data-authentication-location="LOCATION"
-        src="https://widgets.bcc.no/widgets/TopbarJs" data-app-title="" data-app-url="" data-logout-url="LOGOUT_URL"></script>
+        src="https://widgets.bcc.no/widgets/TopbarJs" data-app-title="" data-app-url=""></script>
 <!-- end topbar widget -->
 ````
 
@@ -41,3 +41,5 @@ website you want to point to. That can, for example, be:
 ## Configuration:
 
 Please check the [widgets authentication](../widget-authentication/).
+
+ 
