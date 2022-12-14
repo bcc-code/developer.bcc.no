@@ -5080,10 +5080,10 @@ vuepress-shared@2.0.0-beta.132:
     vue "^3.2.45"
     vue-router "^4.1.6"
 
-vuepress-theme-bcc-common-components@^1.2.33:
-  version "1.2.33"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.2.33.tgz#ab7e6b609df3ce2fc57f7fdc946ce380ec6211d9"
-  integrity sha512-BC5tFIT3p58zz6DWik3OS7ibsYur4B6Hxj2iUBLUhiTIHqqr0Pi2DJfKGu7CqS6ZbTb6JISMOj/81eInWhji4Q==
+vuepress-theme-bcc-common-components@^1.3.10:
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.3.10.tgz#cb6edd3c5825a077d9633977e67d511d71e21804"
+  integrity sha512-wZQWOaaFQIPvTbAtLpN+Dc67L68iXU2cAH/gDOF2VGwpW5ls+Ky8NamytRIboCCKmFjcfxBZi4/32NIpB+Tztw==
   dependencies:
     flowbite "^1.5.4"
     globby "^13.1.2"
