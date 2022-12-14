@@ -29,7 +29,7 @@ Include the following just after <body>:
 ````html
 <!-- topbar widget -->
 <script id="script-bcc-topbar" data-authentication-type="TYPE" data-authentication-location="LOCATION"
-        src="https://widgets.bcc.no/widgets/TopbarJs" data-app-title="" data-app-url=""></script>
+        src="https://widgets.bcc.no/widgets/TopbarJs" data-app-title="" data-app-url="" data-logout-url="LOGOUT_URL"></script>
 <!-- end topbar widget -->
 ````
 
