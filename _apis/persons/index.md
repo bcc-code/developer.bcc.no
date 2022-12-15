@@ -3,28 +3,70 @@ title: Persons API
 ---
 
 # Menu
+- [Menu](#menu)
+- [Overview](#overview)
 - [Getting Started](#getting-started)
-- [Authorization](#auth)
-- [API Explorer Here](https://api.bcc.no/docs/?urls.primaryName=Persons%20documentation)
-- [Examples (Comming...)](#examples)
+  - [Use an SDK if available](#use-an-sdk-if-available)
+  - [Get an access token](#get-an-access-token)
+  - [Use the token to get data from the API](#use-the-token-to-get-data-from-the-api)
+    - [Example in cURL](#example-in-curl)
+    - [Example response](#example-response)
+- [User Consent](#user-consent)
+- [SDKs](#sdks)
+- [Scopes](#scopes)
 
+# Overview
+- This API is the official source of personal data for Machine-To-Machine applications in BCC.
+- If you're creating a third party application, you will need to get user's consent in order to get access to their data
 
 # Getting Started
-## Overview
-- BCC supports a sandbox environment. This is an environment that is identical to production with the only difference being that it contains fictitious data. 
-- You probable wants to start developing your app or integration on top of BCC's API's. The easiest way to get access to the BCC environment is to first request access to the sandbox environment. This will allow you quick access. While development is in progress you can in parallel request access to the production environment.
-## Get access to sandbox environment
-1. Write a email to [it@bcc.no](mailto:it@bcc.no), your email should include the following information.
-    * Name for you applications
-    * Scopes you would like to get access to (link coming soon...)
-    * Reason for wanting access
-2. BCC IT will respond to your request with OAuth2 Client Credentials to BCC's sandbox environment.
 
-## Get access to production environment
-1. Request that your app gets added to production environment.
+## Use an SDK if available
+You can find available SDKs [here](#sdks)
 
-# Auth
-BCC support OAuth2 for authorization to our APIs. To see a list of scopes that we currently support will be coming soon.
+## Get an access token
+The process is described in [APIs page](../index.md)
 
-# Examples (Coming soon...)
+## Use the token to get data from the API
 
+### Example in cURL
+```sh
+curl --request GET \
+  --url $API_ORIGIN/persons/1 \
+  --header 'Authorization: Bearer $ACCESS_TOKEN' \
+```
+
+### Example response
+```json
+{
+    "data":{
+        "age":30,
+        "birthDate":"1990-01-01",
+        "displayName":"John Doe",
+        "firstName":"John",
+        "lastChangedDate":"2019-12-09T00:18:18.615Z",
+        "lastName":"Doe",
+        "middleName":"",
+        "personID":1
+    }
+}
+```
+
+# User Consent
+
+If the application is managed by a third party, upon receiving access to the API, users will be able to give their consent to the app.
+
+Consent settings for each user are available [here](https://members.bcc.no/profile/settings), under the "Sharing personal details with third parties" section.
+
+# SDKs
+
+There are SDKs availibie for the following languages:
+1. [Dotnet](sdk-dotnet.md)
+
+With planned support for:
+1. Typescript/Javascript
+2. Go
+
+# Scopes
+
+Scope descriptions are available [here](scopes.md)
