@@ -7,19 +7,54 @@ description: Technical documentation and guides for software development in BCC
 
 ---
 
-* [Getting Started](#getting-started)
-    * [Our Strategy](#our-strategy)
-    * [Supported Languages and CMS](#supported-languages-and-cms)
-    * [Using SignOn with other languages/CMS’s](#using-signon-with-other-languagescmss)
-* [Get information about the user](#get-information-about-the-user)
-    * [Available claims](#available-claims)
-    * [Deprecated claims](#deprecated-claims)
-    * [ID_token example](#id_token-example)
-* [Single log-out](#single-log-out)
-    * [Integrate your application with single logout](#integrate-your-application-with-single-log-out)
-* [Protect news feed and calendar](#protect-news-feed-and-calendar)
-* [FAQ](#faq)
+- [Getting started](#getting-started)
+  - [Our Strategy](#our-strategy)
+    - [Requirements](#requirements)
+    - [1. HTTPS(SSL)](#1-httpsssl)
+    - [2. BCC Topbar](#2-bcc-topbar)
+  - [Supported Languages and CMS](#supported-languages-and-cms)
+    - [Supported Languages and CMS](#supported-languages-and-cms-1)
+  - [Using SignOn with other languages/CMS's](#using-signon-with-other-languagescmss)
+    - [Authentication Endpoints](#authentication-endpoints)
+- [Get information about the user](#get-information-about-the-user)
+  - [How to request claims](#how-to-request-claims)
+    - [Articles](#articles)
+  - [Available claims](#available-claims)
+    - [Standard OpenID Connect claims](#standard-openid-connect-claims)
+    - [Additional claims of BCC Signon](#additional-claims-of-bcc-signon)
+    - [_‘openid’_ scope](#openid-scope)
+    - [_‘church’_ scope](#church-scope)
+    - [_‘country’_ scope](#country-scope)
+  - [Deprecated claims](#deprecated-claims)
+    - [_‘deprecatedSignonUsername’_ scope](#deprecatedsignonusername-scope)
+  - [id\_token example](#id_token-example)
+- [Single logout](#single-logout)
+  - [Integrate your application with single logout](#integrate-your-application-with-single-logout)
+  - [Requirements](#requirements-1)
+  - [Local logout](#local-logout)
+    - [SPA](#spa)
+    - [Regular web app](#regular-web-app)
+      - [1. Create the ‘endsession’ endpoint in your application](#1-create-the-endsession-endpoint-in-your-application)
+    - [Topbar setup](#topbar-setup)
+      - [2. Redirect the user to the endsession endpoint](#2-redirect-the-user-to-the-endsession-endpoint)
+  - [Central logout](#central-logout)
+    - [1. Redirect the user to the central logout endpoint](#1-redirect-the-user-to-the-central-logout-endpoint)
+  - [Backchannel logout](#backchannel-logout)
+    - [Backchannel logout OIDC specification](#backchannel-logout-oidc-specification)
+    - [Backchannel logout architecture](#backchannel-logout-architecture)
+    - [1. Create the logout endpoint in your backend](#1-create-the-logout-endpoint-in-your-backend)
+      - [Logout token payload example](#logout-token-payload-example)
+    - [2. Register the logout endpoint for your application in auth0](#2-register-the-logout-endpoint-for-your-application-in-auth0)
+  - [Test your setup](#test-your-setup)
+- [Protect news feed and calendar](#protect-news-feed-and-calendar)
+- [FAQ](#faq)
+    - [What's my Redirect URI?](#whats-my-redirect-uri)
+      - [Wordpress:](#wordpress)
+      - [ASP.net:](#aspnet)
+    - [Where can I find my Client ID and Client Secret?](#where-can-i-find-my-client-id-and-client-secret)
+    - [I get redirected to a page that says 'Sorry, an error occurred':](#i-get-redirected-to-a-page-that-says-sorry-an-error-occurred)
 
+  
 # Getting started
 
 Welcome to the section dedicated to our login system.
@@ -102,11 +137,11 @@ such as name or email address) about the user.
 Claims can be requested via the scope parameter in the authentication request to BCC Signon. The claims will be present
 in the response of the authentication request.
 
-### &nbsp;&nbsp;&nbsp; Articles
+### Articles
 
-&nbsp;&nbsp;&nbsp; [Available claims](#available-claims)
-&nbsp;&nbsp;&nbsp; [Deprecated claims](#deprecated-claims)
-&nbsp;&nbsp;&nbsp; [ID_token example](#id_token-example)
+[Available claims](#available-claims)
+[Deprecated claims](#deprecated-claims)
+[ID_token example](#id_token-example)
 
 ## Available claims
 
