@@ -1,4 +1,4 @@
-﻿---
+---
 title: BCC SignOn - ASP.NET
 description: Technical documentation and guides for software development in BCC
 ---
@@ -7,16 +7,20 @@ description: Technical documentation and guides for software development in BCC
 
 ---
 
-* [Getting Started](#getting-started)
-    * [Limitations](#limitations)
-    * [Read more](#read-more)
-* [Install nuget packages](#install-nuget-packages)
-* [Edit configuration file](#edit-configuration-file)
-    * [Get your client IDs](#get-your-client-ids)
-    * [Set Callback URLs](#get-your-client-ids)
-* [OpenID Connect configuration](#openid-connect-configuration)
-* [Add Account controller](#add-account-controller)
-* [Force login to enter the website](#force-login-to-enter-the-website)
+- [Getting started](#getting-started)
+  - [Limitations](#limitations)
+  - [Read More](#read-more)
+- [Install nuget packages](#install-nuget-packages)
+- [Edit configuration file](#edit-configuration-file)
+  - [Get your client IDs](#get-your-client-ids)
+  - [Set Callback URLs](#set-callback-urls)
+- [OpenID Connect configuration](#openid-connect-configuration)
+  - [Auth0 Parameters](#auth0-parameters)
+  - [Enable Cookie Authentication](#enable-cookie-authentication)
+  - [Auth0 Configuration](#auth0-configuration)
+- [Add Account Controller](#add-account-controller)
+    - [Single Sign-out](#single-sign-out)
+- [Force login to enter the website](#force-login-to-enter-the-website)
 
 # Getting started
 
