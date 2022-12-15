@@ -12,6 +12,7 @@ description: Technical documentation and guides for software development in BCC
     - [Production](#production)
 - [Getting Started](#getting-started)
   - [Request access](#request-access)
+    - [Write a email to it@bcc.no](#write-a-email-to-itbccno)
   - [Generate a token](#generate-a-token)
     - [Example in cURL](#example-in-curl)
     - [Example response](#example-response)
@@ -46,13 +47,18 @@ API_AUDIENCE="api.bcc.no"
 # Getting Started
 
 ## Request access 
-We recommend first using the sandbox for local development, and only getting the production access when releasing the product
-   1. Write a email to [it@bcc.no](mailto:it@bcc.no), your email should include the following information.
-       * The environment to which you need access
-       * Name for your application
-       * Scopes you need access to, with a reason for each scope
-       * Link to the privacy policy (if the application is third party)
-   2. BCC IT will respond to your request with OAuth2 ```CLIENT_ID``` and ```CLIENT_SECRET``` of the application with access to the requested environment.
+We recommend first using the sandbox for local development, and only getting the production access when releasing to production
+
+### Write a email to [it@bcc.no](mailto:it@bcc.no)
+
+Your email should include the following information:
+
+1. The environment to which you need access
+2. Name for your application
+3. Scopes you need access to, with a reason for each scope
+4. Link to the privacy policy (if the application is third party)
+
+BCC IT will create an application with the requested permissions and respond with it's OAuth2 ```CLIENT_ID``` and ```CLIENT_SECRET```
 
 ## Generate a token
 
