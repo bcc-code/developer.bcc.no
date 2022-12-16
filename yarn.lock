@@ -5088,6 +5088,15 @@ vuepress-theme-bcc-common-components@^1.3.10:
     flowbite "^1.5.4"
     globby "^13.1.2"
 
+vuepress-theme-bcc-common-components@^1.3.18:
+  version "1.3.18"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.3.18.tgz#c758b99ce0bf91b4f104c4f66bf94c29a21c539e"
+  integrity sha512-wUTnhN8GYD9uq0NWt51lnDfaiUHV7hK066ndRciS6iCEtkDrh3hCW9KnNvJ0pVSmQrxFldrM4xJkMHPn93db+Q==
+  dependencies:
+    flowbite "^1.5.4"
+    globby "^13.1.2"
+    vuepress-theme-bcc-common-components "^1.3.10"
+
 vuepress-theme-hope@^2.0.0-beta.130:
   version "2.0.0-beta.132"
   resolved "https://registry.npmjs.org/vuepress-theme-hope/-/vuepress-theme-hope-2.0.0-beta.132.tgz"
