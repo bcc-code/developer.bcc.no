@@ -1,4 +1,5 @@
 ﻿---
+home: true
 title: BCC Developer Portal
 description: Technical documentation and guides for software development in BCC
 ---

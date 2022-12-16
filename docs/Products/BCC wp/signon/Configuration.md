@@ -238,4 +238,4 @@ contact [support](it@bcc.no?subject=Support%Developer%BCC).
 
 ---
 
-Next: [Plugin Customization →](customization)
+Next: [Plugin Customization →](./Customization.md)

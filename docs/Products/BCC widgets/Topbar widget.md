@@ -40,6 +40,6 @@ website you want to point to. That can, for example, be:
 
 ## Configuration:
 
-Please check the [widgets authentication](https://developer.bcc.no/products/bcc-widgets/widget-authentication).
+Please check the [widgets authentication](./Widget%20Authentication.md).
 
  

@@ -23,7 +23,7 @@ user.
 
 ## Installation
 
-1. Download the latest version of [BCC Signon Plugin](/plugins/bcc-signon.zip)
+1. Download the latest version of [BCC Signon Plugin](https://developer.bcc.no/plugins/bcc-signon.zip)
 2. Login to the admin panel of WordPress
 3. Navigate to **Plugins** → **Add New** → **Upload Plugin**, and find the downloaded file bcc-signon.zip. Install the
    plugin.
@@ -41,4 +41,4 @@ That’s it! Now you can use this user to access the administration dashboard, w
 
 ---
 
-Next: [Plugin Configuration →](configuration)
+Next: [Plugin Configuration →](./Configuration.md)

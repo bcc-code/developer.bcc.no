@@ -19,4 +19,4 @@ existing WordPress user or remove the WordPress user. After that you should no l
 
 ---
 
-Next: [Home](index)
+Next: [Home](./index.md)

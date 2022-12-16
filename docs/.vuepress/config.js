@@ -2,11 +2,10 @@ import { defineUserConfig } from "vuepress";
 import { getDirname } from "@vuepress/utils";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { bccCustomTheme } from "vuepress-theme-bcc-common-components/config.js";
-import { findPathIcons } from 'vuepress-theme-bcc-common-components/helpers/findPathIcons.js'
-import { getSideBarItems } from 'vuepress-theme-bcc-common-components/helpers/getSidebarItems.js'
+import { findPathIcons } from "vuepress-theme-bcc-common-components/helpers/findPathIcons.js";
+import { getSideBarItems } from "vuepress-theme-bcc-common-components/helpers/getSidebarItems.js";
 
 const __dirname = getDirname(import.meta.url);
-
 export default defineUserConfig({
   lang: "en-US",
   title: "BCC Developer Documentation",
@@ -15,9 +14,18 @@ export default defineUserConfig({
   theme: bccCustomTheme({
     logoDark: "bccLogoWhite.png",
     logo: "bccLogoDark.png",
-    sidebarDepth: 2,
     sidebar: getSideBarItems(__dirname),
     icons: findPathIcons(__dirname),
+    navbar: [
+      {
+        text: "Setup",
+        link: "/Setup.md",
+      },
+      {
+        text: "Apis",
+        link: "/Apis/Persons API.md",
+      },
+    ],
     repo: "Kurczak1233/bcc-code.github.io",
     // if your docs are in a different repo from your main project:
     docsRepo: "Kurczak1233/bcc-code.github.io",

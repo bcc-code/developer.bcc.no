@@ -6,11 +6,11 @@ title: Data Structures
 This section describe `person` object and how it relates to scopes.
 
 ## Menu
-- [Home](index)
-- [API integration](api-integration)
-- [Webhooks integration](webhooks)
-- [Data Structures and Scopes](data-structures-and-scopes)
-- [Single Sign Out](single-sign-out)
+- [Home](./index.md)
+- [API integration](./Api%20Integration.md)
+- [Webhooks integration](./Webhooks.md)
+- [Data Structures and Scopes](./Data%20Structures%20And%20Scopes.md)
+- [Single Sign Out](./Single%20Sign%20Out.md)
 
 ## This Document
 - [Menu](#menu)
@@ -41,7 +41,7 @@ Currently Members supports the following scopes. (_To understand the concept of 
 - [`members.read_family - deprecated`](#membersread_family)
 - [`members.read_orgs`](#membersread_orgs)
 
-Once you have the "Technical Administrator" role ([See Getting Started](index)) you will be able to log in to members and apply for these scopes for your application. See [API integration](api-integration) it shows the navigation to your application.
+Once you have the "Technical Administrator" role ([See Getting Started](./index)) you will be able to log in to members and apply for these scopes for your application. See [API integration](./Api%20Integration.md) it shows the navigation to your application.
 
 ## Data Structures
 Currently these scopes are all related to the `person` object and maps to the person fields as follows...

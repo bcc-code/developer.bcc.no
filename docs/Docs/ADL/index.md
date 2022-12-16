@@ -19,12 +19,12 @@ Each ADR consists of following sections:
 
 ## Index
 
-* [01-architecture-for-services-releated-to-members](01-architecture-for-services-releated-to-members)
-* [02-approach-to-microservice-architecture](02-approach-to-microservice-architecture)  
-* [03-approach-to-application-hosting-infrastructure](#)
-* [04-language-solution](04-language-for-core-apis)  
-* [05-database-technology](05-database-technology)
-* [06-cloud-provider](#)
-* [07-approach-to-testing](#)
-* [08-api-gateway-solution](#)
-* [09-api-documentation-solution](#)
+* [01 Architecture for services releated to members](./Services%20Related%20To%20Members.md)
+* [02 Approach to microservice architecture](./Microservice%20API%20Architecture.md)  
+* [03 Approach to application hosting infrastructure](#)
+* [04 Language solution](./Language%20for%20Core%20APIs.md)  
+* [05 Database technology](./ADR%20Database%20Technology.md)
+* [06 Cloud provider](#)
+* [07 Approach to testing](#)
+* [08 Api gateway solution](#)
+* [09 Api documentation solution](#)

@@ -5,8 +5,8 @@ description: Technical documentation and guides for software development in BCC
 
 ## BCC SignOn
 
-* [ASP.net](./asp_net.md)
-* [ASP.net Core](./asp_net-core.md)
-* [Legacy SignOn](./legacy-discontinued.md)
-* [OpenID Connect](./openid-connect.md)
-* [Wordpress](./wordpress.md)
+* [ASP.NET](./ASP.NET.md)
+* [ASP.NET Core](./ASP.NET%20Core.md)
+* [Legacy SignOn](./Legacy%20Discontinued.md)
+* [OpenID Connect](./Openid%20Connect.md)
+* [Wordpress](./Wordpress.md)

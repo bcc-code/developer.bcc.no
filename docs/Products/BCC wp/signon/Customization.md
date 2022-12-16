@@ -25,7 +25,7 @@ WordPress actions are generic events that other plugins can react to. You’ll p
 when hooking into this plugin ([official documentation](https://github.com/oidc-wp/openid-connect-generic#actions)).
 
 You can use the openid-connect-generic-update-user-using-current-claim action to add WordPress roles to the user, based
-on [signon claims](getting-user-information.md).
+on [signon claims](./Getting%20User%20Information.md).
 
 ## User Meta Data
 
@@ -33,4 +33,4 @@ This plugin stores meta data about the user for both practical and debugging pur
 
 ---
 
-Next: [Getting User Information →](getting-user-information)
+Next: [Getting User Information →](./Getting%20User%20Information.md)

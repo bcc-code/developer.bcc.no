@@ -5,14 +5,14 @@ title: Api Integration
 # API Integration
 **_NB. We recommend that you use [webhooks](webhooks.md) to keep your system up to date with the Members data, as this will relieve the load from the API. But you are still welcome to use the API_**
 ## Menu
-- [Home](index)
-- [API integration](api-integration)
-- [Webhooks integration](webhooks)
-- [Data Structures and Scopes](data-structures-and-scopes)
-- [Single Sign Out](single-sign-out)
+- [Home](./index.md)
+- [API integration](./Api%20Integration.md)
+- [Webhooks integration](./Webhooks.md)
+- [Data Structures and Scopes](./Data%20Structures%20And%20Scopes.md)
+- [Single Sign Out](./Single%20Sign%20Out.md)
 
 ## Integrating with the Members API
-Please read the [Getting Started](index.md) section before going through this page. Once scopes have been approved for your client (application) you can integrate with the members api.
+Please read the [Getting Started](./index.md) section before going through this page. Once scopes have been approved for your client (application) you can integrate with the members api.
  
 ## Authentication and Authorization to the API
 It is currently only possible to get access to the API via an API Key. OAuth2 support will come soon.

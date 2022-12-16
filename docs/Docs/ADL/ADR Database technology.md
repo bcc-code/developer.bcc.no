@@ -3,7 +3,7 @@ title:
 description:
 ---
 
-Before you write, please be familiar with description of [ADL](https://bcc-code.github.io/docs/ADL/)
+Before you write, please be familiar with description of [ADL](index.md)
  # Context 
  - architectural drivers, business cases
  

@@ -3,11 +3,6 @@ title: Guiding Principals and Objectives
 description: Checklist for BCC development projects
 ---
 
-{:.no_toc}
-
-1. Table of Contents
-{:toc}
-
 ## Introduction
 
 The purpose of this document is to provide guidence in what to prioritize and why when making architectural decisions and/or planning development projects. When designing a new system architecture, developers should address (have a plan for) each of the points in the checklist below *before* development commences.
