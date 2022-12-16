@@ -5,6 +5,7 @@ import { bccCustomTheme } from "vuepress-theme-bcc-common-components/config.js";
 import { findPathIcons } from "vuepress-theme-bcc-common-components/helpers/findPathIcons.js";
 import { getSideBarItems } from "vuepress-theme-bcc-common-components/helpers/getSidebarItems.js";
 
+
 const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   lang: "en-US",
