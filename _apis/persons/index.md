@@ -25,7 +25,7 @@ title: Persons API
 You can find available SDKs [here](#sdks)
 
 ## Get an access token
-The process is described in [APIs page](../index.md)
+The process is described in [APIs page](../index)
 
 ## Use the token to get data from the API
 
@@ -61,7 +61,7 @@ Consent settings for each user are available [here](https://members.bcc.no/profi
 # SDKs
 
 There are SDKs availibie for the following languages:
-1. [Dotnet](sdk-dotnet.md)
+1. [Dotnet](sdk-dotnet)
 
 With planned support for:
 1. Typescript/Javascript
@@ -69,4 +69,4 @@ With planned support for:
 
 # Scopes
 
-Scope descriptions are available [here](scopes.md)
+Scope descriptions are available [here](scopes)
