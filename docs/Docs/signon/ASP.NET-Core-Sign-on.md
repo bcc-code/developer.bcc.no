@@ -1,4 +1,4 @@
-﻿---
+---
 title: BCC SignOn - ASP.NET Core 
 description: Technical documentation and guides for software development in BCC
 ---
@@ -7,15 +7,19 @@ description: Technical documentation and guides for software development in BCC
 
 ---
 
-* [Getting Started](#getting-started)
-    * [Limitations](#limitations)
-    * [Read more](#read-more)
-* [Install nuget packages](#install-nuget-packages)
-* [Edit configuration file](#edit-configuration-file)
-    * [Get your application credentials](#get-your-application-credentials)
-* [OpenID Connect configuration](#openid-connect-configuration)
-* [Add Account controller](#add-account-controller)
-* [Force login to enter the website](#force-login-to-enter-the-website)
+- [Getting started](#getting-started)
+  - [Limitations](#limitations)
+  - [Read More](#read-more)
+- [Install nuget packages](#install-nuget-packages)
+- [Edit configuration file](#edit-configuration-file)
+  - [Get your application credentials](#get-your-application-credentials)
+- [OpenID Connect configuration](#openid-connect-configuration)
+  - [Warning: make sure that you have updated the configuration file. Don’t expect the solution to work otherwise.](#warning-make-sure-that-you-have-updated-the-configuration-file-dont-expect-the-solution-to-work-otherwise)
+  - [Register callbackURL](#register-callbackurl)
+        - [Before continuing, please send your callback URLs to \[support\](mailto:it@bcc.no?subject=Support Developer BCC) so Auth0 can be configured with your website](#before-continuing-please-send-your-callback-urls-to-supportmailtoitbccnosubjectsupport-developer-bcc-so-auth0-can-be-configured-with-your-website)
+- [Add Account controller](#add-account-controller)
+    - [Single Signout](#single-signout)
+- [Force login to enter the website](#force-login-to-enter-the-website)
 
 # Getting started
 
