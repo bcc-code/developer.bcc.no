@@ -25,7 +25,7 @@ export default defineUserConfig({
       },
       {
         text: "Apis",
-        link: "/Apis/Persons API.md",
+        link: "/Apis/Persons-API.md",
       },
     ],
     repo: "Kurczak1233/bcc-code.github.io",
