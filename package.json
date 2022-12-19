@@ -19,7 +19,7 @@
   "dependencies": {
     "stylus": "^0.59.0",
     "vuepress-plugin-md-enhance": "^2.0.0-beta.130",
-    "vuepress-theme-bcc-common-components": "^1.4.29",
+    "vuepress-theme-bcc-common-components": "^1.4.31",
     "vuepress-theme-hope": "^2.0.0-beta.130"
   }
 }

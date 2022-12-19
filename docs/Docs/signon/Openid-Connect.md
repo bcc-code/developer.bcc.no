@@ -243,14 +243,14 @@ The endpoint needs to delete the session cookie of the user, and if the session 
 
 If you are using ASP.NET you can check our documentation here:
 
-* [ASP.NET Core](/_docs/BCC%20Signon/ASP.NET%20Core#add-account-controller)
-* [ASP.NET](/_docs/BCC%20Signon/ASP.NET#add-account-controller)\
+* [ASP.NET Core](../../Docs/Signon/ASP.NET-Core-Sign-on.md#add-account-controller)
+* [ASP.NET](../../Docs/Signon/ASP.NET-Sign-on.md#add-account-controller)\
 
 ### Topbar setup
 
 If you're using the topbar as the UI for the logout, you need to register your logout-url there.
 The logout-url is registered using the ```data-logout-url``` attribute when registering the topbar widget
-[Topbar Widget](/_products/bcc-widgets/topbar-widget.md)
+[Topbar Widget](../../Products/BCC-Widgets/Topbar-Widget.md)
 
 #### 2. Redirect the user to the endsession endpoint
 

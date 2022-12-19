@@ -8,10 +8,10 @@ The Members System support webhooks. You can register your webhook in the UI or 
 
 ## Menu
 - [Home](./index.md)
-- [API integration](./Api%20Integration.md)
+- [API integration](./Api-Integration.md)
 - [Webhooks integration](./Webhooks.md)
-- [Data Structures and Scopes](./Data%20Structures%20And%20Scopes.md)
-- [Single Sign Out](./Single%20Sign%20Out.md)
+- [Data Structures and Scopes](./Data-Structures-And-Scopes.md)
+- [Single Sign Out](./Single-Sign-Out.md)
 
 ## Webhook functionality (UI and API)
 
@@ -150,7 +150,7 @@ Following is an example of message issued by Members Webhook:
 }
 ```
 
-where `message.data` is an array and `updatedPersonScopedData` is PersonDetails entity with removed properties according to scopes approved. PersonDetails schema can be found in [Data Structures and Scopes](./Data%20Structures%20And%20Scopes.md)
+where `message.data` is an array and `updatedPersonScopedData` is PersonDetails entity with removed properties according to scopes approved. PersonDetails schema can be found in [Data Structures and Scopes](./Data-Structures-And-Scopes.md)
 
 ### Order of operation while receiving message
 1. Decode message data from Base64 to plain string.

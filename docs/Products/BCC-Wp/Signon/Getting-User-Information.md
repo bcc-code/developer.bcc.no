@@ -23,4 +23,4 @@ Where ``ClaimName`` is the name of the claim. All the available claims are docum
 
 ---
 
-Next: [How SSO data is handled →](./Sso%20Data%20Handling.md)
+Next: [How SSO data is handled →](./Sso-Data-Handling.md)

@@ -4941,10 +4941,10 @@ vuepress-theme-bcc-common-components@^1.3.10:
     flowbite "^1.5.4"
     globby "^13.1.2"
 
-vuepress-theme-bcc-common-components@^1.4.29:
-  version "1.4.29"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.4.29.tgz#0a63bd9a4016519807c5371683a36f93f8e5f9e6"
-  integrity sha512-S2ixD3mjL0aWwKCLexyD8bVdcnoS3CicMmdAIBR63Mo1vCYl3nl7YPHTyhYcjRvdcjDYWlYXBzdHdPxS4u6nsA==
+vuepress-theme-bcc-common-components@^1.4.31:
+  version "1.4.31"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.4.31.tgz#6117611f146af34dc3536eec56c14b1233dae56c"
+  integrity sha512-szmvAF/97Bu/7yG4k2loBuS4GkPFYBsbUSuPessGGh3CeDNsizD1x3zbbCmcFDv7kOVHXj0mgYgQgsZWp8qv/g==
   dependencies:
     flowbite "^1.5.4"
     globby "^13.1.2"

@@ -37,7 +37,7 @@ and [the troubleshooting page](#troubleshooting)
    to [support](mailto:it@bcc.no?subject=Support%Developer%BCC).
 8. Save Changes
 9. Test that it works: Open an incognito tab and visit your website. Login with OpenID Connect. If you experience any
-   errors when testing, please see [the troubleshooting page](#troubleshooting).
+   errors when testing, please see [the troubleshooting page](./Troubleshooting.md).
 10. After having tested the login with your BCC user, go the the WordPress admin panel. Then go to Users. You should see
     a user with your BCC email there. Promote that user to Administrator. You will now be able to access the admin panel
     with your BCC user.
@@ -55,4 +55,4 @@ see [this page](#disable-dashboard-and-toolbar).
 
 ---
 
-Next: [Installing BCC Signon on WordPress →](installation)
+Next: [Installing BCC Signon on WordPress →](./Installation.md)

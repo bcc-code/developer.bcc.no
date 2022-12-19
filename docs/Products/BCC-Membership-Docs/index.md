@@ -15,10 +15,10 @@ This documentation is aimed at you as a Developer/Technical Administrator for yo
 
 ## Menu
 - [Home](./index.md)
-- [API integration](./Api%20Integration.md)
+- [API integration](./Api-Integration.md)
 - [Webhooks integration](./Webhooks.md)
-- [Data Structures and Scopes](./Data%20Structures%20And%20Scopes.md)
-- [Single Sign Out](./Single%20Sign%20Out.md)
+- [Data Structures and Scopes](./Data-Structures-And-Scopes.md)
+- [Single Sign Out](./Single-Sign-Out.md)
 
 ## Getting Started
 1. Write to [it@bcc.no](mailto:it@bcc.no) requesting the "Technical Administrator" role
@@ -40,7 +40,7 @@ All organizations that has a relationship to BCC, for example because they are d
 An Organization can have one or more applications registered that are attached to that organization.
 
 ### Scope
-A scope is a permission for your application for example the `members.read_membership` scope will give you access to read fields related to the members membership. See [Data Structures and Scopes](./Data%20Structures%20And%20Scopes.md)
+A scope is a permission for your application for example the `members.read_membership` scope will give you access to read fields related to the members membership. See [Data Structures and Scopes](./Data-Structures-And-Scopes.md)
 
 ### Consent
 A consent is where the end user explicitly approves the scopes your application has access to. For example let's say an application called _X_ got access to the `members.read_membership` scope. Now, lets's say we have a member called _Philly Dally_, Application X now wants to read the memberships of Philly Dally, but he still won't be able to read Philly Dally's membership until Philly Dally has explicitly given him consent to do so.

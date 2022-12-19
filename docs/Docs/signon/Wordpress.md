@@ -171,7 +171,7 @@ by contacting [support](mailto:it@bcc.no?subject=Support%Developer%BCC).
 This enables BCC’s new top bar widget, that you already see on this website.
 
 If you enable this, you can delete the old top bar script tag (See
-the [documentation of the old top bar](/_docs/widgets/legacy-discontinued#old-topbar))
+the [documentation of the old top bar](/_docs/widgets/legacy-discontinued#old-topbar)
 
 ### Local church
 
