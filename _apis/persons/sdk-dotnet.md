@@ -1,3 +1,7 @@
+---
+title: Persons API Dotnet SDK
+---
+
 # Persons API SDK Dotnet
 
 ## Overview
@@ -16,38 +20,37 @@ dotnet add package BccCode.Persons.Api.Contracts
 ## Configure
 
 1. Import the client package
-```cs
-using BccCode.Persons.Api.Client
-```
+   ```cs
+   using BccCode.Persons.Api.Client
+   ```
 
 2. Create the client
-```cs
-var options = new PersonsApiClientOptions{
-    ClientId = "CLIENT_ID",
-    ClientSecret = "CLIENT_SECRET",
-    ApiBasePath = "API_ORIGIN",
-    Audience = "API_AUDIENCE",
-    Authority = "IDENTITY_SERVER_ORIGIN",
-    Scope = $"{PersonsApiScope.ReadName} {PersonsApiScope.ReadGender}"
-};
-var client = new PersonsApiClient(options);
-```
+   ```cs
+   var options = new PersonsApiClientOptions{
+       ClientId = "CLIENT_ID",
+       ClientSecret = "CLIENT_SECRET",
+       ApiBasePath = "API_ORIGIN",
+       Audience = "API_AUDIENCE",
+       Authority = "IDENTITY_SERVER_ORIGIN",
+       Scope = $"{PersonsApiScope.ReadName} {PersonsApiScope.ReadGender}"
+   };
+   var client = new PersonsApiClient(options);
+   ```
 
-3. Use the client
+## Use the client
 
-Get a single person
+### Get a single person
 ```cs
 var person = await client.getPersonAsync(1234)
-Console.WriteLine(person)
 ```
 
 
-Get all the persons
+### Get all the persons
 ```cs
 var allPersons = await client.getPersonsAsync()
 ```
 
-Get filtered persons
+### Get filtered persons
 ```cs
 var personsUnderTwoYearsOld = await client.getQueryable().Where(p => p.Age < 2).ToListAsync();
 ```

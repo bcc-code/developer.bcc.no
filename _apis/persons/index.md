@@ -61,7 +61,7 @@ Consent settings for each user are available [here](https://members.bcc.no/profi
 # SDKs
 
 There are SDKs availibie for the following languages:
-1. [Dotnet](sdk-dotnet)
+1. [Dotnet](./sdk-dotnet)
 
 With planned support for:
 1. Typescript/Javascript
