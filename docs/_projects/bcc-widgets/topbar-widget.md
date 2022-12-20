@@ -16,7 +16,7 @@ The topbar widget can be included at the top of a web page to provide:
 **WordPress applications that have the ``BCC Signon`` plugin installed should not follow this tutorial (the topbar is
 already included in the plugin).**
 
-Make sure you include this styling in your ``<head>`` tag:
+Make sure you include this styling in your `<head>` tag:
 
 ````html
 <!-- stylesheet link (common for all widgets) -->
@@ -24,7 +24,7 @@ Make sure you include this styling in your ``<head>`` tag:
 <!-- end stylesheet link -->
 ````
 
-Include the following just after <body>:
+Include the following just after `<body>`:
 
 ````html
 <!-- topbar widget -->

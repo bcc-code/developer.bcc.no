@@ -23,10 +23,6 @@ export default defineUserConfig({
         text: "Setup",
         link: "/Setup.md",
       },
-      {
-        text: "Apis",
-        link: "/Apis/Persons-API.md",
-      },
     ],
     repo: "Kurczak1233/bcc-code.github.io",
     // if your docs are in a different repo from your main project:
