@@ -28,7 +28,7 @@ Make sure you include this styling in your `<head>` tag:
 <!-- end stylesheet link -->
 ```
 
-Include the following just after <body>:
+Include the following just after `<body>` tag:
 
 ```html
 <!-- topbar widget -->
