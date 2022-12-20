@@ -3,7 +3,7 @@
 name: ADR - commit file to repo
 
 on:
-  issues: 
+  issues:
     types: [closed]
 
 jobs:
@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: View issue information
         run: |
           echo "Issue title: ${{ github.event.issue.title }}"
           echo "Issue body: ${{ github.event.issue.body }}"
-          
+
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y%m%d')"
@@ -28,7 +28,7 @@ jobs:
           title="${{ steps.date.outputs.date }}_${{ github.event.issue.title }}"
           replacement="_"
           echo "::set-output name=name::${title//[\[\] ]/"$replacement"}"
-          
+
       - uses: "finnp/create-file-action@master"
         env:
           FILE_NAME: ${{ format('_docs/ADL/{0}.md', steps.title.outputs.name) }}
@@ -37,11 +37,11 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         with:
           message: "Add ${{ github.event.issue.title }} to ADL"
-          add: '*.md --force'
-          
-      - name: Add link to the documentation 
+          add: "*.md --force"
+
+      - name: Add link to the documentation
         uses: peter-evans/create-or-update-comment@v2
         with:
-          issue-number: ${{ github.event.issue.number }} 
+          issue-number: ${{ github.event.issue.number }}
           body: |
             The document will be available under following [link](https://bcc-code.github.io/docs/ADL/${{ steps.title.outputs.name }})

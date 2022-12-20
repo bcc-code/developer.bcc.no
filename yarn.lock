@@ -1241,6 +1241,11 @@
   resolved "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-3.2.0.tgz"
   integrity sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==
 
+"@vitejs/plugin-vue@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-4.0.0.tgz#93815beffd23db46288c787352a8ea31a0c03e5e"
+  integrity sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==
+
 "@vue/compiler-core@3.2.45":
   version "3.2.45"
   resolved "https://registry.npmjs.org/@vue/compiler-core/-/compiler-core-3.2.45.tgz"
@@ -1698,7 +1703,7 @@ at-least-node@^1.0.0:
   resolved "https://registry.npmjs.org/at-least-node/-/at-least-node-1.0.0.tgz"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
-autoprefixer@^10.4.12:
+autoprefixer@^10.4.12, autoprefixer@^10.4.13:
   version "10.4.13"
   resolved "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.13.tgz"
   integrity sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==
@@ -3167,6 +3172,17 @@ glob@^7.1.6:
     minimatch "^3.1.1"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
+
+glob@^8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-8.0.3.tgz#415c6eb2deed9e502c68fa44a272e6da6eeca42e"
+  integrity sha512-ull455NHSHI/Y1FqGaaYFaLGkNMMJbavMrEGFXG/PGrg6y7sutWHUHrz6gy6WEBH6akM1M414dWKCNs+IhKdiQ==
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^5.0.1"
+    once "^1.3.0"
 
 globals@^11.1.0:
   version "11.12.0"
@@ -4933,22 +4949,16 @@ vuepress-shared@2.0.0-beta.132:
     vue "^3.2.45"
     vue-router "^4.1.6"
 
-vuepress-theme-bcc-common-components@^1.3.10:
-  version "1.3.10"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.3.10.tgz#cb6edd3c5825a077d9633977e67d511d71e21804"
-  integrity sha512-wZQWOaaFQIPvTbAtLpN+Dc67L68iXU2cAH/gDOF2VGwpW5ls+Ky8NamytRIboCCKmFjcfxBZi4/32NIpB+Tztw==
+vuepress-theme-bcc-common-components@^1.4.41:
+  version "1.4.41"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.4.41.tgz#ef95e583e2aecee3ddf39dd77f0be71197146dc7"
+  integrity sha512-wsnrYspkRewc17OHQgnyac61oMfrMPeDYcKZ4ATnhdtfyhaZ15xUCiMFQkl7nDu0kBwPlodK6XhLhUZ/W3YnNw==
   dependencies:
+    "@vitejs/plugin-vue" "^4.0.0"
+    autoprefixer "^10.4.13"
     flowbite "^1.5.4"
+    glob "^8.0.3"
     globby "^13.1.2"
-
-vuepress-theme-bcc-common-components@^1.4.31:
-  version "1.4.31"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-bcc-common-components/-/vuepress-theme-bcc-common-components-1.4.31.tgz#6117611f146af34dc3536eec56c14b1233dae56c"
-  integrity sha512-szmvAF/97Bu/7yG4k2loBuS4GkPFYBsbUSuPessGGh3CeDNsizD1x3zbbCmcFDv7kOVHXj0mgYgQgsZWp8qv/g==
-  dependencies:
-    flowbite "^1.5.4"
-    globby "^13.1.2"
-    vuepress-theme-bcc-common-components "^1.3.10"
 
 vuepress-theme-hope@^2.0.0-beta.130:
   version "2.0.0-beta.132"

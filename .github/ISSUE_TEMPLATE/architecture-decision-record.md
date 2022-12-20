@@ -3,15 +3,21 @@ name: Architecture Decision Record
 about: Issue describing an architectural decision for BCC
 title: "[ADR] an architectural decision record"
 labels: adr
-assignees: ''
-
+assignees: ""
 ---
 
-# Context 
+# Context
+
 - architectural drivers, business cases
-# Decision 
+
+# Decision
+
 - the choice and the arguments
-# Consequences 
+
+# Consequences
+
 - known issues which can occur because of chosen decision
-# Alternatives 
+
+# Alternatives
+
 - were there any other alternatives? why were they not choose

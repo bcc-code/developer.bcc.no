@@ -9,12 +9,11 @@ jobs:
     if: ${{ contains(github.event.issue.labels.*.name, 'adr') }}
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
       - name: Create comment
         uses: peter-evans/create-or-update-comment@v2
         with:
-          issue-number: ${{ github.event.issue.number }} 
+          issue-number: ${{ github.event.issue.number }}
           body: |
             **Remember that ADRs are publicly available hence do not include any confidential information in the issue description!**
             To read more about ADR please refer to [documentation](https://bcc-code.github.io/docs/ADL/).
-            
