@@ -26,7 +26,7 @@ jobs:
       - name: List folders
         run: |
           cd source
-          cp -r /* $GITHUB_WORKSPACE/docs/
+          cp -r * $GITHUB_WORKSPACE/docs/
           # cp -r public/* $GITHUB_WORKSPACE/docs/.vuepress/public/
           ls
 
