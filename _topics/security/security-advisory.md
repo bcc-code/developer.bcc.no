@@ -4,7 +4,7 @@ Security advisories are a way to report and fix security issues in a private man
 
 ### Creating the security advisory
 Any user with at least write permission ([reference](https://docs.github.com/en/code-security/security-advisories/permission-levels-for-security-advisories)) for a specific repo can create a security advisory for it. This is how you create one:
-![Create security advisory](/assets/create-advisory.png)
+![Create security advisory](assets/create-advisory.png)
 
 #### Then you fill the form as such:<br>
 **Ecosystem:** Choose the appropriate option if it's a package (like [feathers-arangodb](https://github.com/bcc-code/feathers-arangodb) which is a npm package) or Other if is's a custom solution (like [bcc-pay](https://github.com/bcc-code/bcc-pay)) and in the next field put **BCC Solutions**<br>
