@@ -18,20 +18,7 @@ already included in the plugin).**
 
 Make sure you include this styling in your ``head`` tag:
 
-````html
-<!-- stylesheet link (common for all widgets) -->
-<link href="https://widgets.bcc.no/styles/widgets.css" rel="stylesheet" type="text/css">
-<!-- end stylesheet link -->
-````
 
-Include the following just after <body>:
-
-````html
-<!-- topbar widget -->
-<script id="script-bcc-topbar" data-authentication-type="TYPE" data-authentication-location="LOCATION" data-logout-url="LOGOUT_URL"
-        src="https://widgets.bcc.no/widgets/TopbarJs" data-app-title="" data-app-url=""></script>
-<!-- end topbar widget -->
-````
 
 Inside of the data-app-title attribute you can add the title of the application and in data-app-url, the url of the
 website you want to point to. That can, for example, be:
