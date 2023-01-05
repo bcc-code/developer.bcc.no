@@ -306,7 +306,7 @@ The backchannel logout is only availible for applications that have a backend th
 https://openid.net/specs/openid-connect-backchannel-1_0.html
 
 ### Backchannel logout architecture
-![image](logout-architecture.png)
+![image](./logout-architecture.png)
 
 ### 1. Create the logout endpoint in your backend
 
