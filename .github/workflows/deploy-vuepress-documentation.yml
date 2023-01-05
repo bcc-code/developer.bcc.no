@@ -39,7 +39,7 @@ jobs:
         env:
           title: ${{ github.event.repository.name }}
           description: ${{ github.event.repository.description }}
-          base: /${{ github.event.repository.name }}
+          base: /
           repo: ${{ github.repository }}
 
       # Build the VuePress site
