@@ -19,7 +19,8 @@ and [the troubleshooting page](troubleshooting)
 
 1. Download the latest version of the [BCC Login Plugin](https://github.com/bcc-code/bcc-wp/releases/download/bcc-login-v1.1.117/bcc-login.zip).
 2. Add `OIDC_CLIENT_ID` and `OIDC_CLIENT_SECRET` as environment variables or constants in `wp-config.php`, using the values supplied by IT support.  
-   **Upgrading**: This step can be omitted if you have the old version of the plugin (called *BCC Signon*) already installed.
+  
+   **UPGRADING**: This step can be omitted if you have the old version of the plugin (called *BCC Signon*) already installed.
 3. Log in to the admin panel of WordPress.
 4. Navigate to **Plugins** → **Add New** → **Upload Plugin**, and find the downloaded file **bcc-login.zip**. Install
    the plugin.
@@ -30,7 +31,7 @@ and [the troubleshooting page](troubleshooting)
 7. Save Changes
 8. If you would like articles from your website to be displayed on BCC Portal, send the Feed Link
    to [support](mailto:it@bcc.no?subject=Support%Developer%BCC).
-9. **Upgrading**: For websites that previously had the old version of the plugin installed (BCC Signon):
+9. **UPGRADING**: For websites that previously had the old version of the plugin installed (BCC Signon):  
    a. Click **Delete subscribers** in the *Maintenence* section of the plugin settings. This will remove all users that do not have admin or editor access in the system.  
    b. Disable the old version of the plugin (BCC Signon) under **Plugins**.
 10. Test that it works: Open an incognito tab and visit your website. Login with OpenID Connect. If you experience any
