@@ -56,7 +56,7 @@ jobs:
           title: ${{ github.event.repository.name }}
           description: ${{ github.event.repository.description }}
           base: /${{ github.repository }}/
-          repo: ${{ github.repository }}
+          repo: ''
 
       # Build the VuePress site
       - name: Build VuePress site
