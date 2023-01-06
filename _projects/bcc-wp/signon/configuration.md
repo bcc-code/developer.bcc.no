@@ -1,76 +1,47 @@
 ---
-title: SignOn Configuration
+title: BCC Login Plugin Configuration
 ---
 
-# Plugin Configuration
+## OpenId Connect Configuration
 
-The settings of BCC Signon are grouped into two panels:
+*OpenID Connect* (OIDC) is the protocol used for handling authentication. These settings are configured using environment variables or constants in *wp-config.php*:
 
-* OpenId Connect Client (OIDC Settings) contains all the settings related to the login of users.
-* BCC Signon (BCC Settings) contains all the settings related to BCC’s widgets: newsfeeds, topbar
+| Setting                    | Description                                         |
+| -------------------------- |---------------------------------------------------- |
+| OIDC_CLIENT_ID             | (Required) OIDC ClientID obtained from IT support   |
+| OIDC_CLIENT_SECRET         | (Required) OIDC Client Secret obtained from IT support |
+| OIDC_CREATE_USERS          | (Optional) Default: `false` - used to create corropsonding users automatically in WP when users log in (**Strongly discouraged**)       |
+| OIDC_AUTHORITY             | (Optional) Default: `https://login.bcc.no`       |
+| OIDC_ENDPOINT_TOKEN_URL    | (Optional) Default: `https://login.bcc.no/oauth/token`  |
+| OIDC_ENDPOINT_USERINFO_URL | (Optional) Default: `https://login.bcc.no/userinfo`  |
+| OIDC_ENDPOINT_LOGOUT_URL | (Optional)  |
+| OIDC_SCOPE                 | (Optional) Default: `email openid profile church`  |
+| OIDC_DEFAULT_VISIBILITY            | (Optional) Alternative to configuring via UI - see below  |
+| BCC_WP_FEED_KEY            | (Optional) Alternative to configuring via UI - see below  |
+| BCC_WP_MEMBER_ORGANIZATION_NAME            | (Optional) Alternative to configuring via UI - see below  |
 
-## OpenId Connect Client Settings
+It is strongly discouraged to enable the *OIDC_CREATE_USERS* setting. This function will create users in Wordpress every time a new user logs in. Enabling this function can both result in poorer performance (due to less effective caching) and also result in GDPR infringement (storing personal data without a legitimate reason).
 
-Most of the fields are pre-filled according to BCC’s configuration.
+## Default Content Access
 
-However, there are some settings you’ll have to configure:
+This setting controls the default visability of new pages and posts.
 
-### Login Type
+1. **Public** - visible to all users, without logging in
+2. **Authenticated Users** - only visible to logged in users
+3. **Members** - only visible to members of the specified *Member Organization* (see below)
 
-OpenID Connect button on login form – is set by default. Keep it this way while setting up/testing the plugin.
+## Feed Key
 
-Auto Login – SSO will redirect automatically the users to Auth0 login page.
-
-**Note**: Activate this only when the plugin is ready to be launched on production.
-
-### Client ID & Client Secret Key
-
-Fill in your Client ID and Client Secret Key. If you have not received these, please contact support.
-
-### OpenID Scope
-
-Here you can request different scopes. More information is available here.
-
-### Enforce Privacy
-
-With this setting you can decide whether the website will request authentication or not. In most of the cases this
-should be set to on and the Unprotected URLs field can be used to skip the privacy for one or more URLs.
-
-### Protected URLs / Unprotected URLs
-
-This text field allows you to add / skip privacy for defined URLs. Regular expressions can very well be used as well.
-Example: if you want to add / skip privacy for all the articles which are under the category ‘local’, you would use
-“/local/”.
-
-### Enable Logging
-
-A logger is available; it’s recommended to only use this for testing purposes since it uses the wp_options table to
-store the logs.
-
-## BCC Signon Settings
-
-### BCC Signon URL
-
-This is BCC’s base URL for the authentication domain; this setting is pre-filled, you don’t need to change it.
-
-### Enable private newsfeed
-
-If you want to integrate your website to BCC’s news feed widget, please enable this setting.
-
-Otherwise, you can turn it off.
-
-### Private newsfeed link
-
-If you have enabled the private newsfeed, the RSS feed will be available at this URL. Please share this URL with BCC IT
+If the feed key has been filled out (with a random GUID), the RSS feed will be available at this URL. Please share this URL with BCC IT
 by contacting [support](it@bcc.no?subject=Support%Developer%BCC).
 
-### Enable TopBar 
+## Enable TopBar
 
 This enables BCC’s new top bar widget, that you already see on this website.
 
 If you enable this, you can delete the old top bar script tag (See the documentation of the old top bar)
 
-### Local church
+## Member Organization
 
 If you want to identify the users which log in to your website by church, e.g. for displaying specific
 content or give access to some pages just to members from your local church, find the church name in the list below and
@@ -238,4 +209,4 @@ contact [support](it@bcc.no?subject=Support%Developer%BCC).
 
 ---
 
-Next: [Plugin Customization →](customization)
+Next: [Protect Uploaded Files →](protect-uploads-files)
