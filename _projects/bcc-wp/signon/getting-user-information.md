@@ -9,7 +9,9 @@ However, it is still possible to access the OIDC `identity token` and `access to
 * *OIDC Identity Token*: https://[your domain]/?bcc-login=id-token
 * *OAuth Access Token*: https://[your domain]/?bcc-login=access-token
 
-To view the contents of these tokens, visit https://jwt.io.
+These endpoints are used by the BCC Widgets (such as topbar) to create a personalized experience.
+
+To view the contents of these tokens a tool such as  [jwt.io](https://jwt.io) can be used.
 
 ---
 
