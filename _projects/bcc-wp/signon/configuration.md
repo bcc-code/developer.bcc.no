@@ -1,5 +1,5 @@
 ---
-title: BCC Login Plugin Configuration
+title: Advanced Configuration
 ---
 
 ## OpenId Connect Configuration
@@ -209,4 +209,4 @@ contact [support](it@bcc.no?subject=Support%Developer%BCC).
 
 ---
 
-Next: [Protect Uploaded Files →](protect-uploads-files)
+Next: [Getting User Information →](getting-user-information)
