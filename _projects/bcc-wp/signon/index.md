@@ -25,11 +25,12 @@ and [the troubleshooting page](troubleshooting)
 4. Navigate to **Plugins** → **Add New** → **Upload Plugin**, and find the downloaded file **bcc-login.zip**. Install
    the plugin.
 5. Once installed, click on **Activate**.
-6. In the WordPress admin panel, go to **Settings** → **BCC Login** and configure the following
+6. Enable **automatic updates** for the plugin.
+7. In the WordPress admin panel, go to **Settings** → **BCC Login** and configure the following
     * **Default Content Access**: Use *Authenticated Users* to limit access to users with a BCC Login Account.
     * **Member Organization**: The name of the relevant church district (e.g. Horten, Salem). This should not be prefixed with BCC or similar.
-7. Save Changes
-8. If you would like articles from your website to be displayed on BCC Portal, send the Feed Link
+8. Save Changes
+9. If you would like articles from your website to be displayed on BCC Portal, send the Feed Link
    to [support](mailto:it@bcc.no?subject=Support%Developer%BCC).
 9. **UPGRADING**: For websites that previously had the old version of the plugin installed (BCC Signon):  
    a. Click **Delete subscribers** in the *Maintenence* section of the plugin settings. This will remove all users that do not have admin or editor access in the system.  
