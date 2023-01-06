@@ -3,6 +3,8 @@ title: BCC WordPress Documentation
 description: Documentation about creating WordPress sites with BCC widgets and plugins
 ---
 
+### BCC Login Plugin
+
 * [Getting Started](signon)
 * [Advanced Configuration](signon/configuration)
 * [Getting user information](signon/getting-user-information)
