@@ -24,6 +24,6 @@ features:
 * There’s a channel on Telegram where you can get updates about the BCC Sign-in system and the Membership Portal. To subscribe, send a request to support, and you will be added.
 
 ## Documentation
-* ADRs
-* BCC Coding Guide
-* Security
+* [Architectural Decision Records](./architectural-decision-records/index.md)
+* [BCC Coding Guide](./guides/coding-guide.md)
+* [Security](./security/index.md)
