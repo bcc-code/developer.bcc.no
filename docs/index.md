@@ -18,6 +18,10 @@ features:
     link: /libraries
 ---
 
+::: tip Work In Progress
+This site is a work in progress, we're adding more up-to-date documentation soon!
+:::
+
 ## Communication channels
 * Check out the [Slack group](https://bccdev.slack.com/) for all developers that are a member of BCC.
 * Check out our [GitHub page](https://github.com/bcc-code) for our open source projects.
