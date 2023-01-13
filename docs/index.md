@@ -31,3 +31,4 @@ This site is a work in progress, we're adding more up-to-date documentation soon
 * [Architectural Decision Records](./architectural-decision-records/index.md)
 * [BCC Coding Guide](./guides/coding-guide.md)
 * [Security](./security/index.md)
+* [Documentation Guide](/bcc-documentation-base)
