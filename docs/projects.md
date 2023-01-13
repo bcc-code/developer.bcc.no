@@ -2,7 +2,7 @@
 order: 10
 ---
 
-# Projects & Status
+# Projects
 * BMM: Open Source ([APP](https://github.com/bcc-code/bmm-app), [Old Website](https://github.com/bcc-code/bmm-website)) and in active development
 * BrunstadTV: Open Source ([App](https://github.com/bcc-code/brunstadtv-app), [Backend](https://github.com/bcc-code/brunstadtv)) and in active development
 * Literature: [Open Source](https://github.com/bcc-code/bcc-literature) and currently in maintenance mode
