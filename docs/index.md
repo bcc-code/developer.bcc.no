@@ -16,6 +16,9 @@ features:
   - title: Libraries and APIs
     details: APIs, libraries and SDKs provided by BCC IT for external consumption
     link: /libraries
+  - title: Design
+    details: Logo assets, design guildelines etc.
+    link: /bcc-design
 actions:
   - text: Read Coding Guide
     link: /guides/coding-guide
