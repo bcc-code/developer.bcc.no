@@ -72,6 +72,10 @@ After lining up the considerations for Relational and Document DBs we come to ou
    1. MongoDB looks like a promising option, but we need more research to be sure
    2. Other options include ArangoDB, Elastic Search
 
+## Re-evaluation (nov 2023)
+* After closer consideration, it appears that the pricing for Azure Serverless SQL is high - despite a "serverless" model. Azure Serverless SQL is a good fit for workloads that don't run often (e.g. daily datawarehous processing).
+* **Postgresql** has now been selected as the go-to database technology for relational databases. It is cross-platform, supported on major clouds and doesn't have the same licening overhead as Microsoft SQL. It also outperforms Microsoft SQL in benchmarks. Note that postgresql also supports JSON columns and querying and could be used for simple document database needs too.
+
 # Consequences 
 
 - Slower development, especially when migration is needed
