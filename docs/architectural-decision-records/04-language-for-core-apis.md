@@ -85,8 +85,8 @@ We shouldn't be introducing any new languages to BCC IT so we're going to choose
 Because of insufficient experience with Go and C# we cannot make a decision 100% certainly, but based on research we feel like go is more likely to be the right choice, so we're going to implement the first API with go.
 If the results are not satisfactory then we're going to re-evaluate
 
-## Re-evaluation
-C# and .Net 7 was reevaluated to be the preferred framework for API development for member applications based on the following:
+## Re-evaluation (Jan 2023)
+**C# and .Net 7** was reevaluated to be the preferred framework for API development for member applications based on the following:
 * More developers who are familiar with .Net than Go
 * Better support for observability (e.g. in Application Insights)
 * Already in use in other projects / teams - using the same technology will increase the likelyhood of knowledge sharing and interoperabilty via .Net SDKs
