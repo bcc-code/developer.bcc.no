@@ -21,6 +21,8 @@ _Authentication_ relates to identifying a user or client.
 * **ONLY use shared secrets / API keys / basic authentication between internal services and resources** (i.e. within the bounds of a single application).  
   API keys / shared secrets offer a simple mechanism for authentication (which does not require a central authentication authority, token requests etc.). However, these secrets don't usually expire and are hard to keep track of (lack governance) and should therefore NOT be used for integration between applications. An appropriate use case would be accessing storage related to a particular service or as an extra layer of security (in addition to network security) between internal services.
 
+* **Avoid secrets** altogether by using *Managed Identities**, **Federated Credentials** and similar techniques for communication between services when deploying to the cloud.
+
 
 ### 1.2 Authorization
 _Authorization_ relates to understanding which permissions / access rights an authenticated user or client has.
@@ -70,14 +72,37 @@ A newer binary format which offers better performance, but not human readable.
 * ** **
 
 ### 2.4 Documentation
+* **Public Documentation** should be included in the `docs` folder of your repository in markdown format. This can easily be published to the developer portal. [Read guide here)[https://developer.bcc.no/bcc-documentation-base/deploying-site/#publishing-documentation].
 
 
-
-
-## 3. Application Frameworks
+## 3. Development Frameworks
 
 ### 3.1 Front-end
+* **Logo Assets** are available [here](https://developer.bcc.no/bcc-design/)
+* **Vue JS** is the preferred javascript framework for web interfaces. 
+* **Tailwind CSS** based on markup from [Flowbite](https://flowbite.com/blocks/) is the preferred CSS framework. 
 
+Note that work is being done on developing a Design System and component library based on the above.
 
 ### 3.2 Back-end
+* **.Net 6+** is the preferred framework for developing web APIs. We also have projects using **Node JS** and **Go**.
+
+### 3.3 App Development
+* **Flutter** is the preferred framework for developing native apps
+
+### 4.4 Content Management
+* **WordPress** is the preferred content management system for building websites.
+* **Directus** is currently the preferred content management system for applications
+
+
+## 4. Deployment
+
+### 4.1 CI/CD
+* **All** code should be deployed using CI/CD pipelines (e.g. Github Actions) that are defined within the repository (e.g. in YML files)
+
+### 4.2 Infrastructure as Code
+* Cloud infrastructure should ideally be defined as code (using **Terraform**). Work is in progress on providing provisioned environments and starter templates for infrastructure.
+
+## 4.3 Cloud Deployment
+The *preferred* cloud platform is **Microsoft Azure**. We currently also have projects running on **GCP**, and **AWS** is used for niche services (e.g. content delivery)
 
