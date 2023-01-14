@@ -98,11 +98,17 @@ Note that work is being done on developing a Design System and component library
 ## 4. Deployment
 
 ### 4.1 CI/CD
-* **All** code should be deployed using CI/CD pipelines (e.g. Github Actions) that are defined within the repository (e.g. in YML files)
+* **All** code should be deployed using CI/CD pipelines (e.g. Github Actions) that are defined within the repository (e.g. in YML files). 
 
 ### 4.2 Infrastructure as Code
 * Cloud infrastructure should ideally be defined as code (using **Terraform**). Work is in progress on providing provisioned environments and starter templates for infrastructure.
 
-## 4.3 Cloud Deployment
-The *preferred* cloud platform is **Microsoft Azure**. We currently also have projects running on **GCP**, and **AWS** is used for niche services (e.g. content delivery)
+### 4.3 Cloud Deployment
+* In general, applications should be run horizontally scalable **Docker Containers**.
+* The *preferred* cloud platform is **Microsoft Azure**. We currently also have projects running on **GCP**, and **AWS** is used for niche services (e.g. content delivery)
+* Consider scalable services with request / consumption based pricing
+
+### 4.4 Database
+* **Postgresql** is the standard for relational databases. We also have several services currently using Microsoft SQL.
+* Use *mainstream* database technologies that are supported by major cloud vendors unless there is a real need to use niche services
 
