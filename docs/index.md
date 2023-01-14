@@ -10,15 +10,15 @@ features:
   - title: Projects
     details: View the status of different BCC projects such as BMM and BrunstadTV
     link: /projects
-  - title: Platform Services
+  - title: Services
     details: Different services such as the PDF service and logo assets
     link: /services
-  - title: Libraries and APIs
+  - title: APIs
     details: APIs, libraries and SDKs provided by BCC IT for external consumption
     link: /libraries
-  - title: Design
+  - title: Logos
     details: Logo assets, design guildelines etc.
-    link: /bcc-design
+    link: /bcc-design/
 actions:
   - text: Read Coding Guide
     link: /guides/coding-guide
