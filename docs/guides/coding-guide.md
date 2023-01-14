@@ -47,9 +47,6 @@ All public network traffic MUST be encrypted (e.g. using SSL).
 Network and resource security within a single cloud (Azure, GCP etc.) is significantly simplified compared to a multi-cloud deployment. This is because a multi-cloud deployment typically will require exposing internal resources to the Internet as well as the use of shared secrets etc. 
 
 
-### 1.4 Deployment Security
-
-
 ## 2. Open APIs
 All new projects should follow an API-first, open API approach. APIs should be complete, and consumable by others.
 
