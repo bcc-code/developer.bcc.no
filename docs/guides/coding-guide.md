@@ -72,7 +72,7 @@ A newer binary format which offers better performance, but not human readable.
 * ** **
 
 ### 2.4 Documentation
-* **Public Documentation** should be included in the `docs` folder of your repository in markdown format. This can easily be published to the developer portal. [Read guide here)[https://developer.bcc.no/bcc-documentation-base/deploying-site/#publishing-documentation].
+* **Public Documentation** should be included in the `docs` folder of your repository in markdown format. This can easily be published to the developer portal. ([Read guide here](https://developer.bcc.no/bcc-documentation-base/deploying-site/#publishing-documentation)).
 
 
 ## 3. Development Frameworks
