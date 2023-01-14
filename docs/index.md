@@ -16,6 +16,13 @@ features:
   - title: Libraries and APIs
     details: APIs, libraries and SDKs provided by BCC IT for external consumption
     link: /libraries
+actions:
+  - text: Read Coding Guide
+    link: /guides/coding-guide
+    type: primary
+  - text: Submit Security Advisory
+    link: /security/security-advisory
+    type: secondary
 ---
 
 ::: tip Work In Progress
