@@ -7,6 +7,7 @@ order: 30
 ## Services
 * [PDF Service](https://developer.bcc.no/pdf-service) - used for generating PDFs from HTML
 * [Logo Assets](https://developer.bcc.no/bcc-design) for organizations in the BCC Federation
+* [WordPress signon](https://developer.bcc.no/bcc-wp) - documentation for the BCC Login WordPress plugin
 
 ## APIs
 * [Orgs API](https://sandbox-api.bcc.no/docs/?urls.primaryName=Orgs%20documentation)
