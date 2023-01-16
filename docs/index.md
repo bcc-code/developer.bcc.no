@@ -10,15 +10,12 @@ features:
   - title: Projects
     details: View the status of different BCC projects such as BMM and BrunstadTV
     link: /projects
-  - title: Services
-    details: Different services such as the PDF service and logo assets
-    link: /services
   - title: APIs
     details: APIs, libraries and SDKs provided by BCC IT for external consumption
     link: /libraries
-  - title: Logos
-    details: Logo assets, design guildelines etc.
-    link: /bcc-design/
+  - title: Design System
+    details: Logo assets and design guidelines for using the BCC Design System
+    link: https://developer.bcc.no/bcc-design/
 actions:
   - text: Read Coding Guide
     link: /guides/coding-guide
@@ -29,7 +26,7 @@ actions:
 ---
 
 ::: tip Work In Progress
-This site is a work in progress, we're adding more up-to-date documentation soon!
+This site is a work in progress and more documentation is added continuously, check back soon!
 :::
 
 ## Communication channels
