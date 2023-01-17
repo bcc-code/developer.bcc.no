@@ -10,7 +10,7 @@ features:
   - title: Projects
     details: View the status of different BCC projects such as BMM and BrunstadTV
     link: /projects
-  - title: APIs
+  - title: Libraries
     details: APIs, libraries and SDKs provided by BCC IT for external consumption
     link: /libraries
   - title: Design System
