@@ -1,3 +1,0 @@
-syntax = "proto3";
-
-package bccCode.events.event.roomDistribution.v1;

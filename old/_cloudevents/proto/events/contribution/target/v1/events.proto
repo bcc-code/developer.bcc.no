@@ -1,5 +1,0 @@
-syntax = "proto3";
-
-package bccCode.events.contribution.target.v1;
-
-import "bccCode/events/contribution/target/v1/data.proto";

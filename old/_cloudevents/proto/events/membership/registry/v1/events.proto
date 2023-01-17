@@ -1,5 +1,0 @@
-syntax = "proto3";
-
-package bccCode.events.membership.registry.v1;
-
-import "bccCode/events/membership/registry/v1/data.proto";

@@ -1,3 +1,0 @@
-syntax = "proto3";
-
-package bccCode.events.contribution.competency.registry.v1;

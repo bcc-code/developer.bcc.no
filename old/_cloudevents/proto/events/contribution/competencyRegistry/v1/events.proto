@@ -1,5 +1,0 @@
-syntax = "proto3";
-
-package bccCode.events.contribution.competency.registry.v1;
-
-import "bccCode/events/contribution/competencyRegistry/v1/data.proto";
