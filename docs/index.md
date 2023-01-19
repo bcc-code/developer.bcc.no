@@ -8,7 +8,7 @@ heroText: BCC Developer Portal
 tagline: Technical documentation and guides for software development in BCC
 features:
   - title: Projects
-    details: View the status of different BCC projects such as BMM and BrunstadTV
+    details: View the status of different BCC projects such as BMM and BCC Media
     link: /projects
   - title: Libraries
     details: APIs, libraries and SDKs provided by BCC IT for external consumption
