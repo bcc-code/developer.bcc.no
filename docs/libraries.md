@@ -12,9 +12,11 @@ order: 30
 * [BCC Sign API](https://developer.bcc.no/bcc-sign) - documentation for checking signatures created on sign.bcc.no
 
 ## APIs
-* [Orgs API](https://sandbox-api.bcc.no/docs/?urls.primaryName=Orgs%20documentation)
-* [Persons API](https://sandbox-api.bcc.no/docs/?urls.primaryName=Persons%20documentation)
-* [Contributions API](https://sandbox-api.bcc.no/docs/?urls.primaryName=Contributions%20documentation)
+[Read documentation on how to authenticate](./apis/index.md)
+
+* Orgs API [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Orgs%20documentation)
+* Persons API [Documentation](./apis/persons-api.md)  [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Persons%20documentation)
+* Contributions API [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Contributions%20documentation)
 
 ## Libraries
 * [Tripletex .Net SDK](https://github.com/bcc-code/tripletex-client-dotnet)
