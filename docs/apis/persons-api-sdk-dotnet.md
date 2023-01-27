@@ -1,13 +1,7 @@
----
-title: Persons API Dotnet SDK
----
-
 # Persons API SDK Dotnet
 
-## Overview
-
 This is the official dotnet SDK for the persons API.
-SDK supports Linq expressions to easily query person data.
+The SDK supports Linq expressions to easily query person data.
 
 ## Install
 

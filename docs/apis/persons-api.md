@@ -1,42 +1,29 @@
 ---
-title: Persons API
+order: 0
 ---
 
-# Menu
-- [Menu](#menu)
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-  - [Use an SDK if available](#use-an-sdk-if-available)
-  - [Get an access token](#get-an-access-token)
-  - [Use the token to get data from the API](#use-the-token-to-get-data-from-the-api)
-    - [Example in cURL](#example-in-curl)
-    - [Example response](#example-response)
-- [User Consent](#user-consent)
-- [SDKs](#sdks)
-- [Scopes](#scopes)
+# Persons API
 
-# Overview
-- This API is the official source of personal data for Machine-To-Machine applications in BCC.
-- If you're creating a third party application, you will need to get user's consent in order to get access to their data
+This API is the official source of personal data for Machine-To-Machine applications in BCC. If you're creating a third party application, you will need to get user's consent in order to get access to their data
 
-# Getting Started
+## Getting Started
 
-## Use an SDK if available
+### Use an SDK if available
 You can find available SDKs [here](#sdks)
 
-## Get an access token
-The process is described in [APIs page](../index)
+### Get an access token
+The process is described in [APIs page](./index.md).
 
-## Use the token to get data from the API
+### Use the token to get data from the API
 
-### Example in cURL
+#### Example in cURL
 ```sh
 curl --request GET \
   --url $API_ORIGIN/persons/1 \
   --header 'Authorization: Bearer $ACCESS_TOKEN' \
 ```
 
-### Example response
+#### Example response
 ```json
 {
     "data":{
@@ -52,13 +39,13 @@ curl --request GET \
 }
 ```
 
-# User Consent
+## User Consent
 
 If the application is managed by a third party, upon receiving access to the API, users will be able to give their consent to the app.
 
 Consent settings for each user are available [here](https://members.bcc.no/profile/settings), under the "Sharing personal details with third parties" section.
 
-# SDKs
+## SDKs
 
 There are SDKs availibie for the following languages:
 1. [Dotnet](sdk-dotnet)
@@ -67,6 +54,6 @@ With planned support for:
 1. Typescript/Javascript
 2. Go
 
-# Scopes
+## Scopes
 
 Scope descriptions are available [here](scopes)

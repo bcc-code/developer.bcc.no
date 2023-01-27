@@ -1,35 +1,13 @@
----
-layout: contents
-title: Apis Contents
-description: Technical documentation and guides for software development in BCC
----
+# Authenticating with BCC APIs
 
-# Menu
-- [Menu](#menu)
-- [Overview](#overview)
-- [Environments](#environments)
-    - [Sandbox](#sandbox)
-    - [Production](#production)
-- [Getting Started](#getting-started)
-  - [Request access](#request-access)
-    - [Write a email to it@bcc.no](#write-a-email-to-itbccno)
-  - [Generate a token](#generate-a-token)
-    - [Example in cURL](#example-in-curl)
-    - [Example response](#example-response)
-  - [Use the token](#use-the-token)
-    - [Example in cURL](#example-in-curl-1)
-- [API Explorer](#api-explorer)
+Authentication is done with [oauth2 client credentials flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). Permissions are managed with scopes
 
-# Overview
-- This API is the official source of personal data for Machine-To-Machine applications in BCC.
-- Authentication is done with [oauth2 client credentials flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/)
-- Permissions are managed with scopes
-
-# Environments
+## Environments
 All APIs are availible for 2 environments. Sandbox is meant for use in local development and staging/sandbox environment for your app. Production should only be used in production deployments.
 
 Both environments are essentially the same. The only difference is that the sandbox environment has fictitious data.
 In usage they are also the same. You only need to use different values here, which are referenced further in the documentation.
+
 ### Sandbox
 ```sh
 IDENTITY_SERVER_ORIGIN="https://bcc-sso-sandbox.eu.auth0.com"
@@ -44,12 +22,12 @@ API_ORIGIN="https://api.bcc.no"
 API_AUDIENCE="api.bcc.no"
 ```
 
-# Getting Started
+## Getting Started
 
-## Request access 
+### Request access 
 We recommend first using the sandbox for local development, and only getting the production access when releasing to production
 
-### Write a email to [it@bcc.no](mailto:it@bcc.no)
+### Write an email to it@bcc.no
 
 Your email should include the following information:
 
@@ -60,11 +38,11 @@ Your email should include the following information:
 
 BCC IT will create an application with the requested permissions and respond with it's OAuth2 ```CLIENT_ID``` and ```CLIENT_SECRET```
 
-## Generate a token
+### Generate a token
 
 Use the credentials to get an access token to our APIs
 
-### Example in cURL
+#### Example in cURL
 ```sh
 curl --request POST \
   --url $IDENTITY_SERVER_ORIGIN/oauth/token \
@@ -72,7 +50,7 @@ curl --request POST \
   --data '{"client_id":"$CLIENT_ID","client_secret":"$CLIENT_SECRET","audience":"$API_AUDIENCE","grant_type":"client_credentials", "scope":"persons.name#read persons.birth_date#read"}'
 ```
 
-### Example response
+#### Example response
 ```json
 {
   "access_token": "ACCESS_TOKEN",
@@ -82,19 +60,19 @@ curl --request POST \
 }
 ```
 
-## Use the token
+### Use the token
 
 Attach the access token to all requests to our APIs.
 Token should be present in the ```Authorization``` header, prefixed with ```"Bearer "```
 
-### Example in cURL
+#### Example in cURL
 ```sh
 curl --request GET \
   --url $API_ORIGIN/persons/1 \
   --header 'Authorization: Bearer $ACCESS_TOKEN' \
 ```
 
-# API Explorer
+## API Explorer
 
 All of our APIs support an API explorer. To use it:
 

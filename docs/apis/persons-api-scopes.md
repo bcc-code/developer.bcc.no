@@ -1,7 +1,3 @@
----
-title: Persons API Scope definitions
----
-
 # Persons API Scope definitions
 
 ## List of all available scopes with example payloads
