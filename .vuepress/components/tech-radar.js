@@ -24,22 +24,22 @@ export const technologies = [
     {
         name: 'VueJS',
         category: 'frameworks',
-        status: 'assess'
+        status: 'adopt'
     },
     {
-        name: 'Docker',
+        name: 'Env0',
         category: 'platform',
-        status: 'hold'
+        status: 'trial'
     },
     {
         name: 'pnpm',
         category: 'tools',
-        status: 'trial'
+        status: 'adopt'
     },
     {
         name: 'C#',
         category: 'languages',
-        status: 'hold'
+        status: 'adopt'
     },
     {
         name: 'DevOps',
