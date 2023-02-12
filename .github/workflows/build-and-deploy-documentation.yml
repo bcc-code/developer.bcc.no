@@ -29,6 +29,7 @@ jobs:
           title: BCC Developer Portal
           description: Technical documentation and guides for software development in BCC
           collapse-sidebar: true
+          auto-register-components: true
           branch: master
           base: /
         
