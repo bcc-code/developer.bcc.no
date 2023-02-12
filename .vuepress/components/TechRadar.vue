@@ -1,11 +1,19 @@
 <template>
   <div>
-    <h1>Technology Radar</h1>
+    <radar></radar>
+    <radar-legend></radar-legend>
   </div>
 </template>
 
 <script>
+import RadarLegend from './RadarLegend.vue'
+import Radar from './Radar.vue'
+
 export default {
-  name: 'TechRadar'
+  name: 'TechRadar',
+  components: {
+    RadarLegend,
+    Radar
+  }
 }
 </script>
