@@ -2,10 +2,12 @@
   <div class="radar-legend">
     <div class="category" v-for="(category) in categories" :key="category">
       <h2 class="h2">{{ category }}</h2>
-      <div v-if="category === technology.category" class="technology-item" v-for="(technology, index) in technologies" :key="technology.name">
-        <div class="technology-item__pointer" v-bind:style="{ backgroundColor: getStatusColor(technology.status ) }">
-          {{ index }}</div>
-        <div class="technology-item__name">{{ technology.name }}</div>
+      <div v-for="(technology, index) in technologies" :key="technology.name">
+        <div v-if="category === technology.category" class="technology-item">
+          <div class="technology-item__pointer" v-bind:style="{ backgroundColor: getStatusColor(technology.status ) }">
+            {{ index }}</div>
+          <div class="technology-item__name">{{ technology.name }}</div>
+        </div>
       </div>
     </div>
   </div>
