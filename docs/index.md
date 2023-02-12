@@ -17,6 +17,9 @@ features:
     details: Logo assets and design guidelines for using the BCC Design System
     link: https://developer.bcc.no/bcc-design/
 actions:
+  - text: Get involved
+    link: /guides/get-involved
+    type: primary
   - text: Read Coding Guide
     link: /guides/coding-guide
     type: primary
