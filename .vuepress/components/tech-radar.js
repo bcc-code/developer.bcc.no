@@ -36,4 +36,14 @@ export const technologies = [
         category: 'tools',
         status: 'trial'
     },
+    {
+        name: 'C#',
+        category: 'languages',
+        status: 'hold'
+    },
+    {
+        name: 'DevOps',
+        category: 'techniques',
+        status: 'adopt'
+    }
 ]
