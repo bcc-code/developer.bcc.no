@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import { technologies, statuses, categories } from './../../../tech-radar'
+import { technologies, statuses, categories } from './tech-radar'
 import * as seedrandom from 'seedrandom'
 
 const random = seedrandom.default('')
