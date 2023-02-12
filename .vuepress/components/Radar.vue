@@ -1,75 +1,59 @@
 <template>
-<div>
-  <svg viewBox="0 0 700 700">
-    <!--
+  <div>
+    <svg viewBox="0 0 700 700">
+      <!--
       status rings
       -->
-    <circle v-for="(status, i) in statuses" :key="status.name" 
-      class="status-circle"
-      :cx="chartRadius + containerOffset" 
-      :cy="chartRadius + containerOffset" 
-      :r="chartRadius - (chartRadius / statuses.length * i)"></circle>
-    
-    <!--
+      <circle v-for="(status, i) in statuses" :key="status.name" class="status-circle"
+        :cx="chartRadius + containerOffset" :cy="chartRadius + containerOffset"
+        :r="chartRadius - (chartRadius / statuses.length * i)"></circle>
+
+      <!--
       category dividers
       -->
-    <line v-for="(category, i) in categories" :key="category"
-      class="category-radius"
-      :x1="calculateCategoryLineXPos(i) + containerOffset"
-      :y1="calculateCategoryLineYPos(i) + containerOffset" 
-      :x2="chartRadius + containerOffset" 
-      :y2="chartRadius + containerOffset">
-    </line>
+      <line v-for="(category, i) in categories" :key="category" class="category-radius"
+        :x1="calculateCategoryLineXPos(i) + containerOffset" :y1="calculateCategoryLineYPos(i) + containerOffset"
+        :x2="chartRadius + containerOffset" :y2="chartRadius + containerOffset">
+      </line>
 
-    <!--
+      <!--
       category labels
       -->
-    <text v-for="(category, i) in categories" :key="category + 1"
-      class="category-label" 
-      :x="getCategoryLabelXPos(category, i) + containerOffset"
-      :y="getCategoryLabelYPos(category, i) + containerOffset">
-      {{ category }}
-    </text>
+      <text v-for="(category, i) in categories" :key="category + 1" class="category-label"
+        :x="getCategoryLabelXPos(category, i) + containerOffset"
+        :y="getCategoryLabelYPos(category, i) + containerOffset">
+        {{ category }}
+      </text>
 
-    <!-- 
+      <!-- 
       technologies
       -->
-    <g v-for="(technology, i) in technologies" :key="technology.name" 
-      class="pointer">
-      <circle class="pointer__circle"
-        :fill="getStatusColor(technology.status)"
-        :cx="getTechnologyXPos(technology, i) + containerOffset" 
-        :cy="getTechnologyYPos(technology, i) + containerOffset"
-        r="15">
-      </circle>
-      <text class="pointer__text"
-        :x="getTechnologyXPos(technology, i) + containerOffset"
-        :y="getTechnologyYPos(technology, i) + containerOffset + pointerSize * 0.5">
-        {{ i }}
-      </text>
-    </g>
+      <g v-for="(technology, i) in technologies" :key="technology.name" class="pointer">
+        <circle class="pointer__circle" :fill="getStatusColor(technology.status)"
+          :cx="getTechnologyXPos(technology, i) + containerOffset"
+          :cy="getTechnologyYPos(technology, i) + containerOffset" r="15">
+        </circle>
+        <text class="pointer__text" :x="getTechnologyXPos(technology, i) + containerOffset"
+          :y="getTechnologyYPos(technology, i) + containerOffset + pointerSize * 0.5">
+          {{ i }}
+        </text>
+      </g>
 
-    <!--
+      <!--
       status labels
       -->
-    <g v-for="(status, i) in statuses" :key="status.name + 1" class="status-label">
-      <rect class="status-label__rect"
-        :height="labelHeight"
-        :width="labelWidth"
-        :x="chartRadius - ( labelWidth / 2) + containerOffset"
-        :y="getStatusLabelYPos(status, i) + containerOffset"
-        rx="5">
-      </rect>
-      <text class="status-label__text"
-        :fill="status.color"
-        :font-size="containerSize * 0.023"
-        :x="chartRadius + containerOffset"
-        :y="getStatusLabelYPos(status, i)  + labelHeight * 0.7 + containerOffset">
-        {{ status.name }}
-      </text>
-    </g>
-  </svg>
-</div>
+      <g v-for="(status, i) in statuses" :key="status.name + 1" class="status-label">
+        <rect class="status-label__rect" :height="labelHeight" :width="labelWidth"
+          :x="chartRadius - (labelWidth / 2) + containerOffset" :y="getStatusLabelYPos(status, i) + containerOffset"
+          rx="5">
+        </rect>
+        <text class="status-label__text" :fill="status.color" :font-size="containerSize * 0.023"
+          :x="chartRadius + containerOffset" :y="getStatusLabelYPos(status, i) + labelHeight * 0.7 + containerOffset">
+          {{ status.name }}
+        </text>
+      </g>
+    </svg>
+  </div>
 </template>
 
 <script>
@@ -111,27 +95,27 @@ export default {
     }
   },
   methods: {
-    getStatusLabelYPos: function(status, i) {
+    getStatusLabelYPos: function (status, i) {
       var interval = this.chartRadius / this.statuses.length
       var offset = interval / 2 - this.labelHeight / 2
-      return interval * i + offset  
+      return interval * i + offset
     },
-    getCategoryLabelXPos: function(category, i) {
+    getCategoryLabelXPos: function (category, i) {
       const categoryOffset = this.radiansPerCategory / 2,
         angle = this.radiansPerCategory * i + categoryOffset
       return this.chartRadius * Math.cos(angle) + this.chartRadius
     },
-    getCategoryLabelYPos: function(category, i) {
+    getCategoryLabelYPos: function (category, i) {
       const categoryOffset = this.radiansPerCategory / 2,
         angle = this.radiansPerCategory * i + categoryOffset
       return this.chartRadius * Math.sin(angle) + this.chartRadius
     },
-    getCategoryPositionByString: function(category) {
+    getCategoryPositionByString: function (category) {
       return this.categories.findIndex(function (element) {
         return element === category
       })
     },
-    getStatusPositionByString: function(status) {
+    getStatusPositionByString: function (status) {
       return this.statuses.findIndex(function (element) {
         return element.name === status
       })
@@ -176,16 +160,62 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  div {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 50px;
+div {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.status-circle {
+  fill: #85B5B4;
+  stroke: #FFF;
+  stroke-width: 2px;
+  opacity: 0.5;
+}
+
+.category-radius {
+  stroke: #FFF;
+  stroke-width: 2px;
+}
+
+.category-label {
+  fill: #000;
+  text-anchor: middle;
+}
+
+.status-label {
+  &__rect {
+    fill: #FFF;
   }
 
-  svg {
-    width: 100%;
-    height: auto;
+  &__text {
+    text-anchor: middle;
+    fill: #000;
   }
+}
+
+.pointer {
+  &__text {
+    fill: #FFF;
+    text-anchor: middle;
+    font-size: 1em;
+  }
+}
+
+.pointer:hover {
+  cursor: pointer;
+
+  .pointer__circle {
+    fill: #000;
+  }
+}
+
+.dark {
 
   .status-circle {
     fill: #85B5B4;
@@ -200,7 +230,7 @@ export default {
   }
 
   .category-label {
-    fill: #FFF;
+    fill: #22272D;
     text-anchor: middle;
   }
 
@@ -214,19 +244,5 @@ export default {
     }
   }
 
-  .pointer {
-    &__text {
-      fill: #FFF;
-      text-anchor: middle;
-      font-size: 1em;
-    }
-  }
-
-  .pointer:hover {
-    cursor: pointer;
-
-    .pointer__circle {
-      fill: #000;
-    }
-  }
+}
 </style>
