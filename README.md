@@ -12,7 +12,9 @@ After the issue is close, a new `*.md` file in `/docs/ADL`folder will be created
 # Building
 
 The site uses vuepress to build the pages. To build them locally, install vuepress:
-```npm install -D vuepress@next```
+```
+npm install -D vuepress@next
+```
 
 Then add the build commands to package.json
 
