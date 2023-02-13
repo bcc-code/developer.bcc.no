@@ -53,7 +53,7 @@
         </text>
         <foreignObject :x="getTechnologyXPos(technology, i) + containerOffset"
           :y="getTechnologyYPos(technology, i) + containerOffset" width="150" height="50">
-          <div class="tooltip">{{ technology.name }}</div>
+          <span class="tooltip">{{ technology.name }}</span>
         </foreignObject>
       </g>
 
