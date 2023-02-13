@@ -18,12 +18,28 @@ export const categories = [
     'languages',
     'platform',
     'techniques',
+    'databases',
 ]
 
 export const technologies = [
     {
         name: 'VueJS',
         category: 'frameworks',
+        status: 'adopt'
+    },
+    {
+        name: 'Typescript',
+        category: 'tools',
+        status: 'adopt'
+    },
+    {
+        name: 'PostgreSQL',
+        category: 'databases',
+        status: 'adopt'
+    },
+    {
+        name: 'Vite',
+        category: 'tools',
         status: 'adopt'
     },
     {
