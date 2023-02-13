@@ -52,6 +52,21 @@ export const technologies = [
         status: 'trial'
     },
     {
+        name: 'Xamarin',
+        category: 'frameworks',
+        status: 'hold'
+    },
+    {
+        name: 'MAUI',
+        category: 'frameworks',
+        status: 'assess'
+    },
+    {
+        name: 'Flutter',
+        category: 'frameworks',
+        status: 'trial'
+    },
+    {
         name: 'DevOps',
         category: 'techniques',
         status: 'adopt'
