@@ -51,8 +51,8 @@
           :y="getTechnologyYPos(technology, i) + containerOffset + pointerSize * 0.5">
           {{ i }}
         </text>
-        <foreignObject x="192.65089391796613" :x="getTechnologyXPos(technology, i) + containerOffset"
-          :y="getTechnologyYPos(technology, i) + containerOffset" width="150" height="150">
+        <foreignObject :x="getTechnologyXPos(technology, i) + containerOffset"
+          :y="getTechnologyYPos(technology, i) + containerOffset" width="150" height="50">
           <div class="tooltip">{{ technology.name }}</div>
         </foreignObject>
       </g>
