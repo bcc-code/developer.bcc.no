@@ -27,6 +27,11 @@ export const technologies = [
         status: 'adopt'
     },
     {
+        name: 'Tailwind CSS',
+        category: 'frameworks',
+        status: 'adopt'
+    },
+    {
         name: 'Env0',
         category: 'platform',
         status: 'trial'
@@ -40,6 +45,11 @@ export const technologies = [
         name: 'C#',
         category: 'languages',
         status: 'adopt'
+    },
+    {
+        name: 'Golang',
+        category: 'languages',
+        status: 'trial'
     },
     {
         name: 'DevOps',
