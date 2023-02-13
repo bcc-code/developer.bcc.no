@@ -52,7 +52,7 @@ export const technologies = [
         status: 'trial'
     },
     {
-        name: 'Xamarin',
+        name: '.NET for iOS and Android (Xamarin)',
         category: 'frameworks',
         status: 'hold'
     },
