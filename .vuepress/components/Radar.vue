@@ -25,20 +25,6 @@
         {{ category }}
       </text>
 
-      <!-- 
-      technologies
-      -->
-      <g v-for="(technology, i) in technologies" :key="technology.name" class="pointer">
-        <circle class="pointer__circle" :fill="getStatusColor(technology.status)"
-          :cx="getTechnologyXPos(technology, i) + containerOffset"
-          :cy="getTechnologyYPos(technology, i) + containerOffset" r="15">
-        </circle>
-        <text class="pointer__text" :x="getTechnologyXPos(technology, i) + containerOffset"
-          :y="getTechnologyYPos(technology, i) + containerOffset + pointerSize * 0.5">
-          {{ i }}
-        </text>
-      </g>
-
       <!--
       status labels
       -->
@@ -52,6 +38,24 @@
           {{ status.name }}
         </text>
       </g>
+
+      <!-- 
+      technologies
+      -->
+      <g v-for="(technology, i) in technologies" :key="technology.name" class="pointer">
+        <circle class="pointer__circle" :fill="getStatusColor(technology.status)"
+          :cx="getTechnologyXPos(technology, i) + containerOffset"
+          :cy="getTechnologyYPos(technology, i) + containerOffset" r="15">
+        </circle>
+        <text class="pointer__text" :x="getTechnologyXPos(technology, i) + containerOffset"
+          :y="getTechnologyYPos(technology, i) + containerOffset + pointerSize * 0.5">
+          {{ i }}
+        </text>
+        <foreignObject x="192.65089391796613" y="124.06360658786926" width="150" height="150">
+          <div class="tooltip">{{ technology.name }}</div>
+        </foreignObject>
+      </g>
+
     </svg>
   </div>
 </template>
@@ -205,6 +209,14 @@ svg {
     text-anchor: middle;
     font-size: 1em;
   }
+
+  .tooltip {
+    display: none;
+    background-color: #0007;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+  }
 }
 
 .pointer:hover {
@@ -212,6 +224,10 @@ svg {
 
   .pointer__circle {
     fill: #000;
+  }
+
+  .tooltip {
+    display: block;
   }
 }
 
