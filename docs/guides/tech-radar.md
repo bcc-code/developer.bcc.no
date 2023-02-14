@@ -8,8 +8,8 @@ As new technologies are introduced in the BCC IT community, they move from the o
 These are our commitments and expectations for each ring:
 
 * **adopt** - We're considering the technology "standard", recommend using it and can provide good support for it.
-* **trial** - We think we should try the technology and perhaps adopt it.
-* **assess** - We're keeping an eye on the technology for potentially use in the future, but do not recommend using it yet.
+* **trial** - We're trying the technology and will perhaps adopt it.
+* **assess** - We're keeping an eye on the technology for potential use in the future, but do not recommend using it yet.
 * **hold** - We have not had a good experience with the technology and recommend phasing it out.
 
 If anything is not on the radar it means that we have never considered it seriously.
