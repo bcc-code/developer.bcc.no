@@ -73,6 +73,11 @@ export const technologies = [
         status: 'hold'
     },
     {
+        name: '.NET MAUI',
+        category: 'frameworks',
+        status: 'assess'
+    },
+    {
         name: 'MAUI',
         category: 'frameworks',
         status: 'assess'
