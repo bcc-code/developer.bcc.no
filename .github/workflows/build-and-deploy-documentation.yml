@@ -31,3 +31,4 @@ jobs:
           auto-register-components: true
           components-dir: .vuepress/components
           branch: master
+          base: /bcc-code-github-io/
