@@ -29,7 +29,7 @@ export const technologies = [
     },
     {
         name: 'Typescript',
-        category: 'tools',
+        category: 'languages',
         status: 'adopt'
     },
     {
@@ -71,11 +71,6 @@ export const technologies = [
         name: '.NET for iOS and Android (Xamarin)',
         category: 'frameworks',
         status: 'hold'
-    },
-    {
-        name: '.NET MAUI',
-        category: 'frameworks',
-        status: 'assess'
     },
     {
         name: 'MAUI',
