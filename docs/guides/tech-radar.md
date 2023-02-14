@@ -10,7 +10,7 @@ These are our commitments and expectations for each ring:
 * **adopt** - We're considering the technology "standard", recommend using it and can provide good support for it.
 * **trial** - We're trying the technology and will perhaps adopt it.
 * **assess** - We're keeping an eye on the technology for potential use in the future, but do not recommend using it yet.
-* **hold** - We have not had a good experience with the technology and recommend phasing it out.
+* **hold** - We have not had a good experience with the technology or it doesn't align with our strategy. We recommend phasing it out.
 
 If anything is not on the radar it means that we have never considered it seriously.
 
