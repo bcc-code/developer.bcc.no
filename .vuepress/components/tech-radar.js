@@ -88,7 +88,7 @@ export const technologies = [
         status: 'adopt'
     },
     {
-        name: 'Terraform'
+        name: 'Terraform',
         category: 'tools',
         status: 'adopt'
     }
