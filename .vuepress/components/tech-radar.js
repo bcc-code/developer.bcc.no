@@ -91,5 +91,15 @@ export const technologies = [
         name: 'Terraform',
         category: 'tools',
         status: 'adopt'
+    },
+    {
+        name: 'WordPress (CMS for websites)',
+        category: 'platforms',
+        status: 'adopt'
+    },
+    {
+        name: 'Directus (CMS for apps)',
+        category: 'platforms',
+        status: 'trial'
     }
 ]
