@@ -63,8 +63,8 @@ Models should be well thought through. _More is less_ - rather keep the size of 
 * **RESTful HTTP-based APIs using JSON**
 Currently the defacto standard for Open APIs. Lightweight and human-readable.
 
-* **gRPC**
-A newer binary format which offers better performance, but not human readable. 
+* **gRPC with protobuf**
+Offers better performance and easier code generation, but a bit harder to set up and use, and not human readable in transit.
 
 * ** **
 
