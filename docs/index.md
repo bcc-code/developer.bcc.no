@@ -31,9 +31,6 @@ actions:
     type: secondary
 ---
 
-::: tip Work In Progress
-This site is a work in progress and more documentation is added continuously, check back soon!
-:::
 
 ## Communication channels
 * Check out the [Slack group](https://bccdev.slack.com/) for all developers that are a member of BCC.
