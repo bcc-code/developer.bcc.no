@@ -8,16 +8,19 @@ heroText: BCC Developer Portal
 tagline: Technical documentation and guides for software development in BCC
 features:
   - title: Projects
-    details: View the status of different BCC projects such as BMM and BCC Media
+    details: List of current projects
     link: /projects
-  - title: Libraries
-    details: APIs, libraries and SDKs provided by BCC IT for external consumption
+  - title: APIs and Libraries
+    details: APIs, libraries and SDKs
     link: /libraries
   - title: Design System
-    details: Logo assets and design guidelines for using the BCC Design System
+    details: Logo assets and design guidelines
     link: https://developer.bcc.no/bcc-design/
+  - title: Terraform
+    details: Infrastructure for your project!
+    link: https://developer.bcc.no/bcc-platform/    
 actions:
-  - text: Get involved
+  - text: Join the Community!
     link: /guides/get-involved
     type: primary
   - text: Read Coding Guide
