@@ -10,11 +10,13 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
+  pages: write
   id-token: write
 # Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
+  
 jobs:
   build:
     runs-on: ubuntu-latest  
@@ -23,10 +25,12 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: bcc-code/bcc-documentation-base
+        
     - name: Check out current repository
       uses: actions/checkout@v3
       with:
         path: source
+        
     - name: Copy documentation to VuePress theme
       shell: bash
       run: |
@@ -35,13 +39,20 @@ jobs:
         false && mkdir $GITHUB_WORKSPACE/vuepress/docs/.vuepress/auto-register-components/
         false && cp -r ./src/components/* $GITHUB_WORKSPACE/vuepress/docs/.vuepress/auto-register-components/
         true
+        
     - uses: microsoft/variable-substitution@v1
       with:
         files: "vuepress/docs/.vuepress/data.json"
       env:
-        title: "test"
-        description: "testing docs"
-        base: "/home/"
+        title: BCC Developer Portal
+        description: Technical documentation and guides for software development in BCC
+        collapse-sidebar: true
+        auto-register-components: true
+        components-dir: .vuepress/components
+        branch: master
+        base: /home/
+        debug-build: (secrets.ACTIONS_RUNNER_DEBUG == 'true' && secrets.ACTIONS_STEP_DEBUG == 'true')
+        
     - name: Build VuePress site
       shell: bash
       run: |
