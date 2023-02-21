@@ -15,10 +15,10 @@ features:
     link: /libraries
   - title: Design System
     details: Logo assets and design guidelines
-    link: ../bcc-design
+    link: ./bcc-design
   - title: Terraform
     details: Infrastructure for your project!
-    link: ../bcc-platform
+    link: ./bcc-platform
 actions:
   - text: Join the Community!
     link: /guides/get-involved
