@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build documentation site
-        uses: bcc-code/bcc-documentation-base@v2
+        uses: bcc-code/bcc-documentation-base@b7668164f1026dc557452abedc86ddd1793e5035
         with:
           title: BCC Developer Portal
           description: Technical documentation and guides for software development in BCC
