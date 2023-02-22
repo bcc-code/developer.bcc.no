@@ -15,10 +15,10 @@ features:
     link: /libraries
   - title: Design System
     details: Logo assets and design guidelines
-    link: ./bcc-design
+    link: ../bcc-design
   - title: Terraform
     details: Infrastructure for your project!
-    link: ./bcc-platform
+    link: ../bcc-platform
 actions:
   - text: Join the Community!
     link: /guides/get-involved
@@ -33,15 +33,16 @@ actions:
 
 
 ## Communication channels
-* Check out the [Slack group](https://bccdev.slack.com/) for all developers that are a member of BCC.
+* <Badge text="primary" vertical="middle" />Check out the [IT Community's Discord](../discord/) for all IT people in BCC.
 * Check out our [GitHub page](https://github.com/bcc-code) for our open source projects.
 * There’s a channel on Telegram where you can get updates about the BCC Sign-in system and the Membership Portal. To subscribe, send a request to support, and you will be added.
+* Check out the [Slack group](https://bccdev.slack.com/) for all developers that are a member of BCC.
 
 ## Documentation
 * [Architectural Decision Records](./architectural-decision-records/index.md)
 * [BCC Coding Guide](./guides/coding-guide.md)
 * [Security](./security/index.md)
-* [Documentation Guide](/bcc-documentation-base)
+* [Documentation Guide](../bcc-documentation-base/)
 
 <br>
 

@@ -18,11 +18,11 @@ Each ADR consists of following sections:
 
 ## Index
 
-* [01-architecture-for-services-releated-to-members](01-architecture-for-services-releated-to-members)
-* [02-approach-to-microservice-architecture](02-approach-to-microservice-architecture)  
+* [01-architecture-for-services-releated-to-members](01-architecture-for-services-releated-to-members.md)
+* [02-approach-to-microservice-architecture](02-approach-to-microservice-architecture.md)
 * [03-approach-to-application-hosting-infrastructure](#) <Badge type="warning" text="unavailable" vertical="middle" />
-* [04-language-solution](04-language-for-core-apis)  
-* [05-database-technology](05-database-technology)
+* [04-language-solution](04-language-for-core-apis.md)
+* [05-database-technology](05-database-technology.md)
 * [06-cloud-provider](#) <Badge type="warning" text="unavailable" vertical="middle" />
 * [07-approach-to-testing](#) <Badge type="warning" text="unavailable" vertical="middle" />
 * [08-api-gateway-solution](#) <Badge type="warning" text="unavailable" vertical="middle" />
