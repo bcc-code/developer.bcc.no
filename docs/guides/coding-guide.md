@@ -72,9 +72,27 @@ Offers better performance and easier code generation, but a bit harder to set up
 * **Public Documentation** should be included in the `docs` folder of your repository in markdown format. This can easily be published to the developer portal. ([Read guide here](https://developer.bcc.no/bcc-documentation-base/deploying-site/#publishing-documentation)).
 
 
-## 3. Development Technologies
+## 3. Development Frameworks
 
-Refer to our [Technology Radar](./tech-radar.md) for a comprehensive list of recommended technologies.
+### 3.1 Front-end
+* **Logo Assets** are available [here](https://developer.bcc.no/bcc-design/)
+* **Vue JS** is the preferred javascript framework for web interfaces. 
+* **Tailwind CSS** based on markup from [Flowbite](https://flowbite.com/blocks/) is the preferred CSS framework. 
+
+Note that work is being done on developing a Design System and component library based on the above.
+
+### 3.2 Back-end
+* **.Net 6+** is the preferred framework for developing web APIs. We also have projects using **Node JS** and **Go**.
+
+### 3.3 App Development
+* **Flutter** is the preferred framework for developing native apps
+
+### 4.4 Content Management
+* **WordPress** is the preferred content management system for building websites.
+* **Directus** is currently the preferred content management system for applications
+
+
+The technologies listed above are the preferred ones. Please refer to the [Technology Radar](./tech-radar.md) for a more comprehensive list of assessed, tried, adopted (recommended) and on-hold (not-recommended) technologies.
 
 
 ## 4. Deployment
