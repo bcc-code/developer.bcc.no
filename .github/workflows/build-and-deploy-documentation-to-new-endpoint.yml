@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build documentation site
-        uses: bcc-code/bcc-documentation-base@98383c368057de3ff1b08aa084f823a1bdb1b8ed
+        uses: bcc-code/bcc-documentation-base@v2
         with:
           title: BCC Developer Portal
           description: Technical documentation and guides for software development in BCC
@@ -28,4 +28,3 @@ jobs:
           components-dir: .vuepress/components
           branch: master
           base: /home/
-          debug-build: (secrets.ACTIONS_RUNNER_DEBUG == 'true' && secrets.ACTIONS_STEP_DEBUG == 'true')
