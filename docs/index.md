@@ -10,14 +10,14 @@ features:
   - title: Projects
     details: List of current projects
     link: /projects
-  - title: APIs and Libraries
+  - title: APIs
     details: APIs, libraries and SDKs
     link: /libraries
-  - title: Design System
+  - title: Design
     details: Logo assets and design guidelines
     link: https://developer.bcc.no/bcc-design
-  - title: Terraform
-    details: Infrastructure for your project!
+  - title: Infrastructure
+    details: Terraform modules for your project!
     link: https://developer.bcc.no/bcc-platform
 actions:
   - text: Join the Community!
@@ -29,20 +29,22 @@ actions:
   - text: Submit Security Advisory
     link: /security/security-advisory
     type: secondary
-footer: 2023 © BCC - licensed under the Apache License, Version 2.0 - <a href="/privacy-policy">Privacy Policy</a>
+footer: 2023 © BCC - licensed under the Apache License, Version 2.0
 ---
 
 
-## Communication channels
+## Channels
 
 * Join the [BCC IT Community Discord](https://developer.bcc.no/discord/) for all IT people in BCC.
-* Check out our [GitHub org](https://github.com/bcc-code) for our open source projects.
-* There’s a channel on Telegram where you can get updates about the BCC Sign-in system and the Membership Portal. To subscribe, send a request to support, and you will be added.
-
+* Check out [GitHub](https://github.com/bcc-code) for our open source projects.
 
 ## Documentation
 
-* [Architectural Decision Records](./architectural-decision-records/index.md)
 * [BCC Coding Guide](./guides/coding-guide.md)
 * [Security](./security/index.md)
 * [Documentation Guide](https://developer.bcc.no/bcc-documentation-base/)
+
+## Other
+
+* [Architectural Decision Records](./architectural-decision-records/index.md)
+* [Privacy Policy](./privacy-policy.md)
