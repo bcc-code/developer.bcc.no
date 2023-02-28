@@ -26,11 +26,11 @@ If you have any questions about this privacy policy or the assessments we have m
 
 Our postal and physical address is:
 
-BCC-forbundets Fellestjenester
-Vålerveien 159
-1599 MOSS
-NORWAY
-Organization number 928 453 944
+BCC-forbundets Fellestjenester  
+Vålerveien 159  
+1599 MOSS  
+NORWAY  
+Organisation number 928 453 944  
 
 ## 2. FIELD OF OPERATION
 
@@ -45,11 +45,11 @@ These activities are discussed in the sections below.
 
 ### 2.1 IT Community Activities
 
-BCC IT coordinates IT Community activities in collaboration with other organizations affiliated with the BCC Federation as well as community members (hereafter collectively referred to as "Related Entities").
+BCC IT coordinates IT Community activities in collaboration with other organisations affiliated with the BCC Federation as well as community members (hereafter collectively referred to as "Related Entities").
 
-Under BCC IT Community Acitivites, all IT-related events, collaboration and communication organized by BCC IT (and/or related entities), where you are a participant or contributor are covered. Electronic communication services include text and video chat, telephone (including SMS), internet, cellular telephone and other IP services.
+Under BCC IT Community Acitivites, all IT-related events, collaboration and communication organised by BCC IT (and/or related entities), where you are a participant or contributor are covered. Electronic communication services include text and video chat, telephone (including SMS), internet, cellular telephone and other IP services.
 
-BCC IT organizes virtual and physical events (hereafter referred to as "Events") and facilitates collaboration (hereafter referred to as "Collaboration") within the BCC IT Community using several media platforms. This includes platforms such as telephone, internet, smartphones etc.
+BCC IT organises virtual and physical events (hereafter referred to as "Events") and facilitates collaboration (hereafter referred to as "Collaboration") within the BCC IT Community using several media platforms. This includes platforms such as telephone, internet, smartphones etc.
 
 BCC IT uses multiple tools/services/websites (hereafter referred to as "Tools") to support Events and Collaboration such as:
 
@@ -70,13 +70,13 @@ BCC IT uses multiple tools/services/websites (hereafter referred to as "Tools") 
 
 ### 2.2 IT Administration Activities
 
-BCC IT provides IT administration services to organizations within the BCC Federation. This includes network administration, system administration, licence administration, user administration, user support, client device configuration, security awareness training etc. Some of these tasks are performed in collaboration with Related Entities including the BCC IT Community.
+BCC IT provides IT administration services to organisations within the BCC Federation. This includes network administration, system administration, licence administration, user administration, user support, client device configuration, security awareness training etc. Some of these tasks are performed in collaboration with Related Entities including the BCC IT Community.
 
 When performing tasks within the context of IT Administration, any actions taken may be logged (including personally identifiable information) for security and auditing purposes.
 
 ### 2.3 IT Software Development and Support Activities
 
-BCC IT provides Software Development and Support services to organizations within the BCC Federation. This includes planning, developing, deploying, maintaining, monitoring and supporting software solutions. Some of these tasks are performed in collaboration with Related Entities including the BCC IT Community.  
+BCC IT provides Software Development and Support services to organisations within the BCC Federation. This includes planning, developing, deploying, maintaining, monitoring and supporting software solutions. Some of these tasks are performed in collaboration with Related Entities including the BCC IT Community.  
 
 When performing tasks within the context of IT Software Development and Support, any actions taken may be logged (including personally identifiable information) for security and auditing purposes.
 
@@ -304,7 +304,7 @@ You can limit the amount of information processed by using private mode settings
 
 BCC IT’s general principles for information security apply to all users, systems and services in BCC IT. Measures for compliance with information security also apply to the security of personal data used for editorial purposes.
 
-These measures shall contribute to BCC IT’s information values being secured in a systematic and satisfactory manner. The basic principles are used as a basis for planning, organizing and implementing all projects that deal with information systems.
+These measures shall contribute to BCC IT’s information values being secured in a systematic and satisfactory manner. The basic principles are used as a basis for planning, organising and implementing all projects that deal with information systems.
 
 ## 8. GLOSSARY
 
