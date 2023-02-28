@@ -29,17 +29,19 @@ actions:
   - text: Submit Security Advisory
     link: /security/security-advisory
     type: secondary
-footer: 2023 © BCC, licensed under the Apache License, Version 2.0
+footer: 2023 © BCC - licensed under the Apache License, Version 2.0 - [Privacy Policy](/privacy-policy.md)
 ---
 
 
 ## Communication channels
-* Check out the [IT Community's Discord](https://developer.bcc.no/discord/) for all IT people in BCC. <Badge text="primary" vertical="middle" />
-* Check out our [GitHub page](https://github.com/bcc-code) for our open source projects.
+
+* Join the [BCC IT Community Discord](https://developer.bcc.no/discord/) for all IT people in BCC.
+* Check out our [GitHub org](https://github.com/bcc-code) for our open source projects.
 * There’s a channel on Telegram where you can get updates about the BCC Sign-in system and the Membership Portal. To subscribe, send a request to support, and you will be added.
-* Check out the [Slack group](https://bccdev.slack.com/) for all developers that are a member of BCC.
+
 
 ## Documentation
+
 * [Architectural Decision Records](./architectural-decision-records/index.md)
 * [BCC Coding Guide](./guides/coding-guide.md)
 * [Security](./security/index.md)
