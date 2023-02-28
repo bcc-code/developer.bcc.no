@@ -1,5 +1,8 @@
 # Privacy policy for BCC-forbundets Fellestjenester
 
+Version: 1.0
+Updated: 2023-02-28
+
 ## TABLE OF CONTENTS
 
 Introduction
@@ -326,9 +329,7 @@ A data processor agreement is an agreement between the data processor and the da
 By basis of processing is meant the statutory basis for the processing of personal data. BCC IT uses one of these treatment bases:  
 
 1. the registered person has consented to the processing, cf. the Privacy Ordinance art. 6 (1) (a)
-
 2. it intends to fulfill an agreement to which the data subject is a party, cf. the Privacy Ordinance art. 6 No. 1 b)
-
 3. it is necessary for purposes related to the legitimate interests pursued by the data controller or a third party, unless the data subject’s interests or fundamental freedoms take precedence and require the protection of personal data, cf. the Privacy Ordinance art. 6 No. 1 f)
 
 By consent is meant a voluntary, specific, informed, unambiguous and active statement from you that you accept the processing of given personal data. A consent can be withdrawn at any time.  
