@@ -1,18 +1,14 @@
-# Privacy policy for BCC-forbundets Fellestjenester
+---
+order: 100
+lang: en-GB
+title: Privacy Policy
+description: Privacy Policy for BCC-forbundets Fellestjenester (IT)
+---
 
-Version: 1.0
-Updated: 2023-02-28
+# Privacy Policy
 
-## TABLE OF CONTENTS
-
-Introduction
-Field of operation
-Purpose
-Processing of personal data, foundation and goal
-Data processors and third parties
-Your rights
-Information security
-Glossary
+Version: 1.0  
+Updated: 2023-02-28  
 
 ## 1. INTRODUCTION
 
@@ -47,7 +43,7 @@ BCC IT’s operations involve the processing of personal data in various context
 
 These activities are discussed in the sections below.
 
-### 2.1 IT COMMUNITY ACTIVITIES
+### 2.1 IT Community Activities
 
 BCC IT coordinates IT Community activities in collaboration with other organizations affiliated with the BCC Federation as well as community members (hereafter collectively referred to as "Related Entities").
 
@@ -72,19 +68,19 @@ BCC IT uses multiple tools/services/websites (hereafter referred to as "Tools") 
 * Amazon Web Services
 * developer.bcc.no
 
-### 2.2 IT ADMINISTRATION ACTIVITIES
+### 2.2 IT Administration Activities
 
 BCC IT provides IT administration services to organizations within the BCC Federation. This includes network administration, system administration, licence administration, user administration, user support, client device configuration, security awareness training etc. Some of these tasks are performed in collaboration with Related Entities including the BCC IT Community.
 
 When performing tasks within the context of IT Administration, any actions taken may be logged (including personally identifiable information) for security and auditing purposes.
 
-### 2.3 IT SOFTWARE DEVELOPMENT AND SUPPORT ACTIVITIES
+### 2.3 IT Software Development and Support Activities
 
 BCC IT provides Software Development and Support services to organizations within the BCC Federation. This includes planning, developing, deploying, maintaining, monitoring and supporting software solutions. Some of these tasks are performed in collaboration with Related Entities including the BCC IT Community.  
 
 When performing tasks within the context of IT Software Development and Support, any actions taken may be logged (including personally identifiable information) for security and auditing purposes.
 
-### 2.4 NON-PROFIT BUSINESS ACTIVITIES
+### 2.4 Non-profit Business Activities
 
 This includes the situations where you come into contact with BCC IT as an organisation, and which are neither related to IT Community Activities nor IT Administration Activities or IT Software Development and Support Activities. As an organisation, BCC IT processes personal information related to, for example, camera surveillance in marked areas of our properties, through registration in our visitor systems, through participation in interviews, through letters in physical or digital format (e-mail) to the company, and through inquiries for user support. Non-profit business activities also include the relationship with own employees and those seeking employment with us.
 
@@ -92,25 +88,27 @@ This includes the situations where you come into contact with BCC IT as an organ
 
 BCC IT processes personal information about you with ten overall purposes related to the four different parts of the non-profit business:
 
-### IT Community Activities
+### Summary
+
+#### IT Community Activities
 
 * To organise, host and promote community events.  
 * To facilitate communication within the community.
 * To coordinate and recruit resources for IT-related projects and tasks
 * To register participation (including time registration)
 
-### IT Administration Activities
+#### IT Administration Activities
 
 * To provide necessary access to systems and resources
 * To ensure system and data security and integrity
 
-### IT Software Development and Support Activities
+#### IT Software Development and Support Activities
 
 * To provide necessary access to systems and resources
 * To ensure system and data security and integrity
 * To provide statistics on development activities
 
-### Non-profit Business Activities
+#### Non-profit Business Activities
 
 * To carry out the organisation's tasks.
 * To fulfill the requirements for compliance with legal provisions.
@@ -118,7 +116,7 @@ BCC IT processes personal information about you with ten overall purposes relate
   
 If your personal information is to be processed for a purpose other than that stated here the new purpose will be stated and parts of information given here will be repeated.
 
-### 3.1 IT COMMUNITY ACTIVITIES
+### 3.1 IT Community Activities
 
 #### 3.1.1 Organise, host and promote community events
 
@@ -136,7 +134,7 @@ BCC IT processes your personal information, including your skills, interests and
 
 BCC IT processes your personal information to keep track of participation in community-based events and/or volunteering. We use participation and time registration statistics to better understand and improve our community project management processes.
 
-### 3.2 IT ADMINISTRATION ACTIVITIES
+### 3.2 IT Administration Activities
 
 #### 3.2.2 Provide necessary access to systems and resources
 
@@ -148,7 +146,7 @@ BCC IT logs actions taken related to the systems and/or resources you access. Ex
 
 This data may be analysed by humans and/or machines for security, troubleshooting or auditing purposes. Aggregated data may be used to better understand how systems are being used by administrators.
 
-### 3.3 IT SOFTWARE DEVELOPMENT AND SUPPORT ACTIVITIES
+### 3.3 IT Software Development and Support Activities
 
 #### 3.3.2 Provide necessary access to systems and resources
 
@@ -160,7 +158,7 @@ BCC IT logs actions taken related to the systems and/or resources you access. Ex
 
 This data may be analysed by humans and/or machines for security, troubleshooting or auditing purposes. Aggregated data may be used to better understand how systems are being used by developers.
 
-### 3.3 NON-PROFIT BUSINESS ACTIVITIES
+### 3.3 Non-profit Business Activities
 
 #### 3.3.1 Perform the organisation's tasks
 
@@ -172,7 +170,7 @@ BCC IT processes your personal data in order to fulfill our statutory obligation
 
 ## 4. PERSONAL INFORMATION PROCESSING, BASIS AND PURPOSE
 
-### 4.1 THE PERSONAL INFORMATION WE PROCESS WHEN YOU ENGAGE WITH THE BCC IT COMMUNITY
+### 4.1 The personal information we process when you engage with the BCC IT Community
 
 We process the following personal information about everyone who uses our Tools:
 
@@ -250,7 +248,7 @@ The basis for our use of personal data for this purpose is an agreement through 
 
 ## 5. DATA PROCESSORS AND THIRD PARTIES
 
-### 5.1 IT COMMUNITY ACTIVITIES
+### 5.1 IT Community Activities
 
 In order to provide the Services to you, BCC IT uses several external service providers. Some of these are data processors that process personal data on behalf of BCC IT, while others are third parties that process personal data on their own behalf.
 
@@ -264,15 +262,15 @@ When a data processor processes personal data on behalf of BCC IT, this is regul
 
 To adapt and further develop and host the Tools, applications and services delivered by BCC IT, we use third-party services from providers such as Google, Microsoft, Amazon, Discord, Github, Zoom etc. In addition, third-party suppliers are used for streaming Internet TV. BCC IT will then, among other things, be able to see overall information (including age, gender and location), get statistics on how many people have been on the site and seen the posts, how many people have responded with clicks and reactions, etc. Third party Tools and services are subject to the third party privacy policy. We encourage you to familiarize yourself with these.
 
-### 5.2 IT ADMINISTRATION ACTIVITIES
+### 5.2 IT Administration Activities
 
 BCC IT cooperations with other organisations affiliated with the BCC Federation in order to provide, secure, maintain and support IT administration services. In addition tools and services from third party vendors and suppliers such as Microsoft, Google, Amazon, Teamwork and Notion are utilized in connection with IT administration tasks. Third party Tools and services are subject to the third party privacy policy. We encourage you to familiarize yourself with these.
 
-### 5.3 IT SOFTWARE DEVELOPMENT AND SUPPORT ACTIVITIES
+### 5.3 IT Software Development and Support Activities
 
 BCC IT cooperations with other organisations affiliated with the BCC Federation in order to develop, deploy, host, test and analyse softare development projects and services. In addition tools and services from third party vendors and suppliers such as Microsoft, Google, Amazon, Miro, Notion are utilized in connection with software development and support tasks. Third party Tools and services are subject to the third party privacy policy. We encourage you to familiarize yourself with these.
 
-### 5.3 NON-PROFIT BUSINESS ACTIVITIES
+### 5.3 Non-profit Business Activities
 
 BCC IT has agreements with a number of data processors that process personal information related to the company’s activities. This is in order to be able to handle, for example, salaries and telephone subscriptions to employees, security for BCC IT’s IT infrastructure and services, as well as physical security for employees and visitors.
 
@@ -280,23 +278,23 @@ BCC IT has agreements with a number of data processors that process personal inf
 
 You can exercise your rights by contacting us via Contact. You are entitled to a response without undue delay, and no later than within 30 days.
 
-### 6.1 WITHDRAWAL OF CONSENT
+### 6.1 Withdrawal of Concent
 
 In cases where the foundational basis for your personal data is linked to consent, you can withdraw your consent, for example by accessing your user profile, by accessing the settings of the Service, or by contacting us.
 
-### 6.2 TRANSPARENCY OF OWN INFORMATION
+### 6.2 Transparency of Information
 
 You can request access to which personal data BCC IT processes about you.
 
-### 6.3 CORRECTION OF PERSONAL INFORMATION
+### 6.3 Correction of Personal Information
 
 You can ask us to correct or supplement information about yourself that is incorrect or misleading. If you have created a user profile with (or shared with) BCC IT, you have the opportunity to go in and make the changes under settings/profile.
 
-### 6.4 DELETION OF PERSONAL INFORMATION
+### 6.4 Deletion of Personal Information
 
 In some situations, you can ask us to delete information about yourself. Read more about the right to deletion on the Data Protection Authority website.
 
-### 6.5 OTHER RIGHTS
+### 6.5 Other Rights
 
 If you believe that we have registered incorrect personal information about you, you wish to oppose the processing of personal information, or you have experienced something that you believe is a breach of the privacy regulations, we ask that you contact us via the Contact Form. You can also complain about our processing of personal data to the Norwegian Data Protection Authority.
 
