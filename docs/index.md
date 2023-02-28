@@ -29,7 +29,7 @@ actions:
   - text: Submit Security Advisory
     link: /security/security-advisory
     type: secondary
-footer: 2023 © BCC - licensed under the Apache License, Version 2.0 - [Privacy Policy](/privacy-policy.md)
+footer: 2023 © BCC - licensed under the Apache License, Version 2.0 - <a href="/privacy-policy">Privacy Policy</a>
 ---
 
 
