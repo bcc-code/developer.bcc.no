@@ -7,8 +7,8 @@ description: Privacy Policy for BCC-forbundets Fellestjenester (IT)
 
 # Privacy Policy
 
-Version: 1.0  
-Updated: 2023-02-28  
+Version: 1.1  
+Updated: 2023-03-01  
 
 ## 1. INTRODUCTION
 
@@ -245,6 +245,12 @@ The archived applications are kept for 6 months. Exceptions for this must be agr
 BCC IT will be able to publish photos and films with the names of employees during interviews and editorial coverage of BCC IT’s productions, on BCC IT’s websites, intranet, online TV and on BCC IT’s profiles in social media.
 
 The basis for our use of personal data for this purpose is an agreement through given consent as well as information about this in the employment contract.
+
+#### 4.3.6 Audit logging
+
+BCC IT may log your activity when accessing tools, services and systems you have gained access to through your collaboration with BCC IT. This is done for security and auditing purposes.
+
+The basis for our use of personal data for this purpose is legitimate interest. The legitimate interest is to ensure the security, integrity and reliablity of tools, systems and services we operate.
 
 ## 5. DATA PROCESSORS AND THIRD PARTIES
 
