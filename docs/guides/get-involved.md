@@ -2,7 +2,7 @@
 
 ## Discord
 
-The commmunity is organized around our Discord server. You can join the server by clicking [here](https://discord.gg).
+The commmunity is organized around our Discord server. You can join the server by clicking [here](https://developer.bcc.no/discord/).
 
 ## GitHub
 
