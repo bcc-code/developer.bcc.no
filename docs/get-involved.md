@@ -13,7 +13,8 @@ The BCC IT Community is a place for *anybody* within BCC who is interested in IT
 
 ### [1. Complete Survey](https://forms.office.com/e/pPUB75XVfc)
 
-Complete the [BCC IT Community Survey](https://forms.office.com/e/pPUB75XVfc) for 2023! **Participants will go into a raffle to win one of 5 BCC IT Community mugs ;-)**  
+Complete the [BCC IT Community Survey](https://forms.office.com/e/pPUB75XVfc) for 2023!  
+Participants will go into a raffle to win one of 5 BCC IT Community mugs ;-) 
 
 ### [2. Join Discord](https://developer.bcc.no/discord/)
 
