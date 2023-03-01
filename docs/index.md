@@ -29,7 +29,7 @@ actions:
 footer: 2023 © BCC - licensed under the Apache License, Version 2.0
 ---
 
-::: BCC IT Community Survey 2023
+::: tip BCC IT Community Survey 2023
 Are you part of the BCC IT Community? Read more about joining, and [take our survey here](get-involved.md).
 :::
 
