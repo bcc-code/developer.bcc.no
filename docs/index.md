@@ -15,10 +15,10 @@ features:
     link: /libraries
   - title: Design
     details: Logo assets and design guidelines
-    link: https://developer.bcc.no/bcc-design
+    link: /bcc-design
   - title: Infrastructure
     details: Terraform modules for your project!
-    link: https://developer.bcc.no/bcc-platform
+    link: /bcc-platform
 actions:
   - text: Join the Community!
     link: /guides/get-involved
@@ -42,7 +42,7 @@ footer: 2023 © BCC - licensed under the Apache License, Version 2.0
 
 * [BCC Coding Guide](./guides/coding-guide.md)
 * [Security](./security/index.md)
-* [Documentation Guide](https://developer.bcc.no/bcc-documentation-base/)
+* [Documentation Guide](./bcc-documentation-base/)
 
 ## Other
 
