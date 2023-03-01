@@ -1,0 +1,75 @@
+name: Build and Deploy Documentation Site to DEV docsite
+
+on:
+  # Runs on pushes targeting the default branch
+  #push:
+  #  branches: ["master","main"]
+  #  paths:
+  #    - docs/**
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+    steps:
+    - name: Check out base repository
+      uses: actions/checkout@v3
+      with:
+        repository: bcc-code/bcc-documentation-base
+
+    - name: Check out current repository
+      uses: actions/checkout@v3
+      with:
+        path: source
+
+    - name: Copy documentation to VuePress theme
+      shell: bash
+      run: |
+        cd source
+        cp -r ./docs/* $GITHUB_WORKSPACE/vuepress/docs/
+        false && mkdir $GITHUB_WORKSPACE/vuepress/docs/.vuepress/auto-register-components/
+        false && cp -r ./src/components/* $GITHUB_WORKSPACE/vuepress/docs/.vuepress/auto-register-components/
+        true
+    - uses: microsoft/variable-substitution@v1
+      with:
+        files: "vuepress/docs/.vuepress/data.json"
+      env:
+        title: BCC Developer Portal
+        description: Technical documentation and guides for software development in BCC
+        collapse-sidebar: true
+        auto-register-components: true
+        components-dir: .vuepress/components
+        branch: master
+        base: /
+
+    - name: Build VuePress site
+      shell: bash
+      run: |
+        cd vuepress
+        npm ci && npm run build
+        
+    - name: zip
+      run: |
+        cd vuepress/docs/.vuepress/dist
+        zip -r Docs.zip *
+        
+    - name: Run command
+      id: token
+      run: |
+        curl -s -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://github.com/bcc-code" | jq -r ".value" | echo -e "token=$(</dev/stdin)\n" >> $GITHUB_OUTPUT
+    - name: Send file
+      run: |
+        curl --request POST --header "Authorization: Bearer ${{steps.token.outputs.token}}" --header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36' --form Docs=@vuepress/docs/.vuepress/dist/Docs.zip "https://ca-docsite-api.yellowdesert-519b15e9.westeurope.azurecontainerapps.io/UploadDoc"
