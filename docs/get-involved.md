@@ -11,15 +11,15 @@ The BCC IT Community is a place for *anybody* within BCC who is interested in IT
 
 ## How to Join
 
-### 1. Complete Survey
+### [1. Complete Survey](https://forms.office.com/e/pPUB75XVfc)
 
 Complete the [BCC IT Community Survey](https://forms.office.com/e/pPUB75XVfc)!  
 
-### 2. Join Discord
+### [2. Join Discord](https://developer.bcc.no/discord/)
 
 Join the BCC IT Community [Discord server](https://developer.bcc.no/discord/). Discord is the main tool we use for text and voice communication as well as posting information about projects and events.
 
-### 3. Check out Github
+### [3. Check out Github](https://github.com/bcc-code)
 
 Check out open source projects in the [bcc-code](https://github.com/bcc-code) organization in [Github](https://github.com/bcc-code). We use Github for source control, CI/CD and project and issue management.
 
