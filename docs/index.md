@@ -16,12 +16,9 @@ features:
   - title: Design
     details: Logo assets and design guidelines
     link: /bcc-design
-  - title: Infrastructure
-    details: Terraform modules for your project!
-    link: /bcc-platform
 actions:
   - text: Join the Community!
-    link: /guides/get-involved
+    link: /get-involved
     type: primary
   - text: Read Coding Guide
     link: /guides/coding-guide
@@ -32,6 +29,9 @@ actions:
 footer: 2023 © BCC - licensed under the Apache License, Version 2.0
 ---
 
+::: BCC IT Community Survey 2023
+Are you part of the BCC IT Community? Read more about joining, and [take our survey here](get-involved.md).
+:::
 
 ## Channels
 
@@ -42,8 +42,9 @@ footer: 2023 © BCC - licensed under the Apache License, Version 2.0
 
 * [BCC Coding Guide](./guides/coding-guide.md)
 * [Security](./security/index.md)
+* [Infrastucture](https://developer.bcc.no/bcc-platform/)
 * [Documentation Guide](./bcc-documentation-base/)
-
+  
 ## Other
 
 * [Architectural Decision Records](./architectural-decision-records/index.md)
