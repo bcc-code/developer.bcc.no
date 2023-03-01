@@ -3,7 +3,7 @@
 ::: tip Reboot 2023
 We're very excited to "reboot" the BCC IT Community this year.
 
-In February some of the groundwork was done during the first "Volunteers weekend" and we look forward to following up with another weekend in April.
+In February some of the groundwork was done during the first "Volunteers weekend" and we look forward to following up with another weekend with more participants in April.
 
 :::
 
