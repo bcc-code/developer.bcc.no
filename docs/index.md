@@ -15,7 +15,7 @@ features:
     link: /libraries
   - title: Design
     details: Logo assets and design guidelines
-    link: /bcc-design
+    link: https://developer.bcc.no/bcc-design/
 actions:
   - text: Join the Community!
     link: /get-involved
