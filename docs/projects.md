@@ -14,7 +14,7 @@ order: 10
 | Project                | Status | Code availability | Documentation |
 |------------------------| ------ | ----------------- | --------------|
 | BMM App                | actively developed | [Open Source](https://github.com/bcc-code/bmm-app) | [Readme](https://github.com/bcc-code/bmm-app#readme) |
-| BMM Desktop/Website            | actively developed <br><Badge text="unreleased" type="warning" vertical="middle" /> <br><Badge text="community project" vertical="middle" /> | [Open Source](https://github.com/bcc-code/bmm-web) | [Readme](https://github.com/bcc-code/bmm-web#readme) |
+| BMM Desktop/Website            | actively developed <br><Badge text="new" type="warning" vertical="middle" /> <br><Badge text="community project" vertical="middle" /> | [Open Source](https://github.com/bcc-code/bmm-web) | [Readme](https://github.com/bcc-code/bmm-web#readme) |
 | BMM Old Website        | maintenance mode | [Open Source](https://github.com/bcc-code/bmm-website) | [Readme](https://github.com/bcc-code/bmm-website#readme) |
 | BCC Media / BrunstadTV app | actively developed | [Open Source](https://github.com/bcc-code/brunstadtv-app) | [Readme](https://github.com/bcc-code/brunstadtv-app#readme) |
 | BCC Media / BrunstadTV backend | actively developed | [Open Source](https://github.com/bcc-code/brunstadtv) | [Readme](https://github.com/bcc-code/brunstadtv#readme) |
