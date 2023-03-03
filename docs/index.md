@@ -9,22 +9,22 @@ tagline: Technical documentation and guides for software development in BCC
 features:
   - title: Projects
     details: List of current projects
-    link: /projects
+    link: /projects.html
   - title: APIs
     details: APIs, libraries and SDKs
-    link: /libraries
+    link: /libraries.html
   - title: Design
     details: Logo assets and design guidelines
     link: https://developer.bcc.no/bcc-design/
 actions:
   - text: Join the Community!
-    link: /get-involved
+    link: /get-involved.html
     type: primary
   - text: Read Coding Guide
-    link: /guides/coding-guide
+    link: /guides/coding-guide.html
     type: primary
   - text: Submit Security Advisory
-    link: /security/security-advisory
+    link: /security/security-advisory.html
     type: secondary
 footer: 2023 © BCC - licensed under the Apache License, Version 2.0
 ---
@@ -40,10 +40,10 @@ Are you part of the BCC IT Community? Read more about joining, and [take our sur
 
 ## Documentation
 
-* [BCC Coding Guide](./guides/coding-guide.md)
-* [Security](./security/index.md)
+* [BCC Coding Guide](guides/coding-guide.md)
+* [Security](security/index.md)
 * [Infrastucture](https://developer.bcc.no/bcc-platform/)
-* [Documentation Guide](./bcc-documentation-base/)
+* [Documentation Guide](https://developer.bcc.no/bcc-documentation-base/)
   
 ## Other
 
