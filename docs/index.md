@@ -44,7 +44,7 @@ Are you part of the BCC IT Community? Read more about joining, and [take our sur
 * [Security](security/index.md)
 * [Infrastucture](https://developer.bcc.no/bcc-platform/)
 * [Documentation Guide](https://developer.bcc.no/bcc-documentation-base/)
-  
+   
 ## Other
 
 * [Architectural Decision Records](./architectural-decision-records/index.md)
