@@ -92,6 +92,9 @@ Note that work is being done on developing a Design System and component library
 * **Directus** is currently the preferred content management system for applications
 
 
+The technologies listed above are the preferred ones. Please refer to the [Technology Radar](./tech-radar.md) for a more comprehensive list of assessed, tried, adopted (recommended) and on-hold (not-recommended) technologies.
+
+
 ## 4. Deployment
 
 ### 4.1 CI/CD
