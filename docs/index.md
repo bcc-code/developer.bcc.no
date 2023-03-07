@@ -42,8 +42,8 @@ Are you part of the BCC IT Community? Read more about joining, and [take our sur
 
 * [BCC Coding Guide](guides/coding-guide.md)
 * [Security](security/index.md)
-* [Infrastucture](https://developer.bcc.no/bcc-platform/)
-* [Documentation Guide](https://developer.bcc.no/bcc-documentation-base/)
+* [Infrastucture](/bcc-platform)
+* [Documentation Guide](/bcc-documentation-base)
    
 ## Other
 
