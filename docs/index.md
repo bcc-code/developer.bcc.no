@@ -47,6 +47,6 @@ Are you part of the BCC IT Community? Read more about joining, and [take our sur
    
 ## Other
 
-* [Architectural Decision Records](/bcc-decision-records/)
+* [Decision Records](/bcc-decision-records/)
 * [Tech Radar](/bcc-decision-records/tech-radar/)
 * [Privacy Policy](./privacy-policy.md)
