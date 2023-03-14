@@ -5,6 +5,8 @@ We're very excited to "reboot" the BCC IT Community this year.
 
 In February some of the groundwork was done during the first "Volunteers weekend" and we look forward to following up with another weekend with more participants in April.
 
+More information about this weekend can be found on our Discord channel!
+
 :::
 
 The BCC IT Community is a place for *anybody* within BCC who is interested in IT and digital product development.
