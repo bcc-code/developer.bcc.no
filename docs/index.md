@@ -5,7 +5,7 @@ heroImage: logomark.svg
 heroImageDark: logomarkWhite.svg
 heroHeight: 100
 heroText: BCC - IT Portal
-tagline: Technical documentation and guides for software development in BCC
+tagline: Technical documentation and guides for IT and software development in BCC
 features:
   - title: Projects
     details: List of current projects
