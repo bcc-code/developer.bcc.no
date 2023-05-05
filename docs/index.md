@@ -4,7 +4,7 @@ title: Home
 heroImage: logomark.svg
 heroImageDark: logomarkWhite.svg
 heroHeight: 100
-heroText: BCC Developer Portal
+heroText: BCC - IT Portal
 tagline: Technical documentation and guides for software development in BCC
 features:
   - title: Projects
@@ -29,13 +29,13 @@ actions:
 footer: 2023 © BCC - licensed under the Apache License, Version 2.0
 ---
 
-::: tip BCC IT Community Survey 2023
-Are you part of the BCC IT Community? Read more about joining, and [take our survey here](get-involved.md).
+::: tip BCC - IT Community Survey 2023
+Are you part of the BCC - IT Community? Read more about joining, and [take our survey here](get-involved.md).
 :::
 
 ## Channels
 
-* Join the [BCC IT Community Discord](https://developer.bcc.no/discord/) for all IT people in BCC.
+* Join the [BCC - IT Community Discord](https://developer.bcc.no/discord/) for all IT people in BCC.
 * Check out [GitHub](https://github.com/bcc-code) for our open source projects.
 
 ## Documentation
