@@ -1,3 +1,8 @@
+
+::: warning DEPRECATED
+The persons API is deprecated in favor of the Core API [see here](https://developer.bcc.no/bcc-core-api/)
+:::
+
 # Persons API Scope definitions
 
 ## List of available scopes
@@ -5,7 +10,7 @@
 > The fields `personID` and `lastChangedDate` is always included in all scopes
 
 | Access                         | Scope                        | Description                                                                                         |
-|--------------------------------|------------------------------|-----------------------------------------------------------------------------------------------------|
+| ------------------------------ | ---------------------------- | --------------------------------------------------------------------------------------------------- |
 | Person data                    | `persons#read`               | Combined access to: `Name`, `Birth date`, `Deceased date`, `Gender`, `Email`, `Phone` and `Address` |
 | Name                           | `persons.name#read`          | Access to `firstName`, `middleName`, `lastName` and `displayName`.                                  |
 | Birth date                     | `persons.birth_date#read`    | Access to `age` and `birthDate`.                                                                    |
