@@ -2,6 +2,10 @@
 order: 0
 ---
 
+::: warning DEPRECATED
+The persons API is deprecated in favor of the Core API [see here](https://developer.bcc.no/bcc-core-api/)
+:::
+
 # Persons API
 
 This API is the official source of personal data for Machine-To-Machine applications in BCC. If you're creating a third party application, you will need to get user's consent in order to get access to their data

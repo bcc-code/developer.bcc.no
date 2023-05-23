@@ -1,3 +1,8 @@
+
+::: warning DEPRECATED
+The persons API is deprecated in favor of the Core API [see here](https://developer.bcc.no/bcc-core-api/)
+:::
+
 # Persons API SDK Dotnet
 
 This is the official dotnet SDK for the persons API.

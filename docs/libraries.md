@@ -14,8 +14,9 @@ order: 30
 ## APIs
 [Read documentation on how to authenticate](./apis/index.md)
 
+* Core API [Documentation](https://developer.bcc.no/bcc-core-api) [Swagger](https://api.bcc.no/docs/?urls.primaryName=Core%20documentation)
 * Orgs API [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Orgs%20documentation)
-* Persons API [Documentation](./apis/persons-api.md)  [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Persons%20documentation)
+* Persons API [Documentation](./apis/persons-api.md) [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Persons%20documentation)
 * Contributions API [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Contributions%20documentation)
 
 ## Libraries
