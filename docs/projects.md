@@ -21,7 +21,6 @@ order: 10
 | Literature             | maintenance mode | [Open Source](https://github.com/bcc-code/bcc-literature) | [Readme](https://github.com/bcc-code/bcc-literature#readme) |
 | User Voice             | maintenance mode | [Open Source](https://github.com/bcc-code/uservoice) | [Readme](https://github.com/bcc-code/uservoice#readme) |
 | Active Christianity    | maintenance mode | [partly Open Source](https://github.com/bcc-code/bcc-ac-gatsby-v2) | [Readme](https://github.com/bcc-code/bcc-ac-gatsby-v2#readme) |
-| Literature             | maintenance mode | [Open Source](https://github.com/bcc-code/bcc-literature) | [Readme](https://github.com/bcc-code/bcc-literature#readme) |
 | BCC Login Plugin for WP    | actively developed | [Open Source](https://github.com/bcc-code/bcc-wb) | [Docs](https://developer.bcc.no/bcc-wp/) |
 | MyShare app            | actively developed | take contact | - |
 | MyShare                | maintenance mode | take contact | - |
