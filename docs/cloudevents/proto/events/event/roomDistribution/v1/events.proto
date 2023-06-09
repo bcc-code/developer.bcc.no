@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package bccCode.events.event.roomDistribution.v1;
+
+import "bccCode/events/event/roomDistribution/v1/data.proto";

@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package bccCode.events.membership.voting.v1;
+
+import "bccCode/events/membership/voting/v1/data.proto";
