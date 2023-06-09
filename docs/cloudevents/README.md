@@ -1,5 +1,6 @@
 ---
 sectionOrder: 10
+sectionTitle: CloudEvents
 ---
 
 # CloudEvents

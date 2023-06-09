@@ -1,3 +1,7 @@
+---
+sectionTitle: APIs
+---
+
 # Authenticating with BCC APIs
 
 Authentication is done with [oauth2 client credentials flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). Permissions are managed with scopes
