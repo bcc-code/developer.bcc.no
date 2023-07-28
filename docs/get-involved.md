@@ -1,9 +1,7 @@
 # Join the BCC IT Community
 
-::: tip Reboot 2023
-We're very excited to "reboot" the BCC IT Community this year.
-
-In February some of the groundwork was done during the first "Volunteers weekend" and we look forward to following up with another weekend with more participants in April.
+::: tip Volunteer Weekend in September
+Looking forward to the next volunteer weekend from 15th-17th September.
 
 More information about this weekend can be found on our Discord channel!
 
