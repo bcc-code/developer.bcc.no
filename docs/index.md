@@ -7,9 +7,9 @@ heroHeight: 100
 heroText: BCC - IT Portal
 tagline: Technical documentation and guides for IT and software development in BCC
 features:
-  - title: Projects
-    details: List of current projects
-    link: /projects.html
+  - title: Products
+    details: List of BCC products
+    link: /products.html
   - title: APIs
     details: APIs, libraries and SDKs
     link: /libraries.html

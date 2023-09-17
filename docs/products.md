@@ -2,16 +2,16 @@
 order: 10
 ---
 
-# Projects
-:::tip Featured projects
-| Project                | Status | Code availability | Documentation |
+# Products
+:::tip Featured products
+| Product                | Status | Code availability | Documentation |
 |------------------------| ------ | ----------------- | --------------|
 | BMM Desktop/Website            | actively developed <br><Badge text="new" type="warning" vertical="middle" /> <br><Badge text="community project" vertical="middle" /> | [Open Source](https://github.com/bcc-code/bmm-web) | [Readme](https://github.com/bcc-code/bmm-web#readme) |
 
 :::
 
 
-| Project                | Status | Code availability | Documentation |
+| Product                | Status | Code availability | Documentation |
 |------------------------| ------ | ----------------- | --------------|
 | BMM App                | actively developed | [Open Source](https://github.com/bcc-code/bmm-app) | [Readme](https://github.com/bcc-code/bmm-app#readme) |
 | BMM Desktop/Website            | actively developed <br><Badge text="new" type="warning" vertical="middle" /> <br><Badge text="community project" vertical="middle" /> | [Open Source](https://github.com/bcc-code/bmm-web) | [Readme](https://github.com/bcc-code/bmm-web#readme) |
