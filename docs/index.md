@@ -4,38 +4,49 @@ title: Home
 heroImage: logomark.svg
 heroImageDark: logomarkWhite.svg
 heroHeight: 100
-heroText: BCC Developer Portal
-tagline: Technical documentation and guides for software development in BCC
+heroText: BCC - IT Portal
+tagline: Technical documentation and guides for IT and software development in BCC
 features:
   - title: Projects
-    details: View the status of different BCC projects such as BMM and BCC Media
-    link: /projects
-  - title: Libraries
-    details: APIs, libraries and SDKs provided by BCC IT for external consumption
-    link: /libraries
-  - title: Design System
-    details: Logo assets and design guidelines for using the BCC Design System
+    details: List of current projects
+    link: /projects.html
+  - title: APIs
+    details: APIs, libraries and SDKs
+    link: /libraries.html
+  - title: Design
+    details: Logo assets and design guidelines
     link: https://developer.bcc.no/bcc-design/
 actions:
+  - text: Join the Community!
+    link: /get-involved.html
+    type: primary
   - text: Read Coding Guide
-    link: /guides/coding-guide
+    link: /guides/coding-guide.html
     type: primary
   - text: Submit Security Advisory
-    link: /security/security-advisory
+    link: /security/security-advisory.html
     type: secondary
+footer: 2023 © BCC - licensed under the Apache License, Version 2.0
 ---
 
-::: tip Work In Progress
-This site is a work in progress and more documentation is added continuously, check back soon!
+::: tip BCC - IT Community Survey 2023
+Are you part of the BCC - IT Community? Read more about joining, and [take our survey here](get-involved.md).
 :::
 
-## Communication channels
-* Check out the [Slack group](https://bccdev.slack.com/) for all developers that are a member of BCC.
-* Check out our [GitHub page](https://github.com/bcc-code) for our open source projects.
-* There’s a channel on Telegram where you can get updates about the BCC Sign-in system and the Membership Portal. To subscribe, send a request to support, and you will be added.
+## Channels
+
+* Join the [BCC - IT Community Discord](https://developer.bcc.no/discord/) for all IT people in BCC.
+* Check out [GitHub](https://github.com/bcc-code) for our open source projects.
 
 ## Documentation
-* [Architectural Decision Records](./architectural-decision-records/index.md)
-* [BCC Coding Guide](./guides/coding-guide.md)
-* [Security](./security/index.md)
+
+* [BCC Coding Guide](guides/coding-guide.md)
+* [Security](security/index.md)
+* [Infrastucture](/bcc-platform)
 * [Documentation Guide](/bcc-documentation-base)
+   
+## Other
+
+* [Decision Records](https://developer.bcc.no/bcc-decision-records/)
+* [Tech Radar](https://developer.bcc.no/bcc-decision-records/tech-radar/)
+* [Privacy Policy](./privacy-policy.md)

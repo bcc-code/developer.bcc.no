@@ -1,6 +1,9 @@
-﻿# BCC Developer documentation repository
+﻿# developer.bcc.no
+The source for [developer.bcc.no](https://developer.bcc.no), the central portal for developers within BCC.
 
 Here files from different docs folders are collected and displayed to developers who will or want to work with BCC-Code products
+
+Pages are built from the `docs` folder with the [common documentation setup](https://developer.bcc.no/bcc-documentation-base/deploying-site/).
 
 
 # ADL (with ADRs)

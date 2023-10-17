@@ -63,8 +63,8 @@ Models should be well thought through. _More is less_ - rather keep the size of 
 * **RESTful HTTP-based APIs using JSON**
 Currently the defacto standard for Open APIs. Lightweight and human-readable.
 
-* **gRPC**
-A newer binary format which offers better performance, but not human readable. 
+* **gRPC with protobuf**
+Offers better performance and easier code generation, but a bit harder to set up and use, and not human readable in transit.
 
 * ** **
 
@@ -90,6 +90,9 @@ Note that work is being done on developing a Design System and component library
 ### 4.4 Content Management
 * **WordPress** is the preferred content management system for building websites.
 * **Directus** is currently the preferred content management system for applications
+
+
+The technologies listed above are the preferred ones. Please refer to the [Technology Radar](./tech-radar.md) for a more comprehensive list of assessed, tried, adopted (recommended) and on-hold (not-recommended) technologies.
 
 
 ## 4. Deployment
