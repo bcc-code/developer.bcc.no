@@ -1,7 +1,7 @@
 # Join the BCC IT Community
 
-::: tip Volunteer Weekend in September
-Looking forward to the next volunteer weekend from 15th-17th September.
+::: tip Volunteer Weekend in November
+Looking forward to the next volunteer weekend from 17-19 November.
 
 More information about this weekend can be found on our Discord channel!
 
