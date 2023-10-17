@@ -14,23 +14,15 @@ After the issue is close, a new `*.md` file in `/docs/ADL`folder will be created
 
 ## Building
 
-The site uses vuepress to build the pages. To build them locally, install vuepress:
+The site uses vuepress to build the pages. To build them locally, you need vuepress installed, which can be installed globally by:
 
 ```(bash)
-npm install -D vuepress@next
+npm install -g vuepress@next
 ```
 
-Then add the build commands to package.json
+Then you can build a rudimentary version the docs locally with this command
+(note that this isn't the real theme and things like automatic sidebar won't work)
 
 ```(bash)
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  }
-```
-
-Then you can build the docs locally with this command:
-
-```(bash)
-npm run docs:dev
+vuepress dev docs
 ```
