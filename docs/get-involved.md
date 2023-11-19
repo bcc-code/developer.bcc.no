@@ -1,10 +1,9 @@
 # Join the BCC IT Community
 
-::: tip Volunteer Weekend in November
-Looking forward to the next volunteer weekend from 17-19 November.
+::: tip Weekly Wednesday Work parties
+On Wednesdays the developers in the IT community regularly gather on Discord in a Weekly Wednesday Work party (WWW), to work together on BCC projects.
 
-More information about this weekend can be found on our Discord channel!
-
+Check Discord to see when the next event is taking place!
 :::
 
 The BCC IT Community is a place for *anybody* within BCC who is interested in IT and digital product development.
@@ -18,7 +17,7 @@ Participants will go into a raffle to win one of 5 BCC IT Community mugs ;-)
 
 ### [2. Join Discord](https://developer.bcc.no/discord/)
 
-Join the BCC IT Community [Discord server](https://developer.bcc.no/discord/). Discord is the main tool we use for text and voice communication as well as posting information about projects and events. Discord will _replace_ the existing Slack channels for BCC Developers.
+Join the BCC IT Community [Discord server](https://developer.bcc.no/discord/). Discord is the main tool we use for text and voice communication as well as posting information about projects and events. Discord has replaced the previous Slack channels for BCC Developers.
 
 ### [3. Check out Github](https://github.com/bcc-code)
 
