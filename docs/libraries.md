@@ -18,8 +18,6 @@ order: 30
 
 - Core API (Persons, Organisations, Roles etc.) [Documentation](https://developer.bcc.no/bcc-core-api) [Swagger](https://api.bcc.no/docs/?urls.primaryName=Core%20documentation)
 - Events API (Events, Registrations, etc. ) [Documentation](https://developer.bcc.no/bcc-events-cms) [Swagger](https://api.bcc.no/docs)
-- Orgs API [Deprecated] [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Orgs%20documentation)
-- Persons API [Deprecated] [Documentation](./apis/persons-api.md) [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Persons%20documentation)
 - Contributions API [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Contributions%20documentation)
 
 ## Libraries
