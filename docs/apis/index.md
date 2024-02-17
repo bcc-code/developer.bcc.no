@@ -51,7 +51,7 @@ Use the credentials to get an access token to our APIs
 curl --request POST \
   --url $IDENTITY_SERVER_ORIGIN/oauth/token \
   --header 'content-type: application/json' \
-  --data '{"client_id":"$CLIENT_ID","client_secret":"$CLIENT_SECRET","audience":"$API_AUDIENCE","grant_type":"client_credentials", "scope":"persons.name#read persons.birth_date#read"}'
+  --data "{\"client_id\":\"$CLIENT_ID\",\"client_secret\":\"$CLIENT_SECRET\",\"audience\":\"$API_AUDIENCE\",\"grant_type\":\"client_credentials\", \"scope\":\"persons.name#read persons.birth_date#read\"}"
 ```
 
 #### Example response
