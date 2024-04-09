@@ -17,6 +17,7 @@ order: 30
 [Read documentation on how to authenticate](./apis/index.md)
 
 - Core API (Persons, Organisations, Roles etc.) [Documentation](https://developer.bcc.no/bcc-core-api) [Swagger](https://api.bcc.no/docs/?urls.primaryName=Core%20documentation)
+- PubSub API [Documentation](https://developer.bcc.no/bcc-pubsub) [Swagger](https://pubsub.api.bcc.no/swagger/index.html)
 - Events API (Events, Registrations, etc. ) [Documentation](https://developer.bcc.no/bcc-events-cms) [Swagger](https://api.bcc.no/docs)
 - Notifications API [Documentation](https://developer.bcc.no/bcc-notifications) [Swagger](https://api.bcc.no/notifications/Swagger)
 - Contributions API [Swagger](https://sandbox-api.bcc.no/docs/?urls.primaryName=Contributions%20documentation)
