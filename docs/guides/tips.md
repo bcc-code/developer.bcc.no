@@ -2,7 +2,134 @@
 
 This is a collection of tips that may be useful for developers.
 
-## Group IAM authentication to CLoud SQL from Cloud Run
+## Group and Service Account IAM authentication to Cloud SQL from Cloud Run
+
+1. Use the Cloud SQL integration from Cloud Run to get a secure connection to Cloud SQL through an Unix socket:
+
+```hcl
+# Example Terraform code
+resource "google_cloud_run_v2_service" "main" {
+  name     = "cloudrun-service"
+  location = local.props.gcp.location
+  deletion_protection = false
+  ingress = "INGRESS_TRAFFIC_ALL"
+
+  template {
+    service_account = google_service_account.main.email
+    containers {
+      image = "us-docker.pkg.dev/cloudrun/container/hello"
+      resources {
+        limits = {
+          cpu    = "1"
+          memory = "512Mi"
+        }
+      }
+
+      volume_mounts {
+        name = "cloudsql"
+        mount_path = "/cloudsql"
+      }
+    }
+
+    scaling {
+      max_instance_count = 2
+    }
+
+    volumes {
+      name = "cloudsql"
+      cloud_sql_instance {
+        instances = [google_sql_database_instance.main.connection_name] # Put yours here
+      }
+    }
+  }
+}
+```
+
+2. Use the following Terraform code to enable Group IAM auth:
+
+```hcl
+resource "google_project_iam_member" "cloud_sql_client" {
+  # For all sysadmin groups (or dev groups for envs other than prod and staging) deploy this.
+  for_each = local.props.iam[local.props.app_environment == "prod" || local.props.app_environment == "staging" ? "sysadmin" : "developer"]
+
+  project = "your-project-id"
+  role    = "roles/cloudsql.client" # Enables connecting to any Cloud SQL instance in the project.
+  member  = "group:${each.value.gcp_principal_id}" # "group:group_email@bcc.no"
+}
+
+resource "google_project_iam_member" "cloud_sql_iam_login" {
+  for_each = local.props.iam[local.props.app_environment == "prod" || local.props.app_environment == "staging" ? "sysadmin" : "developer"]
+
+  project = "your-project-id"
+  role    = "roles/cloudsql.instanceUser" # Enables IAM authentication against all Cloud SQL instances in the project.
+  member  = "group:${each.value.gcp_principal_id}" # "group:group_email@bcc.no"
+}
+
+resource "google_sql_user" "iam_group" {
+  for_each = local.props.iam[local.props.app_environment == "prod" || local.props.app_environment == "staging" ? "sysadmin" : "developer"]
+
+  name     = each.value.gcp_principal_id # "group_email@bcc.no"
+  instance = google_sql_database_instance.main.name
+  type     = "CLOUD_IAM_GROUP"
+}
+
+resource "postgresql_grant" "schema_usage_iam_group" {
+  for_each = google_sql_user.iam_group
+
+  database    = google_sql_database.main.name
+  role        = each.value.name
+  schema      = "public"
+  object_type = "schema"
+  privileges  = ["USAGE"]
+}
+
+# Service account
+resource "google_service_account" "main" {
+  account_id  = "sa-auth-server"
+  description = "Service Account used by auth-server Cloud Run instance"
+}
+
+resource "google_project_iam_member" "auth_server" {
+  for_each = toset([
+    "roles/cloudsql.client",
+    "roles/cloudsql.instanceUser",
+    "roles/cloudtrace.agent"
+  ])
+  project = data.google_project.main.project_id
+  role    = each.key
+  member  = google_service_account.auth_server.member
+}
+```
+
+2. For .NET you can use the following code:
+
+```csharp
+// Add this to your Program.cs
+using System.Threading.Tasks;
+using Google.Apis.Auth.OAuth2;
+
+// Add database
+var npgsqlDataSourceBuilder = new Npgsql.NpgsqlDataSourceBuilder(builder.Configuration["Npgsql:ConnectionString"]);
+if (!string.IsNullOrEmpty(builder.Configuration["Npgsql:ConnectionString"]) && builder.Configuration["Npgsql:ConnectionString"]!.Contains("Host=/cloudsql/"))
+{
+	var credentials = await GoogleCredential.GetApplicationDefaultAsync();
+	// We want to limit the scope of the token, so we create scoped credentials
+	var scopedCredentials = credentials.CreateScoped("https://www.googleapis.com/auth/sqlservice.login");
+	
+	// GetAccessTokenForRequestAsync handles refreshing and caching the token so the refresh intervals can be kept short 
+	npgsqlDataSourceBuilder.UsePeriodicPasswordProvider(
+		(settings, cancellationToken) => new ValueTask<string>(scopedCredentials.UnderlyingCredential.GetAccessTokenForRequestAsync(cancellationToken: cancellationToken)),
+		TimeSpan.FromMinutes(1), // Interval for refreshing the token
+		TimeSpan.FromSeconds(0)); // Interval for retrying after a refresh failure
+}
+var npgsqlDataSource = npgsqlDataSourceBuilder.Build();
+builder.Services.AddDbContext<DataContext>(options =>
+{
+	options.UseNpgsql(npgsqlDataSource, o => o.MigrationsHistoryTable("_migration"));
+});
+```
+
+3. As connection string use: `Host=/cloudsql/[instance name];Database=[db name];Username=[group/user email or service account email without .gserviceaccount.com at the end];SSL Mode=Disable` (SSL is not required as CloudSQL Proxy handles that)
 
 ## Linking git commit to Cloud Run revision
 
