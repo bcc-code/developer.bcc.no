@@ -2,7 +2,7 @@
 
 This is a collection of tips that may be useful for developers.
 
-## Group and Service Account IAM authentication to Cloud SQL from Cloud Run
+## Group IAM authentication to Cloud SQL from Cloud Run
 
 1. Use the Cloud SQL integration from Cloud Run to get a secure connection to Cloud SQL through an Unix socket:
 
@@ -53,7 +53,7 @@ resource "google_project_iam_member" "cloud_sql_client" {
   for_each = local.props.iam[local.props.app_environment == "prod" || local.props.app_environment == "staging" ? "sysadmin" : "developer"]
 
   project = "your-project-id"
-  role    = "roles/cloudsql.client" # Enables connecting to any Cloud SQL instance in the project.
+  role    = "roles/cloudsql.client"                # Enables connecting to any Cloud SQL instance in the project.
   member  = "group:${each.value.gcp_principal_id}" # "group:group_email@bcc.no"
 }
 
@@ -61,7 +61,7 @@ resource "google_project_iam_member" "cloud_sql_iam_login" {
   for_each = local.props.iam[local.props.app_environment == "prod" || local.props.app_environment == "staging" ? "sysadmin" : "developer"]
 
   project = "your-project-id"
-  role    = "roles/cloudsql.instanceUser" # Enables IAM authentication against all Cloud SQL instances in the project.
+  role    = "roles/cloudsql.instanceUser"          # Enables IAM authentication against all Cloud SQL instances in the project.
   member  = "group:${each.value.gcp_principal_id}" # "group:group_email@bcc.no"
 }
 
@@ -82,26 +82,48 @@ resource "postgresql_grant" "schema_usage_iam_group" {
   object_type = "schema"
   privileges  = ["USAGE"]
 }
+```
 
-# Service account
+3. In the PostgreSQL client, use the user's email address not the group email address as username.
+
+## Service Account IAM authentication to Cloud SQL from Cloud Run with .NET
+
+1. Use the Cloud SQL integration from Cloud Run to get a secure connection to Cloud SQL through an Unix socket. Example is in the section above.
+
+2. Use the following Terraform code to enable Service Account IAM auth:
+
+```hcl
 resource "google_service_account" "main" {
-  account_id  = "sa-auth-server"
-  description = "Service Account used by auth-server Cloud Run instance"
+  account_id  = "sa-run-${local.props.app_environment}"
+  description = "Service Account used by Cloud Run instance"
 }
 
-resource "google_project_iam_member" "auth_server" {
+resource "google_project_iam_member" "service_account_project_permissions" {
   for_each = toset([
-    "roles/cloudsql.client",
-    "roles/cloudsql.instanceUser",
-    "roles/cloudtrace.agent"
+    "roles/cloudsql.client",      # Enables connecting to any Cloud SQL instance in the project.
+    "roles/cloudsql.instanceUser" # Enables IAM authentication against all Cloud SQL instances in the project.
   ])
   project = data.google_project.main.project_id
   role    = each.key
-  member  = google_service_account.auth_server.member
+  member  = google_service_account.main.member
+}
+
+resource "google_sql_user" "iam_service_account" {
+  name     = trimsuffix(google_service_account.main.email, ".gserviceaccount.com")
+  instance = google_sql_database_instance.main.name # Bring your own here
+  type     = "CLOUD_IAM_SERVICE_ACCOUNT"
+}
+
+resource "postgresql_grant" "schema_usage_service_account" {
+  database    = google_sql_database.main.name
+  role        = google_sql_user.iam_service_account.name
+  schema      = "public"
+  object_type = "schema"
+  privileges  = ["USAGE"]
 }
 ```
 
-2. For .NET you can use the following code:
+3. In the Cloud Run instance, use the following .NET code in `Program.cs` to enable authentication to the DB with automatic token refresh:
 
 ```csharp
 // Add this to your Program.cs
@@ -129,7 +151,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 });
 ```
 
-3. As connection string use: `Host=/cloudsql/[instance name];Database=[db name];Username=[group/user email or service account email without .gserviceaccount.com at the end];SSL Mode=Disable` (SSL is not required as CloudSQL Proxy handles that)
+4. As connection string use: `Host=/cloudsql/[instance name];Database=[db name];Username=[service account email without .gserviceaccount.com at the end];SSL Mode=Disable` (SSL is not required as CloudSQL Proxy handles that)
 
 ## Linking git commit to Cloud Run revision
 
