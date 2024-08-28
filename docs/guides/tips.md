@@ -50,17 +50,23 @@ resource "google_cloud_run_v2_service" "main" {
 ```hcl
 resource "google_project_iam_member" "cloud_sql_client" {
   # For all sysadmin groups (or dev groups for envs other than prod and staging) deploy this.
-  for_each = local.props.iam[local.props.app_environment == "prod" || local.props.app_environment == "staging" ? "sysadmin" : "developer"]
+  for_each = (local.props.app_environment == "prod" || local.props.app_environment == "staging" ?
+    local.props.iam_groups["sysadmin"] :
+    merge(local.props.iam_groups["developer"], local.props.iam_groups["sysadmin"])
+  )
 
-  project = "your-project-id"
+  project = data.google_project.main.project_id
   role    = "roles/cloudsql.client"                # Enables connecting to any Cloud SQL instance in the project.
   member  = "group:${each.value.gcp_principal_id}" # "group:group_email@bcc.no"
 }
 
 resource "google_project_iam_member" "cloud_sql_iam_login" {
-  for_each = local.props.iam[local.props.app_environment == "prod" || local.props.app_environment == "staging" ? "sysadmin" : "developer"]
+  for_each = (local.props.app_environment == "prod" || local.props.app_environment == "staging" ?
+    local.props.iam_groups["sysadmin"] :
+    merge(local.props.iam_groups["developer"], local.props.iam_groups["sysadmin"])
+  )
 
-  project = "your-project-id"
+  project = data.google_project.main.project_id
   role    = "roles/cloudsql.instanceUser"          # Enables IAM authentication against all Cloud SQL instances in the project.
   member  = "group:${each.value.gcp_principal_id}" # "group:group_email@bcc.no"
 }
@@ -110,17 +116,19 @@ resource "google_project_iam_member" "service_account_project_permissions" {
 
 resource "google_sql_user" "iam_service_account" {
   name     = trimsuffix(google_service_account.main.email, ".gserviceaccount.com")
-  instance = google_sql_database_instance.main.name # Bring your own here
+  instance = google_sql_database_instance.main.name # Put your own here
   type     = "CLOUD_IAM_SERVICE_ACCOUNT"
 }
 
 resource "postgresql_grant" "schema_usage_service_account" {
-  database    = google_sql_database.main.name
+  database    = google_sql_database.main.name # Put your own here
   role        = google_sql_user.iam_service_account.name
   schema      = "public"
   object_type = "schema"
   privileges  = ["USAGE"]
 }
+
+# ... other necessary permissions
 ```
 
 3. In the Cloud Run instance, use the following .NET code in `Program.cs` to enable authentication to the DB with automatic token refresh:
