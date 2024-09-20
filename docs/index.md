@@ -50,3 +50,4 @@ Are you part of the BCC - IT Community? Read more about joining, and [take our s
 * [Decision Records](https://developer.bcc.no/bcc-decision-records/)
 * [Tech Radar](https://developer.bcc.no/bcc-decision-records/tech-radar/)
 * [Privacy Policy](./privacy-policy.md)
+* [Directus Tips](directus/index.md)
