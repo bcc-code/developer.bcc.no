@@ -165,7 +165,7 @@ You would either have to add it to your Dockerfile or install it locally.
 
 ### Docker
 
-```Dockerfile
+```md
 FROM directus/directus:11.x.y
 
 USER root
