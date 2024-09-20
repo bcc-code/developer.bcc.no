@@ -90,7 +90,9 @@ The [BCC Design System](https://github.com/bcc-code/bcc-design) consists of a se
 * **.Net 6+** is the preferred framework for developing web APIs. We also have projects using **Node JS** and **Go**.
 
 ### 3.3 App Development
-* **Flutter** is the preferred framework for developing native apps.
+* **Flutter** is the preferred framework for developing mobile apps that requires high performance custom UIs.
+* **Capacitor /w Vue** is the preferred framework for developing mobile apps that doesn't require high performance custom UIs. Faster dev speed and is cross platform (web).
+* **Electron** is the preferred framework for developing desktop apps.
 
 ### 4.4 Content Management
 * **WordPress** is the preferred content management system for building websites.
