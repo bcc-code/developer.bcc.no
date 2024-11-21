@@ -51,6 +51,8 @@ jobs:
         description: Technical documentation and guides for software development in BCC
         collapse-sidebar: true
         auto-register-components: true
+        public: false
+        authentication: portal
         components-dir: .vuepress/components
         branch: master
         base: /
