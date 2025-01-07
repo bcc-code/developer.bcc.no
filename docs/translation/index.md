@@ -50,7 +50,7 @@ If you wish to *experiment*, please create a free Phrase trial account! Any chan
 	* Select "Webhook Based"
 	* Copy the webhook url to a safe location (we will use it later)
 	* Click "Add"
-* The section "Project actions" should be configured as follows: ![](Pasted image 20241210131934.png)
+* The section "Automation - Project actions" should be configured as follows: ![](Pasted image 20241210131934.png)
 * The section "Source update" should be configured as follows: ![](Pasted image 20241210131958.png)
 * Save
 ## Github Webhook
