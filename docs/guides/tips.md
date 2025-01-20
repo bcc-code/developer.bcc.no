@@ -43,6 +43,24 @@ resource "google_cloud_run_v2_service" "main" {
     }
   }
 }
+
+resource "google_sql_database_instance" "main" {
+  name             = "sql-${local.props.project_name}-${local.props.app_environment}"
+  database_version = "POSTGRES_17"
+  region           = local.props.gcp.location
+
+  settings {
+
+    // ...
+
+    database_flags {
+      name  = "cloudsql.iam_authentication"
+      value = "on"
+    }
+  }
+
+  // ...
+}
 ```
 
 2. Use the following Terraform code to enable Group IAM auth:
