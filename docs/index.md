@@ -26,10 +26,10 @@ actions:
   - text: Submit Security Advisory
     link: /security/security-advisory.html
     type: secondary
-footer: 2023 © BCC - licensed under the Apache License, Version 2.0
+footer: 2025 © BCC - licensed under the Apache License, Version 2.0
 ---
 
-::: tip BCC - IT Community Survey 2023
+::: tip BCC - IT Community Survey
 Are you part of the BCC - IT Community? Read more about joining, and [take our survey here](get-involved.md).
 :::
 
