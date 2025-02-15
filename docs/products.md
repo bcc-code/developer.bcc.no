@@ -25,4 +25,4 @@ order: 10
 | MyShare app            | actively developed | take contact | - |
 | MyShare                | maintenance mode | take contact | - |
 | BCC Vote               | actively developed | take contact | - |
-| SongTreasures          | maintained by Stiftelsen Skjulte Skatters Forlag | - | - |
+| SongTreasures          | maintained by Stiftelsen Skjulte Skatters Forlag | Web frontend: [Open Source](https://github.com/skjulteskatter/st-frontend)<br />App: take conctact | - |
