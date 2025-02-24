@@ -4,7 +4,7 @@ title: Home
 heroImage: logomark.svg
 heroImageDark: logomarkWhite.svg
 heroHeight: 100
-heroText: BCC - IT Portal
+heroText: Developer Portal
 tagline: Technical documentation and guides for IT and software development in BCC
 features:
   - title: Products
@@ -26,7 +26,7 @@ actions:
   - text: Submit Security Advisory
     link: /security/security-advisory.html
     type: secondary
-footer: 2025 © BCC - licensed under the Apache License, Version 2.0
+footer: BCC Developer Portal
 ---
 
 ::: tip BCC - IT Community Survey
