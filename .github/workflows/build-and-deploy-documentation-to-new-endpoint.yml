@@ -27,6 +27,6 @@ jobs:
           public: false
           authentication: portal
           auto-register-components: true
-          components-dir: .vuepress/components
+          components-dir: components
           branch: master
           base: /
